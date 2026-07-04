@@ -37,6 +37,9 @@ import {
 } from "@/lib/ai/provider"
 import { getCurrentRequestContext } from "@/lib/ai/request-context"
 import { getSearchIntentDecision } from "@/lib/ai/search-intent"
+import { discoverAndClassify } from "@/lib/completeness/discover"
+import { DEMO_PROFILE } from "@/lib/completeness/profile"
+import { buildCoverageReport } from "@/lib/completeness/report"
 
 const messageSchema = z.object({
   role: z.enum(["user", "assistant"]),
@@ -52,7 +55,10 @@ const requestSchema = z.object({
   currentDateContext: z.string().trim().max(500).optional(),
   query: z.string().trim().min(1, "Query is required."),
   messages: z.array(messageSchema).optional(),
-  mode: z.enum(["search", "deepResearch"]).optional().default("search"),
+  mode: z
+    .enum(["search", "deepResearch", "completenessAudit"])
+    .optional()
+    .default("search"),
   modelId: ModelIdSchema.optional(),
   sources: z.array(SourceSchema).optional(),
 })
@@ -926,6 +932,10 @@ export async function POST(request: Request) {
     })
   }
 
+  if (parsedBody.data.mode === "completenessAudit") {
+    return handleCompletenessAudit({ query })
+  }
+
   try {
     const hasContext = messages.length > 1 || citeablePreviousSources.length > 0
     const initialSearchDecision = getSearchIntentDecision(query)
@@ -1537,6 +1547,113 @@ function handleDeepResearch({
           toolCallId: searchToolCallId,
           writer,
         })
+        writeFailureMessage(writer)
+      }
+    },
+  })
+
+  return createUIMessageStreamResponse({ stream })
+}
+
+/**
+ * Completeness Audit: streams the real discovery + classification work into the
+ * same chain-of-thought accordion the search modes use (expand -> probe ->
+ * classify), then emits ONE final `report` tool part carrying the coverage
+ * report. Unlike search, it ends with no prose answer — the report card IS the
+ * output. The discovery pipeline's onEvent callback drives each accordion step
+ * live as work completes.
+ */
+function handleCompletenessAudit({ query }: { query: string }) {
+  if (!process.env.FIRECRAWL_API_KEY) {
+    return Response.json(
+      { error: "FIRECRAWL_API_KEY is not configured." },
+      { status: 500 }
+    )
+  }
+
+  const profile = DEMO_PROFILE
+  const reportToolCallId = crypto.randomUUID()
+
+  const stream = createUIMessageStream({
+    execute: async ({ writer }) => {
+      try {
+        const classifyToolCallId = crypto.randomUUID()
+
+        const discovery = await discoverAndClassify({
+          query,
+          profile,
+          onEvent: (event) => {
+            if (event.type === "expand") {
+              writeToolResult({
+                input: { query, searches: event.variants },
+                output: { searches: event.variants, status: "complete" },
+                toolCallId: crypto.randomUUID(),
+                toolName: "expand",
+                writer,
+              })
+            } else if (event.type === "probe") {
+              writeToolResult({
+                input: { query: event.query },
+                output: {
+                  found: event.sources,
+                  query: event.query,
+                  status: "complete",
+                },
+                toolCallId: crypto.randomUUID(),
+                toolName: "probe",
+                writer,
+              })
+            } else if (event.type === "entities") {
+              writeToolResult({
+                input: { entities: event.entities },
+                output: { entities: event.entities, status: "complete" },
+                toolCallId: crypto.randomUUID(),
+                toolName: "entities",
+                writer,
+              })
+            } else if (event.type === "classifyStart") {
+              writeToolInput({
+                input: { total: event.total },
+                toolCallId: classifyToolCallId,
+                toolName: "classify",
+                writer,
+              })
+            } else if (event.type === "classifyProgress") {
+              writeToolOutput({
+                output: {
+                  done: event.done,
+                  total: event.total,
+                  status: event.done >= event.total ? "complete" : "scraping",
+                },
+                toolCallId: classifyToolCallId,
+                writer,
+              })
+            }
+          },
+        })
+
+        const report = buildCoverageReport({
+          query,
+          queriesRun: discovery.queriesRun,
+          profile,
+          classifiedSources: discovery.classifiedSources,
+        })
+
+        // Final part: the report card. Not a prose answer — this IS the output.
+        writeToolResult({
+          input: { query },
+          output: {
+            report,
+            profileLabel: profile.label,
+            profileDescription: profile.description,
+            status: "complete",
+          },
+          toolCallId: reportToolCallId,
+          toolName: "report",
+          writer,
+        })
+      } catch (error) {
+        writeToolError({ error, toolCallId: reportToolCallId, writer })
         writeFailureMessage(writer)
       }
     },

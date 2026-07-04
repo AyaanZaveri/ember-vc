@@ -20,6 +20,10 @@ export type CategoryId =
   | "other"
 
 export type CompletenessProfile = {
+  /** Human-readable name shown in the UI. */
+  label: string
+  /** One-line plain-English description of what this client wants. */
+  description: string
   /** Every category the classifier may assign, with a one-line definition. */
   categories: { id: CategoryId; description: string }[]
   /** The category ids that satisfy this client — the deterministic match rule. */
@@ -27,6 +31,9 @@ export type CompletenessProfile = {
 }
 
 export const DEMO_PROFILE: CompletenessProfile = {
+  label: "Competitive landscape report",
+  description:
+    "Wants the long-tail editorial and community coverage — trade press, regional press, and forums — not storefronts or mainstream SEO winners.",
   categories: [
     {
       id: "trade_pub",

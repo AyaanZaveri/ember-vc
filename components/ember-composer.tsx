@@ -30,11 +30,13 @@ import {
   Copy,
   FileText,
   Globe,
+  ListChecks,
   LoaderCircle,
   Plus,
   RotateCcw,
   Search,
   Telescope,
+  TriangleAlert,
   Wrench,
 } from "lucide-react"
 import { useEffect, useMemo, useRef, useState } from "react"
@@ -135,7 +137,6 @@ function toUiMessage(message: ThreadMessage): ApiChatMessage | null {
   }
 }
 
-const chatTransport = new DefaultChatTransport<UIMessage>({ api: "/api/chat" })
 const searchTransport = new DefaultChatTransport<UIMessage>({
   api: "/api/search",
 })
@@ -296,7 +297,6 @@ function toAssistantContentParts(message: UIMessage) {
 }
 
 const SEARCH_MODES = [
-  { id: "search", label: "Search", Icon: Search },
   { id: "deep-research", label: "Deep Research", Icon: Telescope },
 ] as const
 
@@ -342,10 +342,8 @@ function collectThreadSearchSources(messages: readonly ThreadMessage[]) {
 
 function createChatAdapter({
   modelId,
-  searchMode,
 }: {
   modelId: ModelId
-  searchMode: SearchModeId
 }): ChatModelAdapter {
   return {
     async *run({ abortSignal, messages }) {
@@ -353,38 +351,20 @@ function createChatAdapter({
         .map(toUiMessage)
         .filter((message): message is ApiChatMessage => message !== null)
 
-      if (searchMode === "search" || searchMode === "deep-research") {
-        const query = getLastUserQuery(messages)
-        const previousSources = collectThreadSearchSources(messages)
+      const query = getLastUserQuery(messages)
+      const previousSources = collectThreadSearchSources(messages)
 
-        const stream = await searchTransport.sendMessages({
-          abortSignal,
-          chatId: "ember",
-          messageId: undefined,
-          messages: uiMessages,
-          body: {
-            currentDateContext: getCurrentRequestContext(),
-            query,
-            modelId,
-            mode: searchMode === "deep-research" ? "deepResearch" : "search",
-            sources: previousSources,
-          },
-          trigger: "submit-message",
-        })
-
-        yield* readAssistantContent(stream, abortSignal)
-
-        return
-      }
-
-      const stream = await chatTransport.sendMessages({
+      const stream = await searchTransport.sendMessages({
         abortSignal,
         chatId: "ember",
         messageId: undefined,
         messages: uiMessages,
         body: {
           currentDateContext: getCurrentRequestContext(),
+          query,
           modelId,
+          mode: "completenessAudit",
+          sources: previousSources,
         },
         trigger: "submit-message",
       })
@@ -736,12 +716,12 @@ function ComposerForm({
 }
 
 function ComposerShell() {
-  const [searchMode, setSearchMode] = useState<SearchModeId>("search")
+  const [searchMode, setSearchMode] = useState<SearchModeId>("deep-research")
   const [modelId, setModelId] = useState<ModelId>(DEFAULT_MODEL_ID)
   const [isModelPreferenceReady, setIsModelPreferenceReady] = useState(false)
   const chatAdapter = useMemo(
-    () => createChatAdapter({ modelId, searchMode }),
-    [modelId, searchMode]
+    () => createChatAdapter({ modelId }),
+    [modelId]
   )
   const runtime = useLocalRuntime(chatAdapter)
 
@@ -886,8 +866,16 @@ function getFaviconUrl(url: string) {
 }
 
 function getToolIcon(toolName: string) {
-  if (toolName === "search" || toolName === "probe") {
+  if (toolName === "search" || toolName === "probe" || toolName === "expand") {
     return Search
+  }
+
+  if (toolName === "classify") {
+    return ListChecks
+  }
+
+  if (toolName === "entities") {
+    return Telescope
   }
 
   if (toolName === "context") {
@@ -920,8 +908,20 @@ function formatToolName(toolName: string) {
     return "Refining Search"
   }
 
+  if (toolName === "expand") {
+    return "Expanding Into Search Angles"
+  }
+
+  if (toolName === "entities") {
+    return "Finding Entities To Probe"
+  }
+
   if (toolName === "probe") {
     return "Searching"
+  }
+
+  if (toolName === "classify") {
+    return "Classifying Sources By Type"
   }
 
   if (toolName === "search") {
@@ -940,6 +940,22 @@ function getToolInputSummary(part: ToolCallMessagePart) {
   }
 
   const args = isRecord(part.args) ? part.args : {}
+  const result = isRecord(part.result) ? part.result : {}
+
+  if (part.toolName === "classify") {
+    const done = typeof result.done === "number" ? result.done : undefined
+    const total = typeof result.total === "number" ? result.total : undefined
+    if (total !== undefined) {
+      return `${done ?? 0} of ${total} sources`
+    }
+    return undefined
+  }
+
+  if (part.toolName === "entities") {
+    const entities = Array.isArray(args.entities) ? args.entities : []
+    return entities.filter((e) => typeof e === "string").join(", ") || undefined
+  }
+
   const query = args.query
   const url = args.url
 
@@ -1395,10 +1411,150 @@ function CitationAwareTextPart({
   return <CitationAwareMarkdown sources={sources} text={text} />
 }
 
+type CoverageReportData = {
+  query: string
+  queriesRun: string[]
+  totalSourcesFound: number
+  droppedCount: number
+  gaps: string[]
+  thin: string[]
+  byCategory: {
+    category: string
+    wanted: boolean
+    count: number
+    sources: {
+      url: string
+      title: string
+      confidence: string
+      extractable: boolean
+    }[]
+  }[]
+}
+
+function prettyCategory(id: string) {
+  return id.replace(/_/g, " ")
+}
+
+/**
+ * Pulls the CoverageReport out of the `report` tool part emitted by the
+ * completeness-audit stream. Returns null for non-audit messages.
+ */
+function getReportFromParts(
+  parts: ThreadAssistantMessagePart[]
+): { report: CoverageReportData; profileLabel?: string; profileDescription?: string } | null {
+  for (const part of parts) {
+    if (part.type !== "tool-call" || part.toolName !== "report") continue
+    if (!isRecord(part.result)) continue
+    const result = part.result
+    if (!isRecord(result.report)) continue
+    return {
+      report: result.report as unknown as CoverageReportData,
+      profileLabel:
+        typeof result.profileLabel === "string" ? result.profileLabel : undefined,
+      profileDescription:
+        typeof result.profileDescription === "string"
+          ? result.profileDescription
+          : undefined,
+    }
+  }
+  return null
+}
+
+function GapReport({
+  report,
+  profileDescription,
+}: {
+  report: CoverageReportData
+  profileDescription?: string
+}) {
+  const populated = report.byCategory.filter((category) => category.count > 0)
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="mt-2 space-y-5 leading-6 text-foreground"
+    >
+      <p className="text-[15px] text-foreground/90">
+        {profileDescription
+          ? `${profileDescription} `
+          : ""}
+        {`Across ${report.queriesRun.length} search angles and entity probes I pulled ${report.totalSourcesFound} unique sources and set aside ${report.droppedCount} that don't fit.`}
+      </p>
+
+      {report.gaps.length > 0 ? (
+        <div>
+          <div className="flex items-center gap-1.5 text-[15px] font-semibold text-foreground">
+            <TriangleAlert className="size-4 text-amber-500" />
+            Gaps — source types you wanted that returned nothing
+          </div>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {report.gaps.map((category) => (
+              <span
+                key={category}
+                className="rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-foreground"
+              >
+                {prettyCategory(category)}
+              </span>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <p className="flex items-center gap-1.5 text-[15px] font-medium text-foreground">
+          <CheckCircle2 className="size-4 text-lime-500" />
+          Every source type you wanted has at least one result.
+        </p>
+      )}
+
+      <div className="space-y-3.5">
+        {populated.map((category) => (
+          <div key={category.category}>
+            <div className="mb-1 flex items-center gap-2 text-sm">
+              <span className="font-medium text-foreground">
+                {prettyCategory(category.category)}
+              </span>
+              <span
+                className={cn(
+                  "rounded-full px-1.5 py-0.5 text-xs",
+                  category.wanted
+                    ? "bg-primary/10 text-primary"
+                    : "bg-muted text-muted-foreground"
+                )}
+              >
+                {category.wanted ? "wanted" : "filtered"}
+              </span>
+              <span className="text-xs text-muted-foreground">{category.count}</span>
+            </div>
+            <div className="flex flex-col gap-0.5 pl-1">
+              {category.sources.slice(0, 6).map((source) => (
+                <a
+                  key={source.url}
+                  href={source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="truncate text-xs text-muted-foreground transition-colors hover:text-foreground"
+                  title={source.url}
+                >
+                  {source.title || source.url}
+                  {!source.extractable ? " — flagged for manual review" : ""}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </motion.div>
+  )
+}
+
 function AssistantMessageContent({ message }: { message: ThreadMessage }) {
   const parts = getAssistantContentParts(message)
   const isStreaming =
     message.role === "assistant" && message.status.type === "running"
+  // The completeness-audit `report` part is rendered as its own card below the
+  // accordion — keep it out of the activity steps so it isn't shown as a chip.
+  const reportPayload = getReportFromParts(parts)
   const activityParts = parts.filter(
     (
       part
@@ -1407,7 +1563,7 @@ function AssistantMessageContent({ message }: { message: ThreadMessage }) {
       { type: "reasoning" | "tool-call" | "source" }
     > =>
       part.type === "reasoning" ||
-      part.type === "tool-call" ||
+      (part.type === "tool-call" && part.toolName !== "report") ||
       part.type === "source"
   )
   const reasoningText = getReasoningText(activityParts)
@@ -1523,7 +1679,15 @@ function AssistantMessageContent({ message }: { message: ThreadMessage }) {
           text={part.text}
         />
       ))}
-      <AssistantMessageActions duration={responseDuration} />
+      {reportPayload ? (
+        <GapReport
+          report={reportPayload.report}
+          profileDescription={reportPayload.profileDescription}
+        />
+      ) : null}
+      {reportPayload ? null : (
+        <AssistantMessageActions duration={responseDuration} />
+      )}
     </>
   )
 }
