@@ -5,7 +5,7 @@ import {
   DEFAULT_MODEL_ID,
   getModelProvider,
   type ModelId,
-} from "@/lib/ai/models"
+} from "./models.ts"
 
 const nimApiKey = process.env.NVIDIA_NIM_API_KEY
 
@@ -65,3 +65,13 @@ export function getProviderOptions(modelId: ModelId) {
 
 export const SEARCH_MODEL_ID = DEFAULT_MODEL_ID
 export const CHAT_MODEL_ID = DEFAULT_MODEL_ID
+
+// A dead or unreachable model endpoint keeps its TCP connection open and never
+// errors, so a model call with no deadline hangs forever — which is exactly how
+// Deep Research got stuck on "plan" with no logs. Cap every model call so an
+// outage surfaces as a thrown error that hits the existing fallbacks instead.
+export const MODEL_CALL_TIMEOUT_MS = 30_000
+// The final answer is a genuine long-running stream (reasoning models like
+// MiniMax can think for 30s+ before the first visible token), so it gets a
+// looser deadline than the bounded planning/ranking helper calls.
+export const ANSWER_CALL_TIMEOUT_MS = 90_000

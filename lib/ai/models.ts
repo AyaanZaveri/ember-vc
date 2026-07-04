@@ -162,7 +162,10 @@ export const MODEL_LABS = [
   },
 ] as const
 
-export const DEFAULT_MODEL_ID = MODEL_OPTIONS[0].id
+// gpt-oss-120b (MODEL_OPTIONS[0]) is currently unresponsive on NIM — every
+// request hangs with no error. Point the app default / planner at a model that
+// is actually up so search and chat don't stall before they start.
+export const DEFAULT_MODEL_ID: ModelId = "nvidia/nemotron-3-super-120b-a12b"
 export const MODEL_IDS = MODEL_OPTIONS.map((model) => model.id) as [
   (typeof MODEL_OPTIONS)[number]["id"],
   ...(typeof MODEL_OPTIONS)[number]["id"][],

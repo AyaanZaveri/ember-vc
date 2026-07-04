@@ -1,0 +1,497 @@
+{
+  "runId": "run-2026-07-04T18-08-18-749Z",
+  "generatedAt": "2026-07-04T18:08:18.749Z",
+  "fixtureCount": 36,
+  "profileInclude": [
+    "trade_pub",
+    "regional_press",
+    "community_forum",
+    "niche_forum"
+  ],
+  "summary": {
+    "categoryAccuracy": 0.9444444444444444,
+    "matchAccuracy": 1,
+    "parseFailures": 0
+  },
+  "perCategory": [
+    {
+      "category": "community_forum",
+      "total": 3,
+      "matchHits": 3
+    },
+    {
+      "category": "mainstream_press",
+      "total": 6,
+      "matchHits": 6
+    },
+    {
+      "category": "manufacturer",
+      "total": 1,
+      "matchHits": 1
+    },
+    {
+      "category": "niche_forum",
+      "total": 3,
+      "matchHits": 3
+    },
+    {
+      "category": "other",
+      "total": 2,
+      "matchHits": 2
+    },
+    {
+      "category": "regional_press",
+      "total": 6,
+      "matchHits": 6
+    },
+    {
+      "category": "retailer",
+      "total": 7,
+      "matchHits": 7
+    },
+    {
+      "category": "trade_pub",
+      "total": 1,
+      "matchHits": 1
+    },
+    {
+      "category": "vendor_blog",
+      "total": 7,
+      "matchHits": 7
+    }
+  ],
+  "rows": [
+    {
+      "id": "procoffeegear-collection",
+      "expectedCategory": "retailer",
+      "predictedCategory": "retailer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "coffeemachinedepot-new",
+      "expectedCategory": "retailer",
+      "predictedCategory": "retailer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "clivecoffee-commercial",
+      "expectedCategory": "retailer",
+      "predictedCategory": "retailer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "seattlecoffeegear-semiauto",
+      "expectedCategory": "retailer",
+      "predictedCategory": "retailer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "chriscoffee-commercial",
+      "expectedCategory": "retailer",
+      "predictedCategory": "retailer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "prima-coffee-cafe",
+      "expectedCategory": "retailer",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": false,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "lamarzocco-usa",
+      "expectedCategory": "manufacturer",
+      "predictedCategory": "manufacturer",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "reddit-coffee-favourite",
+      "expectedCategory": "community_forum",
+      "predictedCategory": "community_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "reddit-espresso-which",
+      "expectedCategory": "community_forum",
+      "predictedCategory": "community_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "coffeeforums-lamarzocco-simonelli",
+      "expectedCategory": "niche_forum",
+      "predictedCategory": "niche_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "baristaexchange-simonelli-marzocco",
+      "expectedCategory": "niche_forum",
+      "predictedCategory": "niche_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "home-barista-mini-musica",
+      "expectedCategory": "niche_forum",
+      "predictedCategory": "niche_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "quora-good-commercial",
+      "expectedCategory": "community_forum",
+      "predictedCategory": "community_forum",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "sca-certified-equipment",
+      "expectedCategory": "trade_pub",
+      "predictedCategory": "trade_pub",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "visionsespresso-blog-howto",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "prima-coffee-blog-carts",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "katom-learning-center",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "capitalcityroasters-guide",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "versus-linea-aurelia",
+      "expectedCategory": "other",
+      "predictedCategory": "other",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "youtube-buying-guide",
+      "expectedCategory": "other",
+      "predictedCategory": "other",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "thehorecastore-blog-versus",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "unic-espresso-news-trends",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "bestcoffeegear-tradeshows",
+      "expectedCategory": "retailer",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": false,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "busybeancoffee-blog-wholesale",
+      "expectedCategory": "vendor_blog",
+      "predictedCategory": "vendor_blog",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "wired-best-espresso",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "verge-woods-espresso",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "nyt-wirecutter-espresso",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "cnet-best-espresso",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "seriouseats-coffee-makers",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "forbes-vetted-espresso",
+      "expectedCategory": "mainstream_press",
+      "predictedCategory": "mainstream_press",
+      "categoryOk": true,
+      "expectedMatch": false,
+      "predictedMatch": false,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "wpri-society-coffee",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "golocalprov-daves",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "johnsoncountypost-current-state",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "bizjournals-southern-grounds",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "ibj-motw-expansion",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    },
+    {
+      "id": "patch-jersey-city-espresso",
+      "expectedCategory": "regional_press",
+      "predictedCategory": "regional_press",
+      "categoryOk": true,
+      "expectedMatch": true,
+      "predictedMatch": true,
+      "matchOk": true,
+      "confidence": "high",
+      "parseFailed": false,
+      "retries": 0
+    }
+  ]
+}

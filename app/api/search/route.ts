@@ -3,12 +3,20 @@ import {
   createUIMessageStreamResponse,
   generateText,
   streamText,
-  toUIMessageStream,
   type UIMessageStreamWriter,
 } from "ai"
 import { z } from "zod"
 
 import { SourceSchema } from "@/lib/ai/citations"
+import {
+  applyRanking,
+  buildShortlist,
+  type ConsensusSource,
+  extractResearchEntities,
+  mergeSearchResultsByConsensus,
+  planDeepResearch,
+  rankShortlist,
+} from "@/lib/ai/deep-research"
 import {
   FRESHNESS_POLICY_MAX_AGE_MS,
   filterExcludedSources,
@@ -18,11 +26,13 @@ import {
   type FreshnessPolicy,
   type SearchResultSource,
 } from "@/lib/ai/firecrawl"
-import { ModelIdSchema, type ModelId } from "@/lib/ai/models"
+import { DEFAULT_MODEL_ID, ModelIdSchema, type ModelId } from "@/lib/ai/models"
 import {
+  ANSWER_CALL_TIMEOUT_MS,
   getLanguageModel,
   getMissingApiKey,
   getProviderOptions,
+  MODEL_CALL_TIMEOUT_MS,
   SEARCH_MODEL_ID,
 } from "@/lib/ai/provider"
 import { getCurrentRequestContext } from "@/lib/ai/request-context"
@@ -42,6 +52,7 @@ const requestSchema = z.object({
   currentDateContext: z.string().trim().max(500).optional(),
   query: z.string().trim().min(1, "Query is required."),
   messages: z.array(messageSchema).optional(),
+  mode: z.enum(["search", "deepResearch"]).optional().default("search"),
   modelId: ModelIdSchema.optional(),
   sources: z.array(SourceSchema).optional(),
 })
@@ -71,6 +82,15 @@ const freshnessPolicyDecisionSchema = z.object({
 })
 
 const DEFAULT_FRESHNESS_POLICY: FreshnessPolicy = "normal"
+
+// Deep Research runs several planning/extraction calls before the answer, so it
+// uses a fast model for those (the big default model can take 30-50s per call on
+// NIM). The final answer still uses the user-selected model. A non-reasoning
+// *instruct* model is used deliberately: these calls demand enum-constrained
+// JSON, and reasoning models (Nemotron Nano, gpt-oss) either hallucinate invalid
+// enum values or blow their token budget on thinking and return empty content.
+// gpt-oss-20b was the original pick but is currently down on NIM entirely.
+const DEEP_RESEARCH_HELPER_MODEL_ID: ModelId = "qwen/qwen3-next-80b-a3b-instruct"
 
 const citationStyleInstructions = [
   "Cite factual claims with simple source markers like [1] or [2].",
@@ -120,10 +140,15 @@ function getErrorMessage(error: unknown) {
 }
 
 async function scrapeSourcesInParallel({
+  // Firecrawl throttles/times out (408s) once too many scrapes run
+  // concurrently on one API key — 5 is the level the default single-search
+  // path already runs at safely, so batch anything larger down to it.
+  concurrency = 5,
   freshnessPolicy,
   onProgress,
   sources,
 }: {
+  concurrency?: number
   freshnessPolicy: FreshnessPolicy
   onProgress?: (sources: SearchResultSource[]) => void
   sources: SearchResultSource[]
@@ -138,55 +163,61 @@ async function scrapeSourcesInParallel({
 
   onProgress?.(enrichedSources)
 
-  await Promise.all(
-    sources.map(async (source, index) => {
-      const sourceStartedAt = performance.now()
+  const scrapeOne = async (source: SearchResultSource, index: number) => {
+    const sourceStartedAt = performance.now()
 
-      try {
-        const scrapedSource = await firecrawlScrapeSource({ maxAge, source })
-        const durationSeconds = getElapsedSeconds(sourceStartedAt)
+    try {
+      const scrapedSource = await firecrawlScrapeSource({ maxAge, source })
+      const durationSeconds = getElapsedSeconds(sourceStartedAt)
 
-        enrichedSources[index] = {
-          ...source,
-          ...scrapedSource,
-          readSeconds: durationSeconds,
-          readStatus: "complete",
-        }
-
-        console.info("[search] scraped source", {
-          durationSeconds,
-          freshnessPolicy,
-          maxAge,
-          url: source.url,
-        })
-      } catch (error) {
-        const durationSeconds = getElapsedSeconds(sourceStartedAt)
-        const errorMessage = getErrorMessage(error)
-
-        failures.push({
-          error: errorMessage,
-          url: source.url,
-        })
-
-        enrichedSources[index] = {
-          ...source,
-          readError: errorMessage,
-          readSeconds: durationSeconds,
-          readStatus: "error",
-        }
-
-        console.warn("[search] source scrape failed", {
-          durationSeconds,
-          error: errorMessage,
-          freshnessPolicy,
-          maxAge,
-          url: source.url,
-        })
+      enrichedSources[index] = {
+        ...source,
+        ...scrapedSource,
+        readSeconds: durationSeconds,
+        readStatus: "complete",
       }
 
-      onProgress?.([...enrichedSources])
-    })
-  )
+      console.info("[search] scraped source", {
+        durationSeconds,
+        freshnessPolicy,
+        maxAge,
+        url: source.url,
+      })
+    } catch (error) {
+      const durationSeconds = getElapsedSeconds(sourceStartedAt)
+      const errorMessage = getErrorMessage(error)
+
+      failures.push({
+        error: errorMessage,
+        url: source.url,
+      })
+
+      enrichedSources[index] = {
+        ...source,
+        readError: errorMessage,
+        readSeconds: durationSeconds,
+        readStatus: "error",
+      }
+
+      console.warn("[search] source scrape failed", {
+        durationSeconds,
+        error: errorMessage,
+        freshnessPolicy,
+        maxAge,
+        url: source.url,
+      })
+    }
+
+    onProgress?.([...enrichedSources])
+  }
+
+  for (let start = 0; start < sources.length; start += concurrency) {
+    await Promise.all(
+      sources
+        .slice(start, start + concurrency)
+        .map((source, offset) => scrapeOne(source, start + offset))
+    )
+  }
 
   return {
     durationSeconds: getElapsedSeconds(scrapeStartedAt),
@@ -324,6 +355,7 @@ async function planSearch({
   try {
     const result = await generateText({
       model: getLanguageModel(modelId),
+      abortSignal: AbortSignal.timeout(MODEL_CALL_TIMEOUT_MS),
       temperature: 0,
       instructions: [
         "You decide whether a user follow-up needs a new web search.",
@@ -383,6 +415,7 @@ async function planInitialSearch({
   try {
     const result = await generateText({
       model: getLanguageModel(modelId),
+      abortSignal: AbortSignal.timeout(MODEL_CALL_TIMEOUT_MS),
       temperature: 0.7,
       instructions: [
         "Decide semantically whether the user request needs web search before answering.",
@@ -432,6 +465,7 @@ async function rewriteSearchQueries({
   try {
     const result = await generateText({
       model: getLanguageModel(modelId),
+      abortSignal: AbortSignal.timeout(MODEL_CALL_TIMEOUT_MS),
       temperature: 0,
       instructions: [
         "Rewrite the current user request as one concise web search query.",
@@ -473,6 +507,7 @@ async function decideFreshnessPolicy({
   try {
     const result = await generateText({
       model: getLanguageModel(modelId),
+      abortSignal: AbortSignal.timeout(MODEL_CALL_TIMEOUT_MS),
       temperature: 0,
       instructions: [
         "You decide how fresh Firecrawl scraped content must be for this web request.",
@@ -563,6 +598,22 @@ function writeToolError({
   })
 }
 
+// After a tool step has failed we've already surfaced the error to the UI.
+// Re-throwing out of the stream `execute` only produces a second, stream-level
+// error part the client has to reconcile — instead, close out the turn with a
+// visible assistant message so the run ends cleanly.
+function writeFailureMessage(writer: UIMessageStreamWriter) {
+  const id = crypto.randomUUID()
+  writer.write({ type: "text-start", id })
+  writer.write({
+    type: "text-delta",
+    id,
+    delta:
+      "Something went wrong while searching. The provider may be temporarily unavailable — please try again.",
+  })
+  writer.write({ type: "text-end", id })
+}
+
 function writeToolOutput({
   output,
   toolCallId,
@@ -579,11 +630,108 @@ function writeToolOutput({
   })
 }
 
+/**
+ * Streams a model answer into the UI writer with a safety net. Model providers
+ * (NIM especially) intermittently abort a stream with a 500 *before emitting any
+ * token* — e.g. minimax-m3 does this on a large fraction of requests right now.
+ * Left unhandled that surfaces as a silent empty assistant bubble: the activity
+ * trail completes, then nothing. So: if the stream fails before any visible
+ * text, retry — the same model first (most 500s are transient), then the
+ * known-good default model. If every attempt fails, emit a visible error rather
+ * than an empty message. Once real text has streamed we can't cleanly restart,
+ * so we stop and keep whatever was shown.
+ */
+async function streamAnswerWithFallback({
+  buildAnswer,
+  modelId,
+  writer,
+}: {
+  buildAnswer: (modelId: ModelId) => ReturnType<typeof streamText>
+  modelId: ModelId
+  writer: UIMessageStreamWriter
+}) {
+  const attempts: ModelId[] =
+    modelId === DEFAULT_MODEL_ID
+      ? [modelId, modelId]
+      : [modelId, modelId, DEFAULT_MODEL_ID]
+  let sawText = false
+
+  for (let attempt = 0; attempt < attempts.length; attempt++) {
+    const attemptModelId = attempts[attempt]
+
+    try {
+      for await (const part of buildAnswer(attemptModelId).fullStream) {
+        switch (part.type) {
+          case "text-start":
+            sawText = true
+            writer.write({ type: "text-start", id: part.id })
+            break
+          case "text-delta":
+            sawText = true
+            writer.write({ type: "text-delta", id: part.id, delta: part.text })
+            break
+          case "text-end":
+            writer.write({ type: "text-end", id: part.id })
+            break
+          case "reasoning-start":
+            writer.write({ type: "reasoning-start", id: part.id })
+            break
+          case "reasoning-delta":
+            writer.write({
+              type: "reasoning-delta",
+              id: part.id,
+              delta: part.text,
+            })
+            break
+          case "reasoning-end":
+            writer.write({ type: "reasoning-end", id: part.id })
+            break
+          case "error":
+            throw part.error
+        }
+      }
+
+      return
+    } catch (error) {
+      const message = getErrorMessage(error)
+
+      // Text already reached the user — a retry would duplicate output, so keep
+      // the partial answer rather than restart.
+      if (sawText) {
+        console.warn("[search] answer stream failed after partial output", {
+          attemptModelId,
+          error: message,
+        })
+        return
+      }
+
+      console.warn("[search] answer stream failed before output, retrying", {
+        attempt,
+        attemptModelId,
+        nextModelId: attempts[attempt + 1],
+        error: message,
+      })
+    }
+  }
+
+  const id = crypto.randomUUID()
+  writer.write({ type: "text-start", id })
+  writer.write({
+    type: "text-delta",
+    id,
+    delta:
+      "The model provider returned an error before producing a response. The selected model may be temporarily unavailable — please try again or switch models.",
+  })
+  writer.write({ type: "text-end", id })
+}
+
 function streamResponse({
-  result,
+  buildAnswer,
+  modelId,
   tool,
 }: {
-  result: ReturnType<typeof streamText>
+  buildAnswer: (modelId: ModelId) => ReturnType<typeof streamText>
+  modelId: ModelId
   tool?: {
     input: unknown
     output: unknown
@@ -592,7 +740,7 @@ function streamResponse({
   }
 }) {
   const stream = createUIMessageStream({
-    execute: ({ writer }) => {
+    execute: async ({ writer }) => {
       if (tool) {
         writeToolResult({
           ...tool,
@@ -600,12 +748,7 @@ function streamResponse({
         })
       }
 
-      writer.merge(
-        toUIMessageStream({
-          stream: result.stream,
-          sendReasoning: true,
-        })
-      )
+      await streamAnswerWithFallback({ buildAnswer, modelId, writer })
     },
   })
 
@@ -627,6 +770,7 @@ function answerFromContext({
 }) {
   return streamText({
     model: getLanguageModel(modelId),
+    abortSignal: AbortSignal.timeout(ANSWER_CALL_TIMEOUT_MS),
     temperature: 0.2,
     instructions: [
       "You are Ember, a concise research assistant.",
@@ -665,6 +809,7 @@ function answerDirectly({
 }) {
   return streamText({
     model: getLanguageModel(modelId),
+    abortSignal: AbortSignal.timeout(ANSWER_CALL_TIMEOUT_MS),
     temperature: 0.2,
     instructions: [
       "You are Ember, a concise and helpful assistant.",
@@ -703,6 +848,7 @@ function answerWithSearch({
 }) {
   return streamText({
     model: getLanguageModel(modelId),
+    abortSignal: AbortSignal.timeout(ANSWER_CALL_TIMEOUT_MS),
     temperature: 0.2,
     instructions: [
       "You are Ember, a concise research assistant.",
@@ -772,18 +918,28 @@ export async function POST(request: Request) {
     )
   }
 
+  if (parsedBody.data.mode === "deepResearch") {
+    return handleDeepResearch({
+      currentDateContext,
+      modelId,
+      query,
+    })
+  }
+
   try {
     const hasContext = messages.length > 1 || citeablePreviousSources.length > 0
     const initialSearchDecision = getSearchIntentDecision(query)
 
     if (initialSearchDecision === "direct") {
       return streamResponse({
-        result: answerDirectly({
-          currentDateContext,
-          messages,
-          modelId,
-          query,
-        }),
+        modelId,
+        buildAnswer: (answerModelId) =>
+          answerDirectly({
+            currentDateContext,
+            messages,
+            modelId: answerModelId,
+            query,
+          }),
       })
     }
 
@@ -798,16 +954,16 @@ export async function POST(request: Request) {
 
       if (!plan.shouldSearch) {
         if (citeablePreviousSources.length > 0) {
-          const result = answerFromContext({
-            currentDateContext,
-            messages,
-            modelId,
-            query,
-            sources: citeablePreviousSources,
-          })
-
           return streamResponse({
-            result,
+            modelId,
+            buildAnswer: (answerModelId) =>
+              answerFromContext({
+                currentDateContext,
+                messages,
+                modelId: answerModelId,
+                query,
+                sources: citeablePreviousSources,
+              }),
             tool: {
               input: { query },
               output: { query, sources: citeablePreviousSources },
@@ -818,12 +974,14 @@ export async function POST(request: Request) {
         }
 
         return streamResponse({
-          result: answerDirectly({
-            currentDateContext,
-            messages,
-            modelId,
-            query,
-          }),
+          modelId,
+          buildAnswer: (answerModelId) =>
+            answerDirectly({
+              currentDateContext,
+              messages,
+              modelId: answerModelId,
+              query,
+            }),
         })
       }
 
@@ -848,12 +1006,14 @@ export async function POST(request: Request) {
 
       if (!plan.performSearch) {
         return streamResponse({
-          result: answerDirectly({
-            currentDateContext,
-            messages,
-            modelId,
-            query,
-          }),
+          modelId,
+          buildAnswer: (answerModelId) =>
+            answerDirectly({
+              currentDateContext,
+              messages,
+              modelId: answerModelId,
+              query,
+            }),
         })
       }
 
@@ -1086,27 +1246,298 @@ function handleSearchWithRewrite({
           writer,
         })
 
-        const result = answerWithSearch({
-          currentDateContext,
+        await streamAnswerWithFallback({
           modelId,
-          query,
-          searchQuery,
-          sources: citeableSources,
+          buildAnswer: (answerModelId) =>
+            answerWithSearch({
+              currentDateContext,
+              modelId: answerModelId,
+              query,
+              searchQuery,
+              sources: citeableSources,
+            }),
+          writer,
         })
-
-        writer.merge(
-          toUIMessageStream({
-            stream: result.stream,
-            sendReasoning: true,
-          })
-        )
       } catch (error) {
         writeToolError({
           error,
           toolCallId: searchToolCallId,
           writer,
         })
-        throw error
+        writeFailureMessage(writer)
+      }
+    },
+  })
+
+  return createUIMessageStreamResponse({ stream })
+}
+
+/**
+ * Deep Research: a bounded fan-out pipeline, not a loop. One planner call
+ * produces a fixed set of query variants, all variants run once in parallel,
+ * and one closed-form ranking call judges the fixed shortlist it's handed.
+ * Nothing here reads its own output and decides to search again — see
+ * lib/ai/deep-research.ts for why that boundary matters.
+ */
+function handleDeepResearch({
+  currentDateContext,
+  modelId,
+  query,
+}: {
+  currentDateContext: string
+  modelId: ModelId
+  query: string
+}) {
+  if (!process.env.FIRECRAWL_API_KEY) {
+    return Response.json(
+      { error: "FIRECRAWL_API_KEY is not configured." },
+      { status: 500 }
+    )
+  }
+
+  const planToolCallId = crypto.randomUUID()
+  const searchToolCallId = crypto.randomUUID()
+  const stream = createUIMessageStream({
+    execute: async ({ writer }) => {
+      const requestStartedAt = performance.now()
+
+      writeToolInput({
+        input: { query },
+        toolCallId: planToolCallId,
+        toolName: "plan",
+        writer,
+      })
+
+      try {
+        const planStartedAt = performance.now()
+        const plan = await planDeepResearch({
+          currentDateContext,
+          modelId: DEEP_RESEARCH_HELPER_MODEL_ID,
+          query,
+        })
+        const resolvedFreshnessPolicy =
+          plan.freshnessPolicy ?? DEFAULT_FRESHNESS_POLICY
+        const maxAge = FRESHNESS_POLICY_MAX_AGE_MS[resolvedFreshnessPolicy]
+        const planDurationSeconds = getElapsedSeconds(planStartedAt)
+
+        console.info("[deep-research] plan ready", {
+          durationSeconds: planDurationSeconds,
+          intentLens: plan.intentLens,
+          queryVariants: plan.queryVariants,
+        })
+
+        writeToolOutput({
+          output: {
+            excludeSourceTypes: plan.excludeSourceTypes,
+            freshnessPolicy: resolvedFreshnessPolicy,
+            intentLens: plan.intentLens,
+            maxAge,
+            query,
+            searches: plan.queryVariants,
+            timings: { planSeconds: planDurationSeconds },
+          },
+          toolCallId: planToolCallId,
+          writer,
+        })
+
+        // Each probe is its own visible tool step: input written up-front so it
+        // appears immediately as an active spinner, output written when it
+        // resolves. Found sources go under `found` (NOT `sources`) so they show
+        // as chips in the activity trail without polluting citation numbering —
+        // only the final aggregate step below carries the `sources` key the
+        // frontend maps [1],[2]… onto.
+        const runProbe = async (probeQuery: string, limit: number) => {
+          const probeToolCallId = crypto.randomUUID()
+          writeToolInput({
+            input: { query: probeQuery },
+            toolCallId: probeToolCallId,
+            toolName: "probe",
+            writer,
+          })
+
+          try {
+            const { sources } = await firecrawlSearch({
+              query: probeQuery,
+              limit,
+              maxAge,
+              scrapeContent: false,
+            })
+            writeToolOutput({
+              output: { found: sources, query: probeQuery, status: "complete" },
+              toolCallId: probeToolCallId,
+              writer,
+            })
+            return sources
+          } catch (error) {
+            writeToolError({ error, toolCallId: probeToolCallId, writer })
+            return [] as SearchResultSource[]
+          }
+        }
+
+        // Round 1 — the planned query variants, all in parallel.
+        const round1StartedAt = performance.now()
+        const round1Lists = await Promise.all(
+          plan.queryVariants.map((variant) => runProbe(variant, 10))
+        )
+        const round1Sources = round1Lists.flat()
+        console.info("[deep-research] round 1 complete", {
+          durationSeconds: getElapsedSeconds(round1StartedAt),
+          sourceCount: round1Sources.length,
+          variantCount: plan.queryVariants.length,
+        })
+
+        // Round 2 — niche probing: pull specific entities out of round-1 results
+        // and search each one directly (what surfaces the source that covers the
+        // product but never ranks for the generic topic query).
+        const entities = await extractResearchEntities({
+          currentDateContext,
+          modelId: DEEP_RESEARCH_HELPER_MODEL_ID,
+          query,
+          sources: round1Sources,
+        })
+        const round2StartedAt = performance.now()
+        const round2Lists = entities.length
+          ? await Promise.all(entities.map((entity) => runProbe(entity, 8)))
+          : []
+        const round2Sources = round2Lists.flat()
+        console.info("[deep-research] round 2 complete", {
+          durationSeconds: getElapsedSeconds(round2StartedAt),
+          entities,
+          sourceCount: round2Sources.length,
+        })
+
+        const allQueries = [...plan.queryVariants, ...entities]
+        const merged = mergeSearchResultsByConsensus({
+          resultLists: [...round1Lists, ...round2Lists],
+        })
+        // Scrape only the strongest slice by consensus — discovery is wide, but
+        // scraping every result would be slow and burn credits for little gain.
+        const shortlist: ConsensusSource[] = buildShortlist(merged, 24).map(
+          (source) => ({ ...source, readStatus: "reading" as const })
+        )
+
+        console.info("[deep-research] discovery complete", {
+          mergedCount: merged.length,
+          queryCount: allQueries.length,
+          shortlistCount: shortlist.length,
+        })
+
+        writeToolInput({
+          input: { query, searches: allQueries },
+          toolCallId: searchToolCallId,
+          toolName: "search",
+          writer,
+        })
+
+        writeToolOutput({
+          output: {
+            freshnessPolicy: resolvedFreshnessPolicy,
+            maxAge,
+            query,
+            searches: allQueries,
+            sources: shortlist,
+            status: "scraping",
+            timings: {
+              planSeconds: planDurationSeconds,
+              totalSeconds: getElapsedSeconds(requestStartedAt),
+            },
+          },
+          toolCallId: searchToolCallId,
+          writer,
+        })
+
+        const scrapeResult = await scrapeSourcesInParallel({
+          freshnessPolicy: resolvedFreshnessPolicy,
+          onProgress: (progressSources) => {
+            writeToolOutput({
+              output: {
+                freshnessPolicy: resolvedFreshnessPolicy,
+                maxAge,
+                query,
+                searches: allQueries,
+                sources: progressSources,
+                status: "scraping",
+                timings: {
+                  planSeconds: planDurationSeconds,
+                  totalSeconds: getElapsedSeconds(requestStartedAt),
+                },
+              },
+              toolCallId: searchToolCallId,
+              writer,
+            })
+          },
+          sources: shortlist,
+        })
+        const scrapeWarning =
+          scrapeResult.failures.length > 0
+            ? `${scrapeResult.failures.length} source${
+                scrapeResult.failures.length === 1 ? "" : "s"
+              } could not be fully scraped and will not be cited.`
+            : undefined
+        // consensusCount survives the spread in scrapeSourcesInParallel even
+        // though SearchResultSource doesn't declare it — safe to reassert here.
+        const citeableSources = getCiteableSources(
+          scrapeResult.sources
+        ) as ConsensusSource[]
+
+        const rankStartedAt = performance.now()
+        const ranking = await rankShortlist({
+          currentDateContext,
+          excludeSourceTypes: plan.excludeSourceTypes,
+          intentLens: plan.intentLens,
+          query,
+          shortlist: citeableSources,
+        })
+        const rankedSources = applyRanking(citeableSources, ranking).slice(0, 12)
+        const rankDurationSeconds = getElapsedSeconds(rankStartedAt)
+
+        console.info("[deep-research] rank complete", {
+          citeableCount: citeableSources.length,
+          durationSeconds: rankDurationSeconds,
+          finalCount: rankedSources.length,
+        })
+
+        // Final aggregate step — the ONLY tool output carrying `sources`, so the
+        // frontend maps citation numbers [1],[2]… onto exactly this ranked list.
+        writeToolOutput({
+          output: {
+            freshnessPolicy: resolvedFreshnessPolicy,
+            maxAge,
+            query,
+            searches: allQueries,
+            sources: rankedSources,
+            status: "complete",
+            timings: {
+              planSeconds: planDurationSeconds,
+              scrapeSeconds: scrapeResult.durationSeconds,
+              rankSeconds: rankDurationSeconds,
+              totalSeconds: getElapsedSeconds(requestStartedAt),
+            },
+            warning: scrapeWarning,
+          },
+          toolCallId: searchToolCallId,
+          writer,
+        })
+
+        await streamAnswerWithFallback({
+          modelId,
+          buildAnswer: (answerModelId) =>
+            answerWithSearch({
+              currentDateContext,
+              modelId: answerModelId,
+              query,
+              searchQuery: query,
+              sources: rankedSources,
+            }),
+          writer,
+        })
+      } catch (error) {
+        writeToolError({
+          error,
+          toolCallId: searchToolCallId,
+          writer,
+        })
+        writeFailureMessage(writer)
       }
     },
   })

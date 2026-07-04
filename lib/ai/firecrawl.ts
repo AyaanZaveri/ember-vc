@@ -2,6 +2,7 @@ const FIRECRAWL_SEARCH_URL = "https://api.firecrawl.dev/v2/search"
 const FIRECRAWL_SCRAPE_URL = "https://api.firecrawl.dev/v2/scrape"
 const FIRECRAWL_SNIPPET_MAX_LENGTH = 1600
 const FIRECRAWL_SCRAPE_TIMEOUT_MS = 6000
+const FIRECRAWL_SEARCH_TIMEOUT_MS = 15000
 
 export const FRESHNESS_POLICY_MAX_AGE_MS = {
   live: 1000,
@@ -156,35 +157,48 @@ export async function firecrawlSearch({
     throw new Error("Missing FIRECRAWL_API_KEY")
   }
 
-  const response = await fetch(FIRECRAWL_SEARCH_URL, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      query,
-      limit,
-      sources: ["web"],
-      country: "US",
-      ignoreInvalidURLs: true,
-      ...(includeDomains?.length ? { includeDomains } : {}),
-      ...(!includeDomains?.length && excludeDomains.length
-        ? { excludeDomains }
-        : {}),
-      ...(scrapeContent
-        ? {
-            scrapeOptions: {
-              formats: ["markdown"],
-              maxAge,
-              onlyMainContent: true,
-              proxy: "basic",
-              storeInCache: true,
-            },
-          }
-        : {}),
-    }),
-  })
+  let response: Response
+
+  try {
+    response = await fetch(FIRECRAWL_SEARCH_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query,
+        limit,
+        sources: ["web"],
+        country: "US",
+        ignoreInvalidURLs: true,
+        ...(includeDomains?.length ? { includeDomains } : {}),
+        ...(!includeDomains?.length && excludeDomains.length
+          ? { excludeDomains }
+          : {}),
+        ...(scrapeContent
+          ? {
+              scrapeOptions: {
+                formats: ["markdown"],
+                maxAge,
+                onlyMainContent: true,
+                proxy: "basic",
+                storeInCache: true,
+              },
+            }
+          : {}),
+      }),
+      signal: AbortSignal.timeout(FIRECRAWL_SEARCH_TIMEOUT_MS),
+    })
+  } catch (error) {
+    if (error instanceof Error && error.name === "TimeoutError") {
+      throw new Error(
+        `Firecrawl search timed out after ${FIRECRAWL_SEARCH_TIMEOUT_MS}ms`
+      )
+    }
+
+    throw error
+  }
 
   if (!response.ok) {
     throw new Error(`Firecrawl search failed with status ${response.status}`)

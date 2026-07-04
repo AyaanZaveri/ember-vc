@@ -140,6 +140,44 @@ const searchTransport = new DefaultChatTransport<UIMessage>({
   api: "/api/search",
 })
 
+type UiMessageStream = Parameters<typeof readUIMessageStream>[0]["stream"]
+
+function isAbortError(error: unknown) {
+  return error instanceof DOMException && error.name === "AbortError"
+}
+
+/**
+ * Reads assistant content parts off a UI message stream, stopping cleanly the
+ * moment the run is aborted. Without the abort guard, a torn-down stream (New
+ * Chat mid-generation, a superseding message, a dropped connection, or an HMR
+ * reload in dev) keeps yielding into a runtime whose message repository was
+ * already reset — surfacing as "Parent message not found" and "Cannot close an
+ * errored readable stream". Abort errors are swallowed; real errors propagate.
+ */
+async function* readAssistantContent(
+  stream: UiMessageStream,
+  abortSignal: AbortSignal
+) {
+  try {
+    for await (const message of readUIMessageStream({
+      stream,
+      onError: () => {},
+    })) {
+      if (abortSignal.aborted) {
+        return
+      }
+
+      yield { content: toAssistantContentParts(message) }
+    }
+  } catch (error) {
+    if (abortSignal.aborted || isAbortError(error)) {
+      return
+    }
+
+    throw error
+  }
+}
+
 function getAssistantContentParts(message: ThreadMessage) {
   return message.content.filter(
     (
@@ -315,7 +353,7 @@ function createChatAdapter({
         .map(toUiMessage)
         .filter((message): message is ApiChatMessage => message !== null)
 
-      if (searchMode === "search") {
+      if (searchMode === "search" || searchMode === "deep-research") {
         const query = getLastUserQuery(messages)
         const previousSources = collectThreadSearchSources(messages)
 
@@ -328,16 +366,13 @@ function createChatAdapter({
             currentDateContext: getCurrentRequestContext(),
             query,
             modelId,
+            mode: searchMode === "deep-research" ? "deepResearch" : "search",
             sources: previousSources,
           },
           trigger: "submit-message",
         })
 
-        for await (const message of readUIMessageStream({ stream })) {
-          yield {
-            content: toAssistantContentParts(message),
-          }
-        }
+        yield* readAssistantContent(stream, abortSignal)
 
         return
       }
@@ -354,11 +389,7 @@ function createChatAdapter({
         trigger: "submit-message",
       })
 
-      for await (const message of readUIMessageStream({ stream })) {
-        yield {
-          content: toAssistantContentParts(message),
-        }
-      }
+      yield* readAssistantContent(stream, abortSignal)
     },
   }
 }
@@ -855,7 +886,7 @@ function getFaviconUrl(url: string) {
 }
 
 function getToolIcon(toolName: string) {
-  if (toolName === "search") {
+  if (toolName === "search" || toolName === "probe") {
     return Search
   }
 
@@ -889,6 +920,10 @@ function formatToolName(toolName: string) {
     return "Refining Search"
   }
 
+  if (toolName === "probe") {
+    return "Searching"
+  }
+
   if (toolName === "search") {
     return "Reading Sources"
   }
@@ -920,7 +955,7 @@ function getToolInputSummary(part: ToolCallMessagePart) {
 }
 
 function collectSourceLinks(value: unknown, links: SourceLink[] = []) {
-  if (links.length >= 8) {
+  if (links.length >= 50) {
     return links
   }
 
@@ -1510,7 +1545,23 @@ function ComposerThread({
     SEARCH_MODES.find((mode) => mode.id === searchMode) ?? SEARCH_MODES[0]
   const currentModel = getModelOption(modelId)
   const handleNewChat = () => {
-    threadRuntime.reset()
+    if (!threadRuntime.getState().isRunning) {
+      threadRuntime.reset()
+      return
+    }
+
+    // reset() wipes the message repository synchronously. Doing that mid-stream
+    // orphans the in-flight assistant message (its parent user message vanishes),
+    // which throws "Parent message not found" inside the runtime. Cancel first,
+    // then reset only once the run has actually settled.
+    threadRuntime.cancelRun()
+
+    const unsubscribe = threadRuntime.subscribe(() => {
+      if (!threadRuntime.getState().isRunning) {
+        unsubscribe()
+        threadRuntime.reset()
+      }
+    })
   }
 
   const { resolvedTheme } = useTheme()
