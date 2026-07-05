@@ -25,7 +25,17 @@ export type CategoryBreakdown = {
   }[]
 }
 
-export type CoverageReport = {
+export type RunStats = {
+  /** Why the depth loop stopped — the smart stop or the hard backstop. */
+  stopReason?: "saturated" | "ceiling"
+  roundsRun?: number
+  searchCount?: number
+  scrapeCount?: number
+  /** Wall-clock duration of the run, milliseconds. */
+  elapsedMs?: number
+}
+
+export type CoverageReport = RunStats & {
   query: string
   queriesRun: string[]
   profileInclude: CategoryId[]
@@ -41,11 +51,13 @@ export function buildCoverageReport({
   queriesRun,
   profile,
   classifiedSources,
+  stats,
 }: {
   query: string
   queriesRun: string[]
   profile: CompletenessProfile
   classifiedSources: ClassifiedSource[]
+  stats?: RunStats
 }): CoverageReport {
   const byCategory: CategoryBreakdown[] = profile.categories.map(({ id }) => {
     const inCategory = classifiedSources.filter((s) => s.category === id)
@@ -91,6 +103,7 @@ export function buildCoverageReport({
     byCategory,
     gaps,
     thin,
+    ...stats,
   }
 }
 

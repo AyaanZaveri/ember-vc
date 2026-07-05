@@ -23,6 +23,8 @@ const requestSchema = z.object({
   // Optional user-chosen wanted source types (the picker). When present it
   // overrides the preset's include set; the taxonomy itself stays fixed.
   include: z.array(z.string()).optional(),
+  // Depth/breadth preset. Unknown/absent -> standard.
+  effort: z.enum(["quick", "standard", "thorough", "exhaustive"]).optional(),
 })
 
 type StreamEvent =
@@ -39,7 +41,7 @@ export async function POST(request: Request) {
     )
   }
 
-  const { query, profileId, include } = parsed.data
+  const { query, profileId, include, effort } = parsed.data
   const preset = getProfile(profileId)
   if (!preset) {
     return Response.json({ error: `Unknown profile: ${profileId}` }, { status: 400 })
@@ -60,9 +62,11 @@ export async function POST(request: Request) {
         controller.enqueue(encoder.encode(`${JSON.stringify(event)}\n`))
       }
       try {
+        const started = Date.now()
         const discovery = await discoverAndClassify({
           query,
           profile,
+          effort,
           onEvent: (event) => send(event),
         })
         const report = buildCoverageReport({
@@ -70,6 +74,13 @@ export async function POST(request: Request) {
           queriesRun: discovery.queriesRun,
           profile,
           classifiedSources: discovery.classifiedSources,
+          stats: {
+            stopReason: discovery.stopReason,
+            roundsRun: discovery.roundsRun,
+            searchCount: discovery.searchCount,
+            scrapeCount: discovery.scrapeCount,
+            elapsedMs: Date.now() - started,
+          },
         })
         send({ type: "report", report })
       } catch (error) {

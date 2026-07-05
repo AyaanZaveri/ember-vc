@@ -6,6 +6,9 @@ import {
   ArrowUp,
   Asterisk,
   CheckCircle2,
+  CircleSlash,
+  FileText,
+  Gauge,
   LoaderCircle,
   Search,
   SlidersHorizontal,
@@ -13,7 +16,7 @@ import {
   Telescope,
   TriangleAlert,
 } from "lucide-react"
-import { useCallback, useEffect, useRef, useState } from "react"
+import { Fragment, useCallback, useEffect, useRef, useState } from "react"
 
 import { FirecrawlHeat } from "@/components/fc-heat"
 import { useTheme } from "@/components/theme-provider"
@@ -35,8 +38,20 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import {
+  EFFORT_PRESET_META,
+  isEffortPreset,
+  type EffortPreset,
+} from "@/lib/completeness/effort.ts"
 import { Switch } from "@/components/ui/switch"
 import { Textarea } from "@/components/ui/textarea"
 import { cn } from "@/lib/utils"
@@ -52,6 +67,7 @@ type ClassifiedSourceEvent = {
   justification: string
   extractable: boolean
   parseFailed: boolean
+  round: number
 }
 type CategoryBreakdown = {
   category: string
@@ -74,12 +90,25 @@ type CoverageReport = {
   byCategory: CategoryBreakdown[]
   gaps: string[]
   thin: string[]
+  stopReason?: "saturated" | "ceiling"
+  roundsRun?: number
+  searchCount?: number
+  scrapeCount?: number
+  elapsedMs?: number
 }
 type ProfileSummary = { id: string; include: string[]; categoryCount: number }
 type TaxonomyCategory = { id: string; description: string }
 type Phase = "idle" | "running" | "done" | "error"
 
 const prettyCategory = (id: string) => id.replace(/_/g, " ")
+
+/** "1m 23s" / "45s" — minutes only when applicable. */
+function formatDuration(ms: number): string {
+  const total = Math.round(ms / 1000)
+  const m = Math.floor(total / 60)
+  const s = total % 60
+  return m > 0 ? `${m}m ${s}s` : `${s}s`
+}
 const titleCaseCategory = (id: string) =>
   id
     .replace(/_/g, " ")
@@ -101,6 +130,7 @@ function faviconUrl(url: string, size = 32): string {
 // The chosen wanted-set persists across visits — a rubric is something a user
 // sets once and reuses, not something they re-pick every audit.
 const SOURCES_STORAGE_KEY = "ember:wanted-sources"
+const EFFORT_STORAGE_KEY = "ember:effort"
 
 function EmberLogo() {
   return (
@@ -206,7 +236,7 @@ function SourcesDialog({
           type="button"
           variant="outline"
           size="sm"
-          className={cn("rounded-full px-2.5! shadow-xl shadow-primary/5", triggerClassName)}
+          className={cn("rounded-full px-2.5! shadow-xl shadow-primary/2", triggerClassName)}
         >
           <SlidersHorizontal data-icon="inline-start" className="sm:mr-0.5" />
           <span className="hidden sm:inline">Sources</span>
@@ -254,17 +284,63 @@ function SourcesDialog({
   )
 }
 
+/** Depth/breadth selector — how hard the run digs. Standard is the default;
+ * "Exhaustive" is the overnight-batch setting ("make it 10x slower, I don't care"). */
+function DepthDropdown({
+  effort,
+  onChange,
+}: {
+  effort: EffortPreset
+  onChange: (e: EffortPreset) => void
+}) {
+  const active = EFFORT_PRESET_META.find((p) => p.id === effort) ?? EFFORT_PRESET_META[1]
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          className="rounded-full px-2.5! shadow-xl shadow-primary/2"
+        >
+          <Gauge data-icon="inline-start" className="sm:mr-0.5" />
+          <span className="hidden sm:inline">{active.label}</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="start" className="w-64">
+        <DropdownMenuRadioGroup
+          value={effort}
+          onValueChange={(v) => onChange(v as EffortPreset)}
+        >
+          {EFFORT_PRESET_META.map((p) => (
+            <DropdownMenuRadioItem key={p.id} value={p.id} className="items-start">
+              <span className="flex flex-col gap-0.5">
+                <span className="text-sm font-medium text-foreground">{p.label}</span>
+                <span className="text-xs text-muted-foreground">{p.description}</span>
+              </span>
+            </DropdownMenuRadioItem>
+          ))}
+        </DropdownMenuRadioGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
+
 /** The search box — same visual language as the old composer, but single-shot. */
 function SearchBox({
   taxonomy,
   include,
   onToggleInclude,
+  effort,
+  onEffortChange,
   onSubmit,
   disabled,
 }: {
   taxonomy: TaxonomyCategory[]
   include: Set<string>
   onToggleInclude: (id: string) => void
+  effort: EffortPreset
+  onEffortChange: (e: EffortPreset) => void
   onSubmit: (query: string) => void
   disabled: boolean
 }) {
@@ -296,7 +372,10 @@ function SearchBox({
           className="min-h-20 resize-none border-0 bg-transparent px-5 pt-4 pb-2 text-base! leading-7 text-foreground shadow-none placeholder:text-muted-foreground focus-visible:border-0 focus-visible:ring-0 dark:bg-transparent"
         />
         <div className="flex items-center justify-between px-4 pb-4">
-          <SourcesDialog taxonomy={taxonomy} include={include} onToggle={onToggleInclude} />
+          <div className="flex items-center gap-2">
+            <SourcesDialog taxonomy={taxonomy} include={include} onToggle={onToggleInclude} />
+            <DepthDropdown effort={effort} onChange={onEffortChange} />
+          </div>
           <Button
             type="button"
             size="icon-sm"
@@ -387,26 +466,82 @@ function SourcePill({ source }: { source: ClassifiedSourceEvent }) {
   )
 }
 
+/** One round's classification step — interleaved after that round's probes,
+ * because classification actually happens per round, not once at the end. */
+function ClassifyStep({
+  sources,
+  active,
+}: {
+  sources: ClassifiedSourceEvent[]
+  active: boolean
+}) {
+  if (sources.length === 0 && !active) return null
+  const wanted = sources.filter((s) => s.matches).length
+  return (
+    <ChainOfThoughtStep
+      icon={active ? LoaderCircle : CheckCircle2}
+      // Scope the spin to the STEP'S OWN icon (first child) only — a broad
+      // "[&_svg]:animate-spin" cascades into every descendant svg, including
+      // the asterisk icons on the source pills rendered as this step's children.
+      className={active ? "[&>div:first-child>svg]:animate-spin" : undefined}
+      label={
+        active
+          ? `Classifying sources… ${sources.length}`
+          : `Classified ${sources.length} source${sources.length === 1 ? "" : "s"} · ${wanted} wanted`
+      }
+      status={active ? "active" : "complete"}
+    >
+      <ChainOfThoughtSearchResults className="mt-1 p-1">
+        {sources.map((s) => (
+          <SourcePill key={s.url} source={s} />
+        ))}
+      </ChainOfThoughtSearchResults>
+    </ChainOfThoughtStep>
+  )
+}
+
 /** The live "thinking" accordion — one step per pipeline stage, filled from the stream. */
 function ThinkingAccordion({
   phase,
   variants,
   probes,
-  entities,
-  classifyTotal,
+  entityRounds,
+  reading,
+  dryRounds,
   classified,
 }: {
   phase: Phase
   variants: string[]
   probes: { query: string; round: number; count: number }[]
-  entities: string[]
-  classifyTotal: number
+  entityRounds: { round: number; entities: string[] }[]
+  reading: { round: number; count: number }[]
+  dryRounds: { round: number; reason: "no-new-entities" | "no-new-wanted" }[]
   classified: ClassifiedSourceEvent[]
 }) {
   const done = phase === "done" || phase === "error"
   const r1 = probes.filter((p) => p.round === 1)
-  const r2 = probes.filter((p) => p.round === 2)
-  const wantedFound = classified.filter((s) => s.matches).length
+
+  // Depth rounds (2+): every round that read pages, pulled entities, probed, or
+  // came back dry (found nothing new).
+  const depthRounds = [
+    ...new Set([
+      ...probes.filter((p) => p.round >= 2).map((p) => p.round),
+      ...entityRounds.map((e) => e.round),
+      ...reading.map((r) => r.round),
+      ...dryRounds.map((d) => d.round),
+    ]),
+  ].sort((a, b) => a - b)
+
+  // Classification is interleaved per round. A round's classify step is "active"
+  // only while it's the newest round being classified and nothing later has begun.
+  const classifiedInRound = (round: number) => classified.filter((s) => s.round === round)
+  const maxClassifiedRound = classified.reduce((m, s) => Math.max(m, s.round), 0)
+  const laterActivity = (round: number) =>
+    probes.some((p) => p.round > round) ||
+    entityRounds.some((e) => e.round > round) ||
+    reading.some((r) => r.round > round)
+  const isClassifying = (round: number) =>
+    phase === "running" && round === maxClassifiedRound && !laterActivity(round)
 
   // Open while working; auto-collapse once the audit finishes so the report
   // becomes the focus. Still user-toggleable afterward (onOpenChange).
@@ -457,54 +592,72 @@ function ThinkingAccordion({
           </ChainOfThoughtStep>
         )}
 
-        {entities.length > 0 && (
-          <ChainOfThoughtStep icon={Telescope} label="Pulled out entities to probe" status="complete">
-            <ChainOfThoughtSearchResults className="mt-1">
-              {entities.map((e) => (
-                <ChainOfThoughtSearchResult key={e}>
-                  <Telescope data-icon="inline-start" />
-                  {e}
-                </ChainOfThoughtSearchResult>
-              ))}
-            </ChainOfThoughtSearchResults>
-          </ChainOfThoughtStep>
-        )}
+        {/* Round 1's sources are classified before the depth loop begins. */}
+        <ClassifyStep sources={classifiedInRound(1)} active={isClassifying(1)} />
 
-        {r2.length > 0 && (
-          <ChainOfThoughtStep
-            icon={Search}
-            label={`Probed entities · ${r2.reduce((n, p) => n + p.count, 0)} results`}
-            status="complete"
-          >
-            <ChainOfThoughtSearchResults className="mt-1">
-              {r2.map((p) => (
-                <ChainOfThoughtSearchResult key={p.query}>
-                  <Search data-icon="inline-start" />
-                  {p.query} · {p.count}
-                </ChainOfThoughtSearchResult>
-              ))}
-            </ChainOfThoughtSearchResults>
-          </ChainOfThoughtStep>
-        )}
-
-        {classifyTotal > 0 && (
-          <ChainOfThoughtStep
-            icon={done ? CheckCircle2 : LoaderCircle}
-            className={!done ? "[&_svg]:animate-spin" : undefined}
-            label={
-              done
-                ? `Classified ${classified.length} sources · ${wantedFound} wanted`
-                : `Classifying sources… ${classified.length}/${classifyTotal}`
-            }
-            status={done ? "complete" : "active"}
-          >
-            <ChainOfThoughtSearchResults className="mt-1 p-1">
-              {classified.map((s) => (
-                <SourcePill key={s.url} source={s} />
-              ))}
-            </ChainOfThoughtSearchResults>
-          </ChainOfThoughtStep>
-        )}
+        {depthRounds.map((round) => {
+          const read = reading.find((r) => r.round === round)
+          const ents = entityRounds.find((e) => e.round === round)?.entities ?? []
+          const roundProbes = probes.filter((p) => p.round === round)
+          const dry = dryRounds.find((d) => d.round === round)
+          const depthLabel = depthRounds.length > 1 ? ` (round ${round})` : ""
+          return (
+            <Fragment key={round}>
+              {read && read.count > 0 && (
+                <ChainOfThoughtStep
+                  icon={FileText}
+                  label={`Read ${read.count} wanted source${read.count === 1 ? "" : "s"} for deeper leads${depthLabel}`}
+                  status="complete"
+                />
+              )}
+              {dry && (
+                <ChainOfThoughtStep
+                  icon={CircleSlash}
+                  label={
+                    dry.reason === "no-new-entities"
+                      ? `No new leads to probe${depthLabel} — every source pointed back to what's already been searched`
+                      : `No new wanted sources came back${depthLabel} — the good stuff has dried up`
+                  }
+                  status="complete"
+                />
+              )}
+              {ents.length > 0 && (
+                <ChainOfThoughtStep
+                  icon={Telescope}
+                  label={`Pulled out ${ents.length} entit${ents.length === 1 ? "y" : "ies"} to probe${depthLabel}`}
+                  status="complete"
+                >
+                  <ChainOfThoughtSearchResults className="mt-1">
+                    {ents.map((e) => (
+                      <ChainOfThoughtSearchResult key={e}>
+                        <Telescope data-icon="inline-start" />
+                        {e}
+                      </ChainOfThoughtSearchResult>
+                    ))}
+                  </ChainOfThoughtSearchResults>
+                </ChainOfThoughtStep>
+              )}
+              {roundProbes.length > 0 && (
+                <ChainOfThoughtStep
+                  icon={Search}
+                  label={`Probed entities · ${roundProbes.reduce((n, p) => n + p.count, 0)} results${depthLabel}`}
+                  status="complete"
+                >
+                  <ChainOfThoughtSearchResults className="mt-1">
+                    {roundProbes.map((p) => (
+                      <ChainOfThoughtSearchResult key={p.query}>
+                        <Search data-icon="inline-start" />
+                        {p.query} · {p.count}
+                      </ChainOfThoughtSearchResult>
+                    ))}
+                  </ChainOfThoughtSearchResults>
+                </ChainOfThoughtStep>
+              )}
+              {/* This round's sources are classified right after its probes. */}
+              <ClassifyStep sources={classifiedInRound(round)} active={isClassifying(round)} />
+            </Fragment>
+          )
+        })}
       </ChainOfThoughtContent>
     </ChainOfThought>
   )
@@ -524,21 +677,34 @@ function ReportView({ report }: { report: CoverageReport }) {
       className="space-y-4"
     >
       <p className="text-sm text-muted-foreground">
-        Ran {report.queriesRun.length} search variants/entity probes, found{" "}
+        Ran {report.searchCount ?? report.queriesRun.length} searches
+        {report.roundsRun ? ` across ${report.roundsRun} round${report.roundsRun === 1 ? "" : "s"}` : ""}
+        {report.scrapeCount ? ` (+${report.scrapeCount} page reads)` : ""}
+        {report.elapsedMs ? ` in ${formatDuration(report.elapsedMs)}` : ""}, found{" "}
         {report.totalSourcesFound} unique sources, filtered out {report.droppedCount} not
         matching this profile.
+        {report.stopReason && (
+          <>
+            {" "}
+            <span className="text-foreground">
+              {report.stopReason === "saturated"
+                ? "Stopped when new wanted sources dried up."
+                : "Stopped at the depth ceiling — bump the preset for more."}
+            </span>
+          </>
+        )}
       </p>
 
       {report.gaps.length > 0 ? (
         <div className="rounded-lg border border-border bg-card/40 px-3 py-2.5">
           <div className="flex items-center gap-1.5 text-sm font-medium text-foreground">
             <TriangleAlert className="size-3.5 text-amber-500" />
-            Gaps — wanted categories with zero results
+            Gaps: wanted categories with zero results
           </div>
           <div className="mt-1.5 flex flex-wrap gap-1.5">
             {report.gaps.map((c) => (
               <span key={c} className="rounded-full bg-muted px-2 py-0.5 text-xs font-medium text-foreground">
-                {prettyCategory(c)}
+                {titleCaseCategory(c)}
               </span>
             ))}
           </div>
@@ -608,11 +774,16 @@ export function EmberSearch() {
   const [profileId, setProfileId] = useState("")
   const [taxonomy, setTaxonomy] = useState<TaxonomyCategory[]>([])
   const [include, setInclude] = useState<Set<string>>(new Set())
+  const [effort, setEffort] = useState<EffortPreset>("standard")
   const [phase, setPhase] = useState<Phase>("idle")
   const [query, setQuery] = useState("")
   const [variants, setVariants] = useState<string[]>([])
   const [probes, setProbes] = useState<{ query: string; round: number; count: number }[]>([])
-  const [entities, setEntities] = useState<string[]>([])
+  const [entityRounds, setEntityRounds] = useState<{ round: number; entities: string[] }[]>([])
+  const [reading, setReading] = useState<{ round: number; count: number }[]>([])
+  const [dryRounds, setDryRounds] = useState<
+    { round: number; reason: "no-new-entities" | "no-new-wanted" }[]
+  >([])
   const [classifyTotal, setClassifyTotal] = useState(0)
   const [classified, setClassified] = useState<ClassifiedSourceEvent[]>([])
   const [report, setReport] = useState<CoverageReport | null>(null)
@@ -651,6 +822,12 @@ export function EmberSearch() {
       } catch {
         // leave empty; submit will surface the error
       } finally {
+        try {
+          const savedEffort = localStorage.getItem(EFFORT_STORAGE_KEY)
+          if (isEffortPreset(savedEffort)) setEffort(savedEffort)
+        } catch {
+          // ignore
+        }
         setLoaded(true)
       }
     })()
@@ -666,6 +843,16 @@ export function EmberSearch() {
       // storage full/blocked — non-fatal
     }
   }, [include, loaded])
+
+  // Persist the chosen depth preset the same way.
+  useEffect(() => {
+    if (!loaded) return
+    try {
+      localStorage.setItem(EFFORT_STORAGE_KEY, effort)
+    } catch {
+      // non-fatal
+    }
+  }, [effort, loaded])
 
   const toggleInclude = useCallback((id: string) => {
     setInclude((cur) => {
@@ -685,7 +872,9 @@ export function EmberSearch() {
       setQuery(q)
       setVariants([])
       setProbes([])
-      setEntities([])
+      setEntityRounds([])
+      setReading([])
+      setDryRounds([])
       setClassifyTotal(0)
       setClassified([])
       setReport(null)
@@ -698,7 +887,7 @@ export function EmberSearch() {
         const res = await fetch("/api/audit-stream", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ query: q, profileId, include: [...include] }),
+          body: JSON.stringify({ query: q, profileId, include: [...include], effort }),
           signal: controller.signal,
         })
         if (!res.ok || !res.body) {
@@ -726,14 +915,20 @@ export function EmberSearch() {
               case "probe":
                 setProbes((p) => [...p, { query: event.query, round: event.round, count: event.sources.length }])
                 break
+              case "reading":
+                setReading((r) => [...r, { round: event.round, count: event.count }])
+                break
+              case "dry":
+                setDryRounds((d) => [...d, { round: event.round, reason: event.reason }])
+                break
               case "entities":
-                setEntities(event.entities)
+                setEntityRounds((e) => [...e, { round: event.round, entities: event.entities }])
                 break
               case "classifyStart":
                 setClassifyTotal(event.total)
                 break
               case "classified":
-                setClassified((c) => [...c, event.source])
+                setClassified((c) => [...c, { ...event.source, round: event.round }])
                 break
               case "report":
                 setReport(event.report)
@@ -753,7 +948,7 @@ export function EmberSearch() {
         }
       }
     },
-    [profileId, include]
+    [profileId, include, effort]
   )
 
   // Bumped on reset to remount the composer so its internal draft clears too —
@@ -765,7 +960,9 @@ export function EmberSearch() {
     setQuery("")
     setVariants([])
     setProbes([])
-    setEntities([])
+    setEntityRounds([])
+    setReading([])
+    setDryRounds([])
     setClassifyTotal(0)
     setClassified([])
     setReport(null)
@@ -812,6 +1009,8 @@ export function EmberSearch() {
               taxonomy={taxonomy}
               include={include}
               onToggleInclude={toggleInclude}
+              effort={effort}
+              onEffortChange={setEffort}
               onSubmit={runAudit}
               disabled={phase === "running"}
             />
@@ -834,8 +1033,9 @@ export function EmberSearch() {
                   phase={phase}
                   variants={variants}
                   probes={probes}
-                  entities={entities}
-                  classifyTotal={classifyTotal}
+                  entityRounds={entityRounds}
+                  reading={reading}
+                  dryRounds={dryRounds}
                   classified={classified}
                 />
                 {phase === "error" && (

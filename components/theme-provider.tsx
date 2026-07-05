@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import { flushSync } from "react-dom"
 import {
   ThemeProvider as NextThemesProvider,
   useTheme as useNextTheme,
@@ -17,7 +18,6 @@ type ThemeContextValue = {
 }
 
 const THEME_STORAGE_KEY = "ember:theme"
-let transitionTimeout: number | undefined
 
 function isTheme(theme: string | undefined): theme is Theme {
   return theme === "light" || theme === "dark" || theme === "system"
@@ -25,20 +25,6 @@ function isTheme(theme: string | undefined): theme is Theme {
 
 function isResolvedTheme(theme: string | undefined): theme is ResolvedTheme {
   return theme === "light" || theme === "dark"
-}
-
-function startThemeTransition() {
-  if (typeof window === "undefined") {
-    return
-  }
-
-  const root = document.documentElement
-
-  root.classList.add("theme-transitioning")
-  window.clearTimeout(transitionTimeout)
-  transitionTimeout = window.setTimeout(() => {
-    root.classList.remove("theme-transitioning")
-  }, 220)
 }
 
 function ThemeProvider({ children, ...props }: ThemeProviderProps) {
@@ -62,8 +48,25 @@ function useTheme(): ThemeContextValue {
 
   const setTheme = React.useCallback(
     (nextTheme: Theme) => {
-      startThemeTransition()
-      setNextTheme(nextTheme)
+      // Crossfade the whole document as a single snapshot so borders,
+      // backgrounds, and color-scheme all change together — no per-element
+      // transition storm, no desync between fills and borders.
+      const doc = document as Document & {
+        startViewTransition?: (cb: () => void) => void
+      }
+
+      if (
+        typeof window === "undefined" ||
+        typeof doc.startViewTransition !== "function" ||
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ) {
+        setNextTheme(nextTheme)
+        return
+      }
+
+      doc.startViewTransition(() => {
+        flushSync(() => setNextTheme(nextTheme))
+      })
     },
     [setNextTheme]
   )

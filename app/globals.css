@@ -253,12 +253,19 @@
   }
 }
 
-html.theme-transitioning,
-html.theme-transitioning *,
-html.theme-transitioning *::before,
-html.theme-transitioning *::after {
-  transition-property:
-    background-color, border-color, color, fill, stroke, box-shadow !important;
-  transition-duration: 180ms !important;
-  transition-timing-function: ease !important;
+/* Theme switch: crossfade the whole page as one snapshot via the View
+   Transitions API. Everything changes together underneath a single fade, so
+   there is no per-element paint storm and borders never trail the fills. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+  animation-timing-function: ease;
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
 }

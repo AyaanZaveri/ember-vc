@@ -3,7 +3,15 @@ import { generateText } from "ai"
 import { z } from "zod"
 
 import { canonicalizeUrl, extractResearchEntities } from "../ai/deep-research.ts"
-import { firecrawlSearch, type SearchResultSource } from "../ai/firecrawl.ts"
+import { firecrawlScrapeSource, firecrawlSearch, type SearchResultSource } from "../ai/firecrawl.ts"
+import {
+  resolveEffort,
+  newWantedDomains,
+  hitCeiling,
+  type EffortConfig,
+  type EffortPreset,
+  type StopReason,
+} from "./effort.ts"
 import {
   buildCategoryProbeQuery,
   makeTopicRelevanceFloor,
@@ -26,11 +34,8 @@ import { type CategoryId, type CompletenessProfile } from "./profile.ts"
 
 const DISCOVERY_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
 const MODEL_CALL_TIMEOUT_MS = 30_000
-// Safety valve on total classification calls per run, not a relevance
-// mechanism — at the query volumes this demo runs at, dedupe rarely
-// approaches this. Real batch use would tune this against Firecrawl credit
-// budget, not accuracy.
-const MAX_SOURCES_PER_RUN = 80
+// Per-run cost is now bounded by the effort config's hard ceilings
+// (maxSearches / maxScrapes / maxRounds), not a fixed source cap.
 const SEARCH_RETRY_ATTEMPTS = 2
 
 const nim = createOpenAICompatible({
@@ -270,6 +275,11 @@ export type DiscoveryResult = {
   queriesRun: string[]
   rawSourceCount: number
   classifiedSources: ClassifiedSource[]
+  /** Why the depth loop stopped — the smart stop or the hard backstop. */
+  stopReason: StopReason
+  roundsRun: number
+  searchCount: number
+  scrapeCount: number
 }
 
 /**
@@ -279,175 +289,279 @@ export type DiscoveryResult = {
  */
 export type DiscoveryEvent =
   | { type: "expand"; variants: string[] }
-  | { type: "probe"; query: string; round: 1 | 2; sources: SearchResultSource[] }
-  | { type: "entities"; entities: string[] }
+  | { type: "probe"; query: string; round: number; sources: SearchResultSource[] }
+  | { type: "entities"; entities: string[]; round: number }
+  | { type: "reading"; round: number; count: number }
+  | { type: "dry"; round: number; reason: "no-new-entities" | "no-new-wanted"; dryRounds: number; saturationK: number }
   | { type: "classifyStart"; total: number }
   | {
       type: "classified"
       done: number
       total: number
+      round: number
       source: ClassifiedSourceEvent
     }
 
 export async function discoverAndClassify({
   query,
   profile,
-  variantCount = 4,
-  entityCount = 5,
+  effort,
   concurrency = 5,
   onEvent,
 }: {
   query: string
   profile: CompletenessProfile
-  variantCount?: number
-  entityCount?: number
+  effort?: EffortPreset | EffortConfig
   concurrency?: number
   onEvent?: (event: DiscoveryEvent) => void
 }): Promise<DiscoveryResult> {
-  // Round 1: expand + search all variants in parallel. Fire a probe event as
-  // each search resolves so the accordion fills in live rather than all at once.
-  const variants = await expandQuery(query, variantCount)
-  onEvent?.({ type: "expand", variants })
+  const cfg = resolveEffort(effort)
+  let searchCount = 0
+  let scrapeCount = 0
+  let classifyDone = 0
 
-  // Category-targeted probes fire in PARALLEL with round 1 — one extra search per
-  // wanted long-tail category, shaped to surface exactly the source types the
-  // generic round leaves thin. Gated on the wanted-set, so a run that wants none
-  // does no extra work.
-  const wantedCategories = wantedLongTail(profile)
-  const categoryProbePromise = runCategoryProbes(query, wantedCategories, onEvent)
-
-  const round1Lists = await Promise.all(
-    variants.map((v) =>
-      safeSearch(v, 10).then((sources) => {
-        onEvent?.({ type: "probe", query: v, round: 1, sources })
-        return sources
-      })
-    )
-  )
-  const round1Sources = round1Lists.flat()
-  const categoryProbes = await categoryProbePromise
-
-  // Round 2: pull named entities out of round-1 results, search each directly —
-  // this is what surfaces the source that covers the specific product/entity
-  // but never ranks for the generic topic query.
-  const entities = await extractResearchEntities({
-    currentDateContext: "",
-    modelId: DISCOVERY_MODEL_ID,
-    query,
-    sources: round1Sources,
-  })
-  const boundedEntities = entities.slice(0, entityCount)
-  if (boundedEntities.length) {
-    onEvent?.({ type: "entities", entities: boundedEntities })
-  }
-  const round2Lists = boundedEntities.length
-    ? await Promise.all(
-        boundedEntities.map((e) =>
-          safeSearch(e, 8).then((sources) => {
-            onEvent?.({ type: "probe", query: e, round: 2, sources })
-            return sources
-          })
-        )
-      )
-    : []
-  const round2Sources = round2Lists.flat()
-
-  // Dedupe by canonical URL — NO consensus-count ranking or truncation here.
-  // Classification is what decides relevance now, not "how many lists found it."
-  // We also track whether a source came from a category probe, because the cost
-  // cap below must NOT evict the long-tail we deliberately hunted for.
-  const categoryProbeQueries = new Set(categoryProbes.map((p) => p.query))
+  // Shared pools, filled round by round. Classification happens PER ROUND (not
+  // once at the end) so each depth round can harvest its next search terms from
+  // the WANTED sources found so far — gold breeds gold.
   const byCanonical = new Map<
     string,
     { source: SearchResultSource; foundVia: Set<string>; fromCategoryProbe: boolean }
   >()
-  const allLists: [string, SearchResultSource[]][] = [
-    ...variants.map((v, i): [string, SearchResultSource[]] => [v, round1Lists[i] ?? []]),
-    ...boundedEntities.map((e, i): [string, SearchResultSource[]] => [e, round2Lists[i] ?? []]),
-    ...categoryProbes.map((p): [string, SearchResultSource[]] => [p.query, p.sources]),
-  ]
-  for (const [via, sources] of allLists) {
-    const isCategoryProbe = categoryProbeQueries.has(via)
+  const classifiedByUrl = new Map<string, ClassifiedSource>()
+  const seenWantedDomains = new Set<string>()
+  const probedEntities = new Set<string>()
+  const scrapedUrls = new Set<string>()
+  // Persist scraped markdown across rounds. Without this, a source read in an
+  // earlier round falls back to its thin snippet in later rounds (the deep read
+  // is thrown away), so depth stalls after one real layer.
+  const scrapedContent = new Map<string, string>()
+  const queriesRun: string[] = []
+
+  /** Register a labelled list; return only the sources not seen before. */
+  const absorb = (via: string, isCat: boolean, sources: SearchResultSource[]): SearchResultSource[] => {
+    const fresh: SearchResultSource[] = []
     for (const source of sources) {
       const key = canonicalizeUrl(source.url)
       const existing = byCanonical.get(key)
       if (existing) {
         existing.foundVia.add(via)
-        if (isCategoryProbe) existing.fromCategoryProbe = true
+        if (isCat) existing.fromCategoryProbe = true
       } else {
-        byCanonical.set(key, { source, foundVia: new Set([via]), fromCategoryProbe: isCategoryProbe })
+        byCanonical.set(key, { source, foundVia: new Set([via]), fromCategoryProbe: isCat })
+        fresh.push(source)
       }
     }
+    return fresh
   }
 
-  // Apply the cost cap category-probe-first, so the generic/entity flood of SEO
-  // winners can't evict the long-tail sources the probes were built to find.
-  // Insertion order is preserved within each group (JS filter is stable).
-  const values = [...byCanonical.values()]
-  const unique = [
-    ...values.filter((v) => v.fromCategoryProbe),
-    ...values.filter((v) => !v.fromCategoryProbe),
-  ].slice(0, MAX_SOURCES_PER_RUN)
-  if (byCanonical.size > MAX_SOURCES_PER_RUN) {
-    console.warn(
-      `[discover] ${byCanonical.size} unique sources found, capping classification at ${MAX_SOURCES_PER_RUN} (category-probe sources kept first; cost safety valve, not a relevance cutoff)`
-    )
-  }
-
-  // Classify every unique source, bounded concurrency.
-  onEvent?.({ type: "classifyStart", total: unique.length })
-  const classifiedSources: ClassifiedSource[] = new Array(unique.length)
-  let cursor = 0
-  let done = 0
-  async function worker() {
-    while (cursor < unique.length) {
-      const index = cursor++
-      const { source, foundVia } = unique[index]
-      const result = await classifySource({
-        source: { url: source.url, title: source.title, description: source.description },
-        profile,
-      })
-      const classified: ClassifiedSource = {
-        url: source.url,
-        title: source.title,
-        description: source.description,
-        foundVia: [...foundVia],
-        category: result.category,
-        matches: result.matches,
-        confidence: result.confidence,
-        justification: result.justification,
-        extractable: isExtractable(source.url),
-        parseFailed: result.parseFailed,
+  /** Classify a batch of NEW sources (bounded concurrency); store + stream live. */
+  const classifyBatch = async (sources: SearchResultSource[], round: number): Promise<ClassifiedSource[]> => {
+    if (sources.length === 0) return []
+    // Re-emit with the cumulative discovered count so the UI's total grows across rounds.
+    onEvent?.({ type: "classifyStart", total: byCanonical.size })
+    const out: ClassifiedSource[] = []
+    let cursor = 0
+    const worker = async () => {
+      while (cursor < sources.length) {
+        const s = sources[cursor++]
+        const key = canonicalizeUrl(s.url)
+        const foundVia = byCanonical.get(key)?.foundVia ?? new Set<string>([s.url])
+        const result = await classifySource({
+          source: { url: s.url, title: s.title, description: s.description },
+          profile,
+        })
+        const classified: ClassifiedSource = {
+          url: s.url,
+          title: s.title,
+          description: s.description,
+          foundVia: [...foundVia],
+          category: result.category,
+          matches: result.matches,
+          confidence: result.confidence,
+          justification: result.justification,
+          extractable: isExtractable(s.url),
+          parseFailed: result.parseFailed,
+        }
+        classifiedByUrl.set(key, classified)
+        out.push(classified)
+        classifyDone += 1
+        onEvent?.({
+          type: "classified",
+          done: classifyDone,
+          total: byCanonical.size,
+          round,
+          source: {
+            url: classified.url,
+            title: classified.title,
+            foundVia: classified.foundVia,
+            category: classified.category,
+            matches: classified.matches,
+            confidence: classified.confidence,
+            justification: classified.justification,
+            extractable: classified.extractable,
+            parseFailed: classified.parseFailed,
+          },
+        })
       }
-      classifiedSources[index] = classified
-      done += 1
-      onEvent?.({
-        type: "classified",
-        done,
-        total: unique.length,
-        source: {
-          url: classified.url,
-          title: classified.title,
-          foundVia: classified.foundVia,
-          category: classified.category,
-          matches: classified.matches,
-          confidence: classified.confidence,
-          justification: classified.justification,
-          extractable: classified.extractable,
-          parseFailed: classified.parseFailed,
-        },
-      })
     }
+    await Promise.all(Array.from({ length: Math.min(concurrency, sources.length) }, worker))
+    return out
   }
-  await Promise.all(
-    Array.from({ length: Math.min(concurrency, unique.length) }, worker)
+
+  // --- Round 1: facet probes + category/operator probes (breadth) ---
+  const variants = await expandQuery(query, cfg.variantCount)
+  onEvent?.({ type: "expand", variants })
+
+  const wantedCategories = wantedLongTail(profile)
+  const categoryProbePromise = runCategoryProbes(query, wantedCategories, onEvent)
+
+  const round1Lists = await Promise.all(
+    variants.map((v) => {
+      searchCount++
+      return safeSearch(v, cfg.limit).then((sources) => {
+        onEvent?.({ type: "probe", query: v, round: 1, sources })
+        return sources
+      })
+    })
   )
+  const categoryProbes = await categoryProbePromise
+  searchCount += categoryProbes.length
 
-  const categoryProbeSources = categoryProbes.reduce((n, p) => n + p.sources.length, 0)
+  const round1Fresh: SearchResultSource[] = []
+  variants.forEach((v, i) => {
+    queriesRun.push(v)
+    round1Fresh.push(...absorb(v, false, round1Lists[i] ?? []))
+  })
+  categoryProbes.forEach((p) => {
+    queriesRun.push(p.query)
+    round1Fresh.push(...absorb(p.query, true, p.sources))
+  })
+  const round1Classified = await classifyBatch(round1Fresh, 1)
+  for (const d of newWantedDomains(round1Classified, seenWantedDomains)) seenWantedDomains.add(d)
+
+  // --- Depth rounds 2..maxRounds ---
+  let dryRounds = 0
+  let stopReason: StopReason = "ceiling"
+  let roundsRun = 1
+  for (let round = 2; round <= cfg.maxRounds; round++) {
+    if (cfg.entityCountPerRound === 0) break
+    if (hitCeiling(cfg, { round, searchCount })) {
+      stopReason = "ceiling"
+      break
+    }
+
+    // Harvest next-round entities from WANTED sources first; fall back to the
+    // broader pool only if we haven't found enough wanted sources yet.
+    const allClassified = [...classifiedByUrl.values()]
+    const wantedSources = allClassified.filter((c) => c.matches)
+    const harvestFrom = wantedSources.length >= 2 ? wantedSources : allClassified
+
+    // Deep mode: scrape wanted sources to markdown so the extractor reads full
+    // text, not thin snippets. Spread the budget across rounds (so later layers
+    // still get fresh reads) and NEVER re-scrape a page we've already read — the
+    // bug that used to blow the whole budget in the first depth round.
+    const perRoundScrapeCap = Math.max(4, Math.ceil(cfg.maxScrapes / Math.max(1, cfg.maxRounds - 1)))
+    let scrapedThisRound = 0
+    const harvestSources: SearchResultSource[] = []
+    for (const c of harvestFrom) {
+      let description = c.description
+      const canScrape =
+        cfg.scrapeWanted &&
+        c.matches &&
+        !scrapedUrls.has(c.url) &&
+        scrapeCount < cfg.maxScrapes &&
+        scrapedThisRound < perRoundScrapeCap
+      if (scrapedContent.has(c.url)) {
+        // Read in an earlier round — reuse the full text, don't re-scrape.
+        description = scrapedContent.get(c.url)!
+      } else if (canScrape) {
+        scrapeCount++
+        scrapedThisRound++
+        scrapedUrls.add(c.url)
+        try {
+          const scraped = await firecrawlScrapeSource({
+            source: { url: c.url, title: c.title, description: c.description, snippet: c.description, query },
+          })
+          const md = (scraped as { markdown?: string }).markdown
+          if (md) {
+            description = md.slice(0, 4000)
+            scrapedContent.set(c.url, description)
+          }
+        } catch {
+          // scrape failed — fall back to the snippet, no crash
+        }
+      }
+      harvestSources.push({ url: c.url, title: c.title, description, snippet: c.description, query })
+    }
+    // Surface the deep-read so the depth loop is visible in the UI (the signature
+    // Thorough/Exhaustive behavior — reading wanted sources for fresh leads).
+    if (scrapedThisRound > 0) {
+      onEvent?.({ type: "reading", round, count: scrapedThisRound })
+    }
+
+    const entities = (
+      await extractResearchEntities({
+        currentDateContext: "",
+        modelId: DISCOVERY_MODEL_ID,
+        query,
+        sources: harvestSources,
+      })
+    )
+      .filter((e) => !probedEntities.has(e.toLowerCase()))
+      .slice(0, cfg.entityCountPerRound)
+
+    if (entities.length === 0) {
+      dryRounds++
+      onEvent?.({ type: "dry", round, reason: "no-new-entities", dryRounds, saturationK: cfg.saturationK })
+      if (dryRounds >= cfg.saturationK) {
+        stopReason = "saturated"
+        break
+      }
+      continue
+    }
+    entities.forEach((e) => probedEntities.add(e.toLowerCase()))
+    onEvent?.({ type: "entities", entities, round })
+
+    const entityLists = await Promise.all(
+      entities.map((e) => {
+        if (searchCount >= cfg.maxSearches) return Promise.resolve([] as SearchResultSource[])
+        searchCount++
+        return safeSearch(e, Math.max(6, cfg.limit - 2)).then((sources) => {
+          onEvent?.({ type: "probe", query: e, round, sources })
+          return sources
+        })
+      })
+    )
+    const roundFresh: SearchResultSource[] = []
+    entities.forEach((e, i) => {
+      queriesRun.push(e)
+      roundFresh.push(...absorb(e, false, entityLists[i] ?? []))
+    })
+    const roundClassified = await classifyBatch(roundFresh, round)
+    roundsRun = round
+
+    const fresh = newWantedDomains(roundClassified, seenWantedDomains)
+    if (fresh.length === 0) {
+      dryRounds++
+      onEvent?.({ type: "dry", round, reason: "no-new-wanted", dryRounds, saturationK: cfg.saturationK })
+    } else {
+      dryRounds = 0
+      for (const d of fresh) seenWantedDomains.add(d)
+    }
+    if (dryRounds >= cfg.saturationK) {
+      stopReason = "saturated"
+      break
+    }
+  }
+
   return {
     query,
-    queriesRun: [...variants, ...boundedEntities, ...categoryProbes.map((p) => p.query)],
-    rawSourceCount: round1Sources.length + round2Sources.length + categoryProbeSources,
-    classifiedSources,
+    queriesRun,
+    rawSourceCount: byCanonical.size,
+    classifiedSources: [...classifiedByUrl.values()],
+    stopReason,
+    roundsRun,
+    searchCount,
+    scrapeCount,
   }
 }

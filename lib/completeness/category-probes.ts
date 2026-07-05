@@ -29,11 +29,39 @@ export function wantedLongTail(profile: CompletenessProfile): CategoryId[] {
   return LONG_TAIL_CATEGORIES.filter((c) => profile.include.includes(c))
 }
 
-/** OR-group of terms, quoting multi-word phrases. Empty in → empty string. */
+// B2B / research framing words. Verified live: "mechanical keyboard switch
+// MANUFACTURERS (forum OR discussion)" returns 2/8 real forums (it steers the
+// search toward supplier directories and vendor reviews); dropping the framing
+// word — "mechanical keyboard switch (forum OR discussion)" — returns 6/8.
+// Forums and local press discuss the SUBJECT, not the "manufacturers" of it.
+const B2B_FRAMING = new Set([
+  "manufacturers", "manufacturer", "suppliers", "supplier", "vendors", "vendor",
+  "wholesalers", "wholesale", "providers", "provider", "companies", "company",
+  "makers", "maker", "distributors", "distributor", "sellers", "seller",
+])
+
+/** The core subject phrase — the topic with B2B/research framing words removed,
+ *  so category probes match how communities/local press actually talk. Falls
+ *  back to the original if stripping would empty it. */
+function coreTopicPhrase(topic: string): string {
+  const words = topic.trim().split(/\s+/)
+  const kept = words.filter((w) => !B2B_FRAMING.has(w.toLowerCase().replace(/[^a-z]/g, "")))
+  return (kept.length ? kept : words).join(" ")
+}
+
+/**
+ * OR-group of terms. Bare words only — NEVER wrap a multi-word term in quotes
+ * here. Verified against live Firecrawl search: a quoted multi-word phrase
+ * inside a parenthesized OR-group, combined with a multi-word topic anchor,
+ * unpredictably returns ZERO results (confirmed on multiple topics/categories —
+ * this is what silently starved `regional_press`'s hardcoded "local news" term
+ * on every run). The unquoted bare-word equivalent reliably returns results.
+ * Empty in → empty string.
+ */
 function orGroup(terms: string[]): string {
   const cleaned = [...new Set(terms.map((t) => t.trim()).filter(Boolean))]
   if (cleaned.length === 0) return ""
-  return `(${cleaned.map((t) => (/\s/.test(t) ? `"${t}"` : t)).join(" OR ")})`
+  return `(${cleaned.join(" OR ")})`
 }
 
 /**
@@ -55,9 +83,12 @@ const TEMPLATES: Record<CategoryId, (topic: string, vocab: string[]) => string> 
   // Trade press: generic trade words + one topic-specific term (e.g. "roaster").
   trade_pub: (topic, vocab) =>
     `${topic} ${orGroup(["magazine", "journal", "association", ...vocab.slice(0, 1)])}`,
-  // Regional press: weakest single signal, so lean on local-news phrasings.
+  // Regional press: weakest single signal. "local news"/"now open" tested to
+  // ZERO results once quoted (the orGroup bug) and were weak even unquoted
+  // (mostly retailer/social hits); "opens OR expanding OR news" tested live
+  // and reliably surfaced real regional outlets (e.g. communityimpact.com).
   regional_press: (topic, vocab) =>
-    `${topic} ${orGroup(["local news", "now open", ...vocab.slice(0, 1)])}`,
+    `${topic} ${orGroup(["opens", "expanding", "news", ...vocab.slice(0, 1)])}`,
   // Not probed (easy categories) — present only to satisfy the exhaustive record.
   mainstream_press: (topic) => topic,
   manufacturer: (topic) => topic,
@@ -71,7 +102,9 @@ export function buildCategoryProbeQuery(
   category: CategoryId,
   vocab: string[]
 ): string {
-  return TEMPLATES[category](topic.trim(), vocab).trim()
+  // Anchor on the CORE subject (B2B framing stripped) so forum/press probes
+  // match how communities and local outlets actually discuss the subject.
+  return TEMPLATES[category](coreTopicPhrase(topic), vocab).trim()
 }
 
 // --- Precision guard: a deterministic lexical relevance floor, scoped ONLY to
