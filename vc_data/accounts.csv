@@ -1,0 +1,12 @@
+feedback_item,customer,plan,arr_usd,usage_trend_90d,notes
+1,competitive intelligence platform,enterprise,180000,flat,renewal Q3; expansion to 2 more teams discussed
+2,price comparison service,growth,42000,down 8%,failures on one retail domain since ~3 weeks
+3,open source user,free,0,flat,github issue reporter
+4,indie dev (discord),hobby,348,up 4%,one of ~4100 self-serve accounts with similar usage shape
+5,ai research assistant startup,growth,36000,up 14%,pulls 30 results per query and reranks client-side
+6,fortune 500 prospect,prospect,0,n/a,net-new; feasibility answer due this quarter
+7,workflow automation startup,growth,28000,up 6%,heavy actions usage
+8,startup (discord),growth,31000,flat,inline user-facing scrapes
+9,data infrastructure company,growth,38000,flat,40+ extraction jobs; maintenance pain raised twice before
+10,sales intelligence platform,scale,60000,up 18%,pays linkedin data vendor more than firecrawl bill
+11,ai agent startup,trial,0,doubling m/m,evaluating migration off own playwright cluster
