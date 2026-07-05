@@ -4,12 +4,7 @@
 
 <h1 align="center">Ember</h1>
 
-<p align="center">
-  <video src="media/ember-demo.mp4" controls width="720">
-    Demo video: <a href="media/ember-demo.mp4">media/ember-demo.mp4</a>
-  </video>
-</p>
-
+https://github.com/user-attachments/assets/11c6b04e-45f0-4539-8610-0dabec7d83f0
 
 ## What I built
 
