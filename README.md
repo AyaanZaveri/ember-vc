@@ -1,21 +1,10 @@
-# Next.js template
+# Ember
 
-This is a Next.js template with shadcn/ui.
+Main writeup is in [ONEPAGER.md](ONEPAGER.md).
 
-## Adding components
-
-To add components to your app, run the following command:
+## Running locally
 
 ```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+bun install
+bun run dev
 ```
