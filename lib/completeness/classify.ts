@@ -2,6 +2,7 @@ import { createOpenAICompatible } from "@ai-sdk/openai-compatible"
 import { generateText } from "ai"
 import { z } from "zod"
 
+import { COMPLETENESS_MODEL_ID } from "./model.ts"
 import {
   type CategoryId,
   type CompletenessProfile,
@@ -22,7 +23,8 @@ import {
 // Non-reasoning instruct model, chosen for the same reason the rest of ember
 // does: it returns constrained JSON reliably without burning its budget on
 // hidden reasoning. gpt-oss-120b is unresponsive on NIM (see lib/ai/models.ts).
-const CLASSIFIER_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
+// See model.ts for the latency test that picked the default and how to override it.
+const CLASSIFIER_MODEL_ID = COMPLETENESS_MODEL_ID
 const MODEL_CALL_TIMEOUT_MS = 30_000
 
 const nim = createOpenAICompatible({

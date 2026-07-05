@@ -18,6 +18,7 @@ import {
   wantedLongTail,
 } from "./category-probes.ts"
 import { classifySource } from "./classify.ts"
+import { COMPLETENESS_MODEL_ID } from "./model.ts"
 import { type CategoryId, type CompletenessProfile } from "./profile.ts"
 
 /**
@@ -32,7 +33,8 @@ import { type CategoryId, type CompletenessProfile } from "./profile.ts"
  * sources would crowd out the one-off niche hit a classifier is meant to catch).
  */
 
-const DISCOVERY_MODEL_ID = "qwen/qwen3-next-80b-a3b-instruct"
+// See model.ts for the latency test that picked this and how to override it.
+const DISCOVERY_MODEL_ID = COMPLETENESS_MODEL_ID
 const MODEL_CALL_TIMEOUT_MS = 30_000
 // Per-run cost is now bounded by the effort config's hard ceilings
 // (maxSearches / maxScrapes / maxRounds), not a fixed source cap.
