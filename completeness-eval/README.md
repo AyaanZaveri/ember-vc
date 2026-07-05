@@ -10,8 +10,21 @@ baseline**, a fixed **search-operator** recipe (no LLM), the same operators but
 with one shared, method-agnostic labeler, and measures how many distinct
 **usable** (extractable) long-tail sources each surfaces.
 
-Full writeup (results, methodology, and the AI-introduced labeling bugs) is
-summarized in the root [ONEPAGER.md](../ONEPAGER.md).
+Full writeup (results and methodology) is summarized in the root
+[ONEPAGER.md](../ONEPAGER.md).
+
+One labeling bug worth flagging on its own: the shared labeler was built and
+spot-checked against the espresso topic, so its curated trade-pub and
+regional-press domain lists were coffee-specific (`sca.coffee`,
+`dailycoffeenews.com`). Running the same code on the accounting and solar
+topics, it didn't recognize `accountingtoday.com`, `pv-magazine.com`, or
+`solarpowerworldonline.com` as trade pubs, so every method scored near-zero
+long-tail on those topics, which looked like a real finding rather than a
+labeler gap. Caught by dumping the raw domain list instead of trusting the
+summary numbers: `solarpowerworldonline.com` was right there in the output,
+just mislabeled as "other." Fixed with a per-topic domain allowlist (see
+`labelUrl()` in `lib/labeler.ts`) that the labeler checks first, built from
+the same research used for ground truth.
 
 ## Reading the numbers: what the labeler does and doesn't measure
 
