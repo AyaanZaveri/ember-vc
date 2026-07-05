@@ -1,0 +1,28 @@
+{
+  "query": "commercial solar installation companies",
+  "note": "Long-tail sources built from independent WebSearch oracle. domainCategories is the per-topic allowlist the shared labeler consults for every method identically.",
+  "domainCategories": {
+    "pv-magazine.com": "trade_pub",
+    "pv-magazine-usa.com": "trade_pub",
+    "solarpowerworldonline.com": "trade_pub",
+    "solarmagazine.com": "trade_pub",
+    "solarbuildermag.com": "trade_pub",
+    "solarfeeds.com": "trade_pub",
+    "renewableenergyworld.com": "trade_pub",
+    "seia.org": "trade_pub",
+    "solarpaneltalk.com": "niche_forum",
+    "solar-electric.com": "niche_forum",
+    "5newsonline.com": "regional_press",
+    "bizjournals.com": "regional_press"
+  },
+  "longTailUrls": [
+    "https://www.pv-magazine-usa.com/",
+    "https://www.pv-magazine.com/tag/commercial-industrial/",
+    "https://www.solarpowerworldonline.com/",
+    "https://solarmagazine.com/",
+    "https://seia.org/research-resources/major-solar-projects-list/",
+    "https://www.solarpaneltalk.com/",
+    "https://www.solarpaneltalk.com/forum/solar-panels-for-home/solar-panel-installation",
+    "https://www.5newsonline.com/article/news/local/university-arkansas-unveils-solar-efforts-save-100m-utility-costs/527-5d6149c7-a57a-477d-acee-1339ee8a76f8"
+  ]
+}

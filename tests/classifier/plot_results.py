@@ -10,13 +10,23 @@ Run: python3 tests/classifier/plot_results.py
 """
 
 import json
+import os
 import sys
 from pathlib import Path
 
-HELPER_DIR = Path("/Users/ayaanzaveri/.codex/skills/publication-grade-matplotlib/scripts")
+# The helper lives outside the repo — point at it via BEAUTIFUL_CHARTS_DIR, else
+# the default skills location under the current user's home. No hardcoded path.
+HELPER_DIR = Path(
+    os.environ.get(
+        "BEAUTIFUL_CHARTS_DIR",
+        Path.home() / ".codex/skills/publication-grade-matplotlib/scripts",
+    )
+)
 sys.path.insert(0, str(HELPER_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "completeness-eval" / "runners"))
 
 from beautiful_charts import TAILWIND, create_beautiful_chart, save_chart  # noqa: E402
+from chart_style import tidy  # noqa: E402
 
 RESULTS_DIR = Path(__file__).parent / "results"
 LATEST_PATH = RESULTS_DIR / "latest.json"
@@ -76,6 +86,9 @@ def main() -> None:
     ax.tick_params(axis="x", labelsize=8.5, rotation=0)
     for label in ax.get_xticklabels():
         label.set_linespacing(1.4)
+
+    # Compact header + even outer padding (see completeness-eval/runners/chart_style).
+    tidy(fig, ax)
 
     out_paths = save_chart(fig, RESULTS_DIR / "accuracy_by_category", formats=("png", "svg"))
     for path in out_paths:

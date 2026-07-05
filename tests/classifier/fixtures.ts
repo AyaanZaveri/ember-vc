@@ -101,7 +101,7 @@ export const FIXTURES: Fixture[] = [
     title: "What's everyone's favourite commercial espresso machine? : r/Coffee",
     description:
       "The ones we are currently looking at are: La Marzocco Linea PB, Slayer Steam, Nuova Simonelli White Eagle, San Remo Racer.",
-    expectedCategory: "community_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: false,
     note: "Large general forum, high value but not scrapeable — surface + flag for manual review.",
@@ -112,7 +112,7 @@ export const FIXTURES: Fixture[] = [
     title: "Which Commercial Espresso Machine…",
     description:
       "The new Mazzer line is excellent. I'm really impressed by them, especially for ease of service. Mahlkonig is a close second in my mind.",
-    expectedCategory: "community_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: false,
   },
@@ -122,7 +122,7 @@ export const FIXTURES: Fixture[] = [
     title: "Commercial Espresso machine - La Mazzorco vs Nuova Simonelli?",
     description:
       "It depends on the model you choose but Nuova Simonelli is easy to fix, parts seems to be cheaper and they are built like tanks.",
-    expectedCategory: "niche_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: true,
   },
@@ -132,7 +132,7 @@ export const FIXTURES: Fixture[] = [
     title: "Simonelli vs. La Marzocco - Barista Exchange",
     description:
       "They both have their strenghts and drawbacks: Simonelli: They have one of the most stable exchangers on the market. They are pretty solid.",
-    expectedCategory: "niche_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: true,
   },
@@ -142,7 +142,7 @@ export const FIXTURES: Fixture[] = [
     title: "La Marzocco Linea Mini or Nuova Simonelli Musica? Help me choose",
     description:
       "The Mini is a totally different beast. It is much more expensive. It's heavy, has two boilers (water and steam) so, maximum flexibility and maximum cost.",
-    expectedCategory: "niche_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: true,
   },
@@ -152,7 +152,7 @@ export const FIXTURES: Fixture[] = [
     title:
       "What are some good commercial espresso machines for a coffee shop or restaurant?",
     description: "",
-    expectedCategory: "community_forum",
+    expectedCategory: "forum",
     expectedMatch: true,
     extractable: false,
   },

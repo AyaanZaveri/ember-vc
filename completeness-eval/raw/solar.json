@@ -1,0 +1,2610 @@
+{
+  "query": "commercial solar installation companies",
+  "slug": "solar",
+  "generatedAt": "2026-07-04T23:42:11.032Z",
+  "results": {
+    "baseline": {
+      "sources": [
+        {
+          "url": "https://solarlandscape.com/",
+          "canonical": "solarlandscape.com/",
+          "domain": "solarlandscape.com",
+          "title": "Solar Landscape | Commercial Rooftop Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarmeusa.com/services/commercial-solar-installation",
+          "canonical": "solarmeusa.com/services/commercial-solar-installation",
+          "domain": "solarmeusa.com",
+          "title": "Commercial Solar Installation Company In NJ",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.earthlighttech.com/commercial-solar/",
+          "canonical": "earthlighttech.com/commercial-solar",
+          "domain": "earthlighttech.com",
+          "title": "Commercial Solar Installation in CT & MA - Earthlight Technologies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aurora-energy.com/baltimore-commercial-solar-company/",
+          "canonical": "aurora-energy.com/baltimore-commercial-solar-company",
+          "domain": "aurora-energy.com",
+          "title": "Baltimore Commercial Solar Company - Aurora Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tencosolar.net/commercial-solar",
+          "canonical": "tencosolar.net/commercial-solar",
+          "domain": "tencosolar.net",
+          "title": "Commercial Solar Installation & Design | TENCO SOLAR",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.kcgreenenergy.com/service-areas/new-jersey/",
+          "canonical": "kcgreenenergy.com/service-areas/new-jersey",
+          "domain": "kcgreenenergy.com",
+          "title": "Solar Installation in New Jersey | Residential & Commercial",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mnseia.org/find-installer",
+          "canonical": "mnseia.org/find-installer",
+          "domain": "mnseia.org",
+          "title": "Find an Installer - MnSEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarreviews.com/solar-companies/new-jersey",
+          "canonical": "solarreviews.com/solar-companies/new-jersey",
+          "domain": "solarreviews.com",
+          "title": "7 Best Solar Companies in New Jersey (2026 Top Solar Installers)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sunwiseusa.com/",
+          "canonical": "sunwiseusa.com/",
+          "domain": "sunwiseusa.com",
+          "title": "Solar Panel Installation Company in Cherry Hill NJ | Sunwise",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://greenpowerenergy.com/commercial-programs/",
+          "canonical": "greenpowerenergy.com/commercial-programs",
+          "domain": "greenpowerenergy.com",
+          "title": "Commercial Solar Panel Installations | 15+ Years Experience",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://allbaysolar.com/",
+          "canonical": "allbaysolar.com/",
+          "domain": "allbaysolar.com",
+          "title": "Bay Area Solar Installation, Energy Storage, Roofing & Construction",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solartribune.com/your-home/solar-companies/california/bay-area/",
+          "canonical": "solartribune.com/your-home/solar-companies/california/bay-area",
+          "domain": "solartribune.com",
+          "title": "Best Solar Companies in Bay Area - Solar Tribune",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.americanarraysolar.com/solar/solar-contractors-alameda/",
+          "canonical": "americanarraysolar.com/solar/solar-contractors-alameda",
+          "domain": "americanarraysolar.com",
+          "title": "Alameda Solar Contractors - Residential & Commercial Solar Panel ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose/",
+          "canonical": "simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose",
+          "domain": "simmitri.com",
+          "title": "San Jose Commercial Solar Energy Company - Simmitri",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.comsolaraz.com/",
+          "canonical": "comsolaraz.com/",
+          "domain": "comsolaraz.com",
+          "title": "Commercial Solar Arizona: Commercial & Industrial Solar Contractors",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://westcoastsolarenergy.com/commercial-solar/",
+          "canonical": "westcoastsolarenergy.com/commercial-solar",
+          "domain": "westcoastsolarenergy.com",
+          "title": "Commercial Solar Panels in CA - Westcoast Solar Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=opeLHC369HQ",
+          "canonical": "youtube.com/watch?v=opeLHC369HQ",
+          "domain": "youtube.com",
+          "title": "Commercial Solar ROI (Watch Before Installing Solar!) - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://citadelrs.com/commercial/solar/",
+          "canonical": "citadelrs.com/commercial/solar",
+          "domain": "citadelrs.com",
+          "title": "Commercial Solar Panel System Installation - Citadel Roofing & Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://renewepi.com/orange-ca-county/",
+          "canonical": "renewepi.com/orange-ca-county",
+          "domain": "renewepi.com",
+          "title": "Orange County - Commercial Solar Energy Company",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.okie.solar/solar-company-tulsa/",
+          "canonical": "okie.solar/solar-company-tulsa",
+          "domain": "okie.solar",
+          "title": "Residential & Commercial Solar Company in Tulsa - Okie Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sHVjZ3ebKn0",
+          "canonical": "youtube.com/watch?v=sHVjZ3ebKn0",
+          "domain": "youtube.com",
+          "title": "Best Commercial Solar Options for Business - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "http://www.cromwellsolar.com/commercial",
+          "canonical": "cromwellsolar.com/commercial",
+          "domain": "cromwellsolar.com",
+          "title": "Commercial Solar Panel Installation in KS & MO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://texasdirectsolar.com/",
+          "canonical": "texasdirectsolar.com/",
+          "domain": "texasdirectsolar.com",
+          "title": "Texas Direct Solar: Solar Panels Houston TX | Stop Depending on ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://synergysolar.us/solar/commercial/",
+          "canonical": "synergysolar.us/solar/commercial",
+          "domain": "synergysolar.us",
+          "title": "Commercial Solar Power in Jacksonville & North Florida",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tampabaysolar.com/",
+          "canonical": "tampabaysolar.com/",
+          "domain": "tampabaysolar.com",
+          "title": "Tampa Bay Solar : Best Solar Company Florida | Leading Solar ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sunshinerenewable.com/",
+          "canonical": "sunshinerenewable.com/",
+          "domain": "sunshinerenewable.com",
+          "title": "Houston Solar Installer | Solar Energy System Installation Texas",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://noco.com/commercial/solar",
+          "canonical": "noco.com/commercial/solar",
+          "domain": "noco.com",
+          "title": "Commercial Solar Solutions in Western NY - NOCO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sesre.com/city/solar-installations-in-indiana/",
+          "canonical": "sesre.com/city/solar-installations-in-indiana",
+          "domain": "sesre.com",
+          "title": "Solar Panel Installation in Indiana",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solariasolarandroofing.com/commercial-solar-panel-installation/",
+          "canonical": "solariasolarandroofing.com/commercial-solar-panel-installation",
+          "domain": "solariasolarandroofing.com",
+          "title": "commercial solar panel installation orlando florida",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://harmonsolar.com/commercial/",
+          "canonical": "harmonsolar.com/commercial",
+          "domain": "harmonsolar.com",
+          "title": "Commercial Solar Panels & Installation",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.americanarraysolar.com/solar/solar-contractors-visalia/",
+          "canonical": "americanarraysolar.com/solar/solar-contractors-visalia",
+          "domain": "americanarraysolar.com",
+          "title": "Visalia Solar Contractors - Residential & Commercial Solar Panel ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.westcoastsolar.com/commercial/commercial-solar-power-systems/",
+          "canonical": "westcoastsolar.com/commercial/commercial-solar-power-systems",
+          "domain": "westcoastsolar.com",
+          "title": "Commercial Solar Panels in Northern California - West Coast Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://rocknollenergy.com/commercial-solar-installation-columbus/",
+          "canonical": "rocknollenergy.com/commercial-solar-installation-columbus",
+          "domain": "rocknollenergy.com",
+          "title": "Commercial Solar Installation in Columbus | Rocknoll Energy Systems",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://buffalosolar.com/",
+          "canonical": "buffalosolar.com/",
+          "domain": "buffalosolar.com",
+          "title": "Buffalo Solar - Commercial Solar Installation",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ussolarcontractors.com/",
+          "canonical": "ussolarcontractors.com/",
+          "domain": "ussolarcontractors.com",
+          "title": "U.S. SOLAR CONTRACTORS | SOLAR INSTALLATION",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://luminasolar.com/solar-panel-installation-baltimore-md/",
+          "canonical": "luminasolar.com/solar-panel-installation-baltimore-md",
+          "domain": "luminasolar.com",
+          "title": "Solar Panel Installation in Baltimore, MD: Free Estimate - Lumina Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.hesolarllc.com/commercial-solar/",
+          "canonical": "hesolarllc.com/commercial-solar",
+          "domain": "hesolarllc.com",
+          "title": "Commercial Solar Energy – Greater Austin Area | HESOLAR",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarenergypartners.com/atlanta/commercial-solar-energy/solar-contractors--installers",
+          "canonical": "solarenergypartners.com/atlanta/commercial-solar-energy/solar-contractors--installers",
+          "domain": "solarenergypartners.com",
+          "title": "Commercial Solar Contractors & Installers in Atlanta, GA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aresolar.com/",
+          "canonical": "aresolar.com/",
+          "domain": "aresolar.com",
+          "title": "ARE Solar Panel Installation Company Denver Colorado",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://93energy.com/commercial-solar/indiana",
+          "canonical": "93energy.com/commercial-solar/indiana",
+          "domain": "93energy.com",
+          "title": "Commercial Solar Indiana | Solar Panel & PV Systems | 93Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solar-verse.com/",
+          "canonical": "solar-verse.com/",
+          "domain": "solar-verse.com",
+          "title": "Solar-Verse | Residential & Commercial Solar in Maryland",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.bettertomorrowsolar.com/",
+          "canonical": "bettertomorrowsolar.com/",
+          "domain": "bettertomorrowsolar.com",
+          "title": "Affordable Solar Power Solutions in Atlanta, GA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sunvalleysolar.com/commercial-solar",
+          "canonical": "sunvalleysolar.com/commercial-solar",
+          "domain": "sunvalleysolar.com",
+          "title": "Commercial Solar Solutions in Arizona | Get a Quote Today",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.energysage.com/local-data/solar-companies/tx/williamson-county/austin/",
+          "canonical": "energysage.com/local-data/solar-companies/tx/williamson-county/austin",
+          "domain": "energysage.com",
+          "title": "Best solar companies in Austin, TX: Our 2026 picks - EnergySage",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://8msolar.com/commercial-solar-company-south-carolina/",
+          "canonical": "8msolar.com/commercial-solar-company-south-carolina",
+          "domain": "8msolar.com",
+          "title": "Commercial Solar Panel Installers and Contractors in South Carolina",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.photonbrothers.com/denver/solar-installations/commercial",
+          "canonical": "photonbrothers.com/denver/solar-installations/commercial",
+          "domain": "photonbrothers.com",
+          "title": "Commercial & Government Solar Installers in Denver",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "sources": [
+        {
+          "url": "https://www.tencosolar.net/commercial-solar",
+          "canonical": "tencosolar.net/commercial-solar",
+          "domain": "tencosolar.net",
+          "title": "Commercial Solar Installation & Design | TENCO SOLAR",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://seia.org/research-resources/solar-means-business/",
+          "canonical": "seia.org/research-resources/solar-means-business",
+          "domain": "seia.org",
+          "title": "Solar Means Business 2024 - SEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.solarpowerworldonline.com/",
+          "canonical": "solarpowerworldonline.com/",
+          "domain": "solarpowerworldonline.com",
+          "title": "Solar Power Installation | Development | Technology News and ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Homes/Choosing-a-Contractor/Residential-Installers",
+          "canonical": "nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Homes/Choosing-a-Contractor/Residential-Installers",
+          "domain": "nyserda.ny.gov",
+          "title": "Residential & Small Commercial Solar Contractors - nyserda - NY.Gov",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.etai.org/renewable_energy.html",
+          "canonical": "etai.org/renewable_energy.html",
+          "domain": "etai.org",
+          "title": "Accredited Renewable Energy Certifications - ETA International",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://illinoissolar.org/choosing-a-qualified-solar-installer",
+          "canonical": "illinoissolar.org/choosing-a-qualified-solar-installer",
+          "domain": "illinoissolar.org",
+          "title": "How to Choose a Qualified Solar Installer",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://standardsolar.com/",
+          "canonical": "standardsolar.com/",
+          "domain": "standardsolar.com",
+          "title": "Standard Solar: Home",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://fsg.com/solar/",
+          "canonical": "fsg.com/solar",
+          "domain": "fsg.com",
+          "title": "Commercial Solar Installation & Power Solutions - FSG",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://axiumsolar.com/",
+          "canonical": "axiumsolar.com/",
+          "domain": "axiumsolar.com",
+          "title": "Commercial Solar Contractor for Design, Construction & O&M",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://colitetech.com/blog/avoid-these-7-mistakes-when-planning-your-first-commercial-solar-project/",
+          "canonical": "colitetech.com/blog/avoid-these-7-mistakes-when-planning-your-first-commercial-solar-project",
+          "domain": "colitetech.com",
+          "title": "Avoid These 7 Mistakes When Planning Your First Commercial ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://seia.org/research-resources/major-solar-projects-list/",
+          "canonical": "seia.org/research-resources/major-solar-projects-list",
+          "domain": "seia.org",
+          "title": "Major Solar Projects List – SEIA - Solar Energy Industries Association",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://commercialsolarguy.com/",
+          "canonical": "commercialsolarguy.com/",
+          "domain": "commercialsolarguy.com",
+          "title": "Commercial Solar Guy: Commercial Solar Construction Company ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://aspenpower.com/safari-energy-reaches-500th-commercial-solar-project/",
+          "canonical": "aspenpower.com/safari-energy-reaches-500th-commercial-solar-project",
+          "domain": "aspenpower.com",
+          "title": "Safari Energy Reaches 500th Commercial Solar Project",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://cedarcreekenergy.com/the-installation-process-for-commercial-solar-projects-what-to-expect/",
+          "canonical": "cedarcreekenergy.com/the-installation-process-for-commercial-solar-projects-what-to-expect",
+          "domain": "cedarcreekenergy.com",
+          "title": "The Installation Process for Commercial Solar Projects",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://commercialsolarguy.com/commercial-solar-panel-installation/",
+          "canonical": "commercialsolarguy.com/commercial-solar-panel-installation",
+          "domain": "commercialsolarguy.com",
+          "title": "Commercial Solar Panel Installation: Everything You Need to Know",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Businesses/Resources-for-Owners",
+          "canonical": "nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Businesses/Resources-for-Owners",
+          "domain": "nyserda.ny.gov",
+          "title": "Resources for Commercial Solar Owners - nyserda - NY.Gov",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://straightupsolar.com/webinar-top-5-questions-to-ask-your-solar-installer/",
+          "canonical": "straightupsolar.com/webinar-top-5-questions-to-ask-your-solar-installer",
+          "domain": "straightupsolar.com",
+          "title": "Webinar: The Top 5 Questions to Ask Your Solar Installer",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://aurora-energy.com/understanding-net-metering-and-how-it-benefits-commercial-solar-owners/",
+          "canonical": "aurora-energy.com/understanding-net-metering-and-how-it-benefits-commercial-solar-owners",
+          "domain": "aurora-energy.com",
+          "title": "Understanding Net Metering and How It Benefits Commercial Solar ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.solarpaneltalk.com/",
+          "canonical": "solarpaneltalk.com/",
+          "domain": "solarpaneltalk.com",
+          "title": "Solar Panels Forum: Forums - Solar Panels",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://forum.cleanenergyreviews.info/t/solar-power-dc-metro-northern-virginia/528",
+          "canonical": "forum.cleanenergyreviews.info/t/solar-power-dc-metro-northern-virginia/528",
+          "domain": "forum.cleanenergyreviews.info",
+          "title": "Solar Power DC Metro, Northern Virginia",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://diysolarforum.com/",
+          "canonical": "diysolarforum.com/",
+          "domain": "diysolarforum.com",
+          "title": "DIY Solar Power Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://community.ases.org/communities/community-home/digestviewer/viewthread?MessageKey=c8d60f29-e508-4213-8971-8a148ed36550&CommunityKey=c6070e36-6969-4c68-a4d4-3f7844c89ba5",
+          "canonical": "community.ases.org/communities/community-home/digestviewer/viewthread?MessageKey=c8d60f29-e508-4213-8971-8a148ed36550&CommunityKey=c6070e36-6969-4c68-a4d4-3f7844c89ba5",
+          "domain": "community.ases.org",
+          "title": "American home solar “experience” | Everything Solar Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://lucidowners.com/threads/solar-panel-and-company-recommendations.2470/",
+          "canonical": "lucidowners.com/threads/solar-panel-and-company-recommendations.2470",
+          "domain": "lucidowners.com",
+          "title": "Solar panel and company recommendations",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.mygrandrv.com/threads/looking-for-solar-installer.63770/",
+          "canonical": "mygrandrv.com/threads/looking-for-solar-installer.63770",
+          "domain": "mygrandrv.com",
+          "title": "looking for solar installer - Grand Design RV Forum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://solarlandscape.com/",
+          "canonical": "solarlandscape.com/",
+          "domain": "solarlandscape.com",
+          "title": "Solar Landscape | Commercial Rooftop Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://solarmeusa.com/services/commercial-solar-installation",
+          "canonical": "solarmeusa.com/services/commercial-solar-installation",
+          "domain": "solarmeusa.com",
+          "title": "Commercial Solar Installation Company In NJ",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.earthlighttech.com/commercial-solar/",
+          "canonical": "earthlighttech.com/commercial-solar",
+          "domain": "earthlighttech.com",
+          "title": "Commercial Solar Installation in CT & MA - Earthlight Technologies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://aurora-energy.com/baltimore-commercial-solar-company/",
+          "canonical": "aurora-energy.com/baltimore-commercial-solar-company",
+          "domain": "aurora-energy.com",
+          "title": "Baltimore Commercial Solar Company - Aurora Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.kcgreenenergy.com/service-areas/new-jersey/",
+          "canonical": "kcgreenenergy.com/service-areas/new-jersey",
+          "domain": "kcgreenenergy.com",
+          "title": "Solar Installation in New Jersey | Residential & Commercial",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.mnseia.org/find-installer",
+          "canonical": "mnseia.org/find-installer",
+          "domain": "mnseia.org",
+          "title": "Find an Installer - MnSEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.solarreviews.com/solar-companies/new-jersey",
+          "canonical": "solarreviews.com/solar-companies/new-jersey",
+          "domain": "solarreviews.com",
+          "title": "7 Best Solar Companies in New Jersey (2026 Top Solar Installers)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://sunwiseusa.com/",
+          "canonical": "sunwiseusa.com/",
+          "domain": "sunwiseusa.com",
+          "title": "Solar Panel Installation Company in Cherry Hill NJ | Sunwise",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://greenpowerenergy.com/commercial-programs/",
+          "canonical": "greenpowerenergy.com/commercial-programs",
+          "domain": "greenpowerenergy.com",
+          "title": "Commercial Solar Panel Installations | 15+ Years Experience",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.energysage.com/local-data/solar-companies/ct/new-haven-county/new-haven/",
+          "canonical": "energysage.com/local-data/solar-companies/ct/new-haven-county/new-haven",
+          "domain": "energysage.com",
+          "title": "Best solar companies in New Haven, CT: Our 2026 picks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://ionsolarpros.com/",
+          "canonical": "ionsolarpros.com/",
+          "domain": "ionsolarpros.com",
+          "title": "Solar Company CT | Ion Solar Pros - Solar Installers in Connecticut",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.ctpost.com/best/map/best-solar-companies-ct/",
+          "canonical": "ctpost.com/best/map/best-solar-companies-ct",
+          "domain": "ctpost.com",
+          "title": "The Best Solar Companies in CT | Alternative Energy Installers",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "regional_press",
+          "emberMatches": true
+        },
+        {
+          "url": "https://shorelinesolar.com/",
+          "canonical": "shorelinesolar.com/",
+          "domain": "shorelinesolar.com",
+          "title": "Shoreline Solar | Trusted Solar Installation Company In CT",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.solarreviews.com/solar-companies/new-york",
+          "canonical": "solarreviews.com/solar-companies/new-york",
+          "domain": "solarreviews.com",
+          "title": "7 Best Solar Companies in New York (2026 Top Solar Installers)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://americas.rwe.com/our-energy/solar-energy/commercial-and-industrial-solar/",
+          "canonical": "americas.rwe.com/our-energy/solar-energy/commercial-and-industrial-solar",
+          "domain": "americas.rwe.com",
+          "title": "Commercial & Industrial Solar | RWE in the Americas",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://aurorasolar.com/blog/the-key-differences-between-residential-and-commercial-solar/",
+          "canonical": "aurorasolar.com/blog/the-key-differences-between-residential-and-commercial-solar",
+          "domain": "aurorasolar.com",
+          "title": "The Key Differences Between Residential and Commercial ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://hustonsolar.com/commercial-vs-residential-solar-panels/",
+          "canonical": "hustonsolar.com/commercial-vs-residential-solar-panels",
+          "domain": "hustonsolar.com",
+          "title": "Comparing Commercial vs Residential Solar Panels",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://ea-global.us/residential-vs-commercial-solar-systems-which-one-is-right-for-you/",
+          "canonical": "ea-global.us/residential-vs-commercial-solar-systems-which-one-is-right-for-you",
+          "domain": "ea-global.us",
+          "title": "Residential vs Commercial Solar Systems: Which One Is ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.masscec.com/resources/commercial-solar-information-hub",
+          "canonical": "masscec.com/resources/commercial-solar-information-hub",
+          "domain": "masscec.com",
+          "title": "Commercial Solar Information Hub",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://sunergysolutionsllc.com/commercial-vs-residential-solar-panels/",
+          "canonical": "sunergysolutionsllc.com/commercial-vs-residential-solar-panels",
+          "domain": "sunergysolutionsllc.com",
+          "title": "Commercial vs Residential Solar Panels",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://revel-energy.com/commercial-vs-residential-solar-why-businesses-choose-specialized-contractors/",
+          "canonical": "revel-energy.com/commercial-vs-residential-solar-why-businesses-choose-specialized-contractors",
+          "domain": "revel-energy.com",
+          "title": "Commercial vs. Residential Solar: Choosing Contractors",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.solarreviews.com/blog/installing-commercial-solar-panels",
+          "canonical": "solarreviews.com/blog/installing-commercial-solar-panels",
+          "domain": "solarreviews.com",
+          "title": "What Is Commercial Solar Installation? Business Guide for ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://kamtechsolar.com/residential-vs-commericial-solar/",
+          "canonical": "kamtechsolar.com/residential-vs-commericial-solar",
+          "domain": "kamtechsolar.com",
+          "title": "Residential vs Commercial Solar: 7 Powerful Differences Explained",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://a1solarstore.com/wholesale-solar-panels.html?srsltid=AfmBOoqrjeduuPd5xSqDVLqeWaJw-_w20Bhlpf9AA24z6EZHid0ZalFU",
+          "canonical": "a1solarstore.com/wholesale-solar-panels.html?srsltid=AfmBOoqrjeduuPd5xSqDVLqeWaJw-_w20Bhlpf9AA24z6EZHid0ZalFU",
+          "domain": "a1solarstore.com",
+          "title": "Buy Wholesale Solar Panels - Pallets & Containers | A1 SolarStore",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://solarwholesale.com/",
+          "canonical": "solarwholesale.com/",
+          "domain": "solarwholesale.com",
+          "title": "Solar Wholesale - Your DIY Solar Specialists",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.solarelectricsupply.com/?srsltid=AfmBOoqQ7U3wtFS0ZAihb8xwlzS8sDdg2d2q-GjGeDit3zpXxjpyxj17",
+          "canonical": "solarelectricsupply.com/?srsltid=AfmBOoqQ7U3wtFS0ZAihb8xwlzS8sDdg2d2q-GjGeDit3zpXxjpyxj17",
+          "domain": "solarelectricsupply.com",
+          "title": "Solar Electric Supply – Leading Wholesale Solar Panels & Solar ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://ussolarsupplier.com/?srsltid=AfmBOooY3dIScUfm4GR2ujQZA68EbHMkfDnDzcD3l4TOqKehKhp6iZJg",
+          "canonical": "ussolarsupplier.com/?srsltid=AfmBOooY3dIScUfm4GR2ujQZA68EbHMkfDnDzcD3l4TOqKehKhp6iZJg",
+          "domain": "ussolarsupplier.com",
+          "title": "US Solar Supplier: Solar Suppliers | Solar Panel Suppliers",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.unboundsolar.com/?srsltid=AfmBOoqhhYx61OZxbpWHKaHKBCEs9tOHcS_bT5372KxjtnKFlgzQk3Pb",
+          "canonical": "unboundsolar.com/?srsltid=AfmBOoqhhYx61OZxbpWHKaHKBCEs9tOHcS_bT5372KxjtnKFlgzQk3Pb",
+          "domain": "unboundsolar.com",
+          "title": "Unbound Solar: Solar Products & DIY Advice by Our Experts",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2Np3Gv0pQjQ",
+          "canonical": "youtube.com/watch?v=2Np3Gv0pQjQ",
+          "domain": "youtube.com",
+          "title": "Solar Companies HATE ME For Showing You This - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://kcsolar.net/",
+          "canonical": "kcsolar.net/",
+          "domain": "kcsolar.net",
+          "title": "KC Solar: Kansas City Solar Panel Installation",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.yelp.com/search?cflt=solarinstallation&find_loc=Kansas+City%2C+MO",
+          "canonical": "yelp.com/search?cflt=solarinstallation&find_loc=Kansas+City%2C+MO",
+          "domain": "yelp.com",
+          "title": "THE BEST 10 SOLAR INSTALLATION IN KANSAS CITY, MO - Yelp",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://straightupsolar.com/",
+          "canonical": "straightupsolar.com/",
+          "domain": "straightupsolar.com",
+          "title": "StraightUp Solar: Solar Installation Company in MO & IL",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.linkedin.com/company/solarlandscape",
+          "canonical": "linkedin.com/company/solarlandscape",
+          "domain": "linkedin.com",
+          "title": "Solar Landscape - LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.consumeraffairs.com/solar-energy/solar-landscape.html",
+          "canonical": "consumeraffairs.com/solar-energy/solar-landscape.html",
+          "domain": "consumeraffairs.com",
+          "title": "Solar Landscape Review 2026 | ConsumerAffairs®",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.inc.com/chloe-aiello/how-this-solar-company-pulled-in-nearly-850-million-this-year/91062640",
+          "canonical": "inc.com/chloe-aiello/how-this-solar-company-pulled-in-nearly-850-million-this-year/91062640",
+          "domain": "inc.com",
+          "title": "Solar Landscape Pulls in $850 Million in 2024 - Inc. Magazine",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher inc.com",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://climatebase.org/company/1133267/solar-landscape",
+          "canonical": "climatebase.org/company/1133267/solar-landscape",
+          "domain": "climatebase.org",
+          "title": "Solar Landscape | Climatebase",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/gosolarlandscape/?hl=en",
+          "canonical": "instagram.com/gosolarlandscape?hl=en",
+          "domain": "instagram.com",
+          "title": "Solar Landscape (@gosolarlandscape) · Asbury Park, NJ - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.solarpowerworldonline.com/suppliers/solar-landscape/",
+          "canonical": "solarpowerworldonline.com/suppliers/solar-landscape",
+          "domain": "solarpowerworldonline.com",
+          "title": "Solar Landscape",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.earthlighttech.com/",
+          "canonical": "earthlighttech.com/",
+          "domain": "earthlighttech.com",
+          "title": "Earthlight Technologies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.linkedin.com/company/earthlight-technologies",
+          "canonical": "linkedin.com/company/earthlight-technologies",
+          "domain": "linkedin.com",
+          "title": "Earthlight Technologies | LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.bbb.org/us/ct/ellington/profile/solar-energy-design/earthlight-technologies-llc-0111-87084918",
+          "canonical": "bbb.org/us/ct/ellington/profile/solar-energy-design/earthlight-technologies-llc-0111-87084918",
+          "domain": "bbb.org",
+          "title": "Earthlight Technologies, LLC | BBB Business Profile",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.ctgreenbank.com/resources/earthlight-technologies-llc-is-now-among-the-leading-contractors-using-green-bank-financing/",
+          "canonical": "ctgreenbank.com/resources/earthlight-technologies-llc-is-now-among-the-leading-contractors-using-green-bank-financing",
+          "domain": "ctgreenbank.com",
+          "title": "Earthlight Technologies, LLC is now among the leading contractors ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.yelp.com/biz/earthlight-solar-and-energy-solutions-ellington",
+          "canonical": "yelp.com/biz/earthlight-solar-and-energy-solutions-ellington",
+          "domain": "yelp.com",
+          "title": "EARTHLIGHT SOLAR & ENERGY SOLUTIONS - Updated June 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.energysage.com/supplier/20693/earthlight-technologies-llc/",
+          "canonical": "energysage.com/supplier/20693/earthlight-technologies-llc",
+          "domain": "energysage.com",
+          "title": "Earthlight Technologies, LLC - Profile & Reviews - 2026 | EnergySage",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://auroraer.com/",
+          "canonical": "auroraer.com/",
+          "domain": "auroraer.com",
+          "title": "Aurora Energy Research | Trusted global energy intelligence",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://aurora-energy.com/",
+          "canonical": "aurora-energy.com/",
+          "domain": "aurora-energy.com",
+          "title": "Commercial Solar | MD, DC, VA - Aurora Energy | Commercial Solar ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.auroraenergy.com.au/",
+          "canonical": "auroraenergy.com.au/",
+          "domain": "auroraenergy.com.au",
+          "title": "Aurora Energy: Tasmania's Leading Energy Retailer",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.linkedin.com/company/aurora-energy-research-north-america",
+          "canonical": "linkedin.com/company/aurora-energy-research-north-america",
+          "domain": "linkedin.com",
+          "title": "Aurora Energy Research - Americas | LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.energysage.com/supplier/20401/aurora-energy-inc/",
+          "canonical": "energysage.com/supplier/20401/aurora-energy-inc",
+          "domain": "energysage.com",
+          "title": "Aurora Energy, Inc. - Profile & Reviews - 2026 - EnergySage",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.energyexemplar.com/aurora",
+          "canonical": "energyexemplar.com/aurora",
+          "domain": "energyexemplar.com",
+          "title": "Aurora Energy Forecasting and Analysis Software",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.builtinaustin.com/company/aurora-energy-research",
+          "canonical": "builtinaustin.com/company/aurora-energy-research",
+          "domain": "builtinaustin.com",
+          "title": "Aurora Energy Research Offices - Built In Austin",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "regional_press",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.linkedin.com/company/aurora-energy-inc.",
+          "canonical": "linkedin.com/company/aurora-energy-inc.",
+          "domain": "linkedin.com",
+          "title": "Aurora Energy, Inc.",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.tencosolar.net/",
+          "canonical": "tencosolar.net/",
+          "domain": "tencosolar.net",
+          "title": "TENCO SOLAR: Commercial Solar Installers",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.linkedin.com/company/tencosolar",
+          "canonical": "linkedin.com/company/tencosolar",
+          "domain": "linkedin.com",
+          "title": "TENCO SOLAR - LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.yelp.com/biz/tenco-solar-anaheim",
+          "canonical": "yelp.com/biz/tenco-solar-anaheim",
+          "domain": "yelp.com",
+          "title": "TENCO SOLAR - Updated June 2026 - 20 Photos & 21 Reviews - Yelp",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.energybusinessreview.com/tenco-solar",
+          "canonical": "energybusinessreview.com/tenco-solar",
+          "domain": "energybusinessreview.com",
+          "title": "TENCO SOLAR | Top Solar Photovoltaic Services Company 2023",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        }
+      ],
+      "meta": {
+        "queriesRun": [
+          "commercial solar installation companies",
+          "solar panel installers for businesses",
+          "commercial vs residential solar installation providers",
+          "wholesale commercial solar installation services",
+          "Solar Landscape",
+          "Earthlight Technologies",
+          "Aurora Energy",
+          "TENCO SOLAR",
+          "Shoreline Solar",
+          "commercial solar installation companies (magazine OR journal OR association OR \"solar installer\")",
+          "commercial solar installation companies (\"local news\" OR \"now open\" OR \"solar project\")",
+          "commercial solar installation companies (discussion OR forum OR \"solar owners\")",
+          "commercial solar installation companies intitle:forum"
+        ],
+        "rawSourceCount": 98,
+        "results": 80
+      }
+    },
+    "operators": {
+      "sources": [
+        {
+          "url": "https://solarlandscape.com/",
+          "canonical": "solarlandscape.com/",
+          "domain": "solarlandscape.com",
+          "title": "Solar Landscape | Commercial Rooftop Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarmeusa.com/services/commercial-solar-installation",
+          "canonical": "solarmeusa.com/services/commercial-solar-installation",
+          "domain": "solarmeusa.com",
+          "title": "Commercial Solar Installation Company In NJ",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.earthlighttech.com/commercial-solar/",
+          "canonical": "earthlighttech.com/commercial-solar",
+          "domain": "earthlighttech.com",
+          "title": "Commercial Solar Installation in CT & MA - Earthlight Technologies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aurora-energy.com/baltimore-commercial-solar-company/",
+          "canonical": "aurora-energy.com/baltimore-commercial-solar-company",
+          "domain": "aurora-energy.com",
+          "title": "Baltimore Commercial Solar Company - Aurora Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tencosolar.net/commercial-solar",
+          "canonical": "tencosolar.net/commercial-solar",
+          "domain": "tencosolar.net",
+          "title": "Commercial Solar Installation & Design | TENCO SOLAR",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.kcgreenenergy.com/service-areas/new-jersey/",
+          "canonical": "kcgreenenergy.com/service-areas/new-jersey",
+          "domain": "kcgreenenergy.com",
+          "title": "Solar Installation in New Jersey | Residential & Commercial",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mnseia.org/find-installer",
+          "canonical": "mnseia.org/find-installer",
+          "domain": "mnseia.org",
+          "title": "Find an Installer - MnSEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarreviews.com/solar-companies/new-jersey",
+          "canonical": "solarreviews.com/solar-companies/new-jersey",
+          "domain": "solarreviews.com",
+          "title": "7 Best Solar Companies in New Jersey (2026 Top Solar Installers)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sunwiseusa.com/",
+          "canonical": "sunwiseusa.com/",
+          "domain": "sunwiseusa.com",
+          "title": "Solar Panel Installation Company in Cherry Hill NJ | Sunwise",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://greenpowerenergy.com/commercial-programs/",
+          "canonical": "greenpowerenergy.com/commercial-programs",
+          "domain": "greenpowerenergy.com",
+          "title": "Commercial Solar Panel Installations | 15+ Years Experience",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://allbaysolar.com/",
+          "canonical": "allbaysolar.com/",
+          "domain": "allbaysolar.com",
+          "title": "Bay Area Solar Installation, Energy Storage, Roofing & Construction",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solartribune.com/your-home/solar-companies/california/bay-area/",
+          "canonical": "solartribune.com/your-home/solar-companies/california/bay-area",
+          "domain": "solartribune.com",
+          "title": "Best Solar Companies in Bay Area - Solar Tribune",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.americanarraysolar.com/solar/solar-contractors-alameda/",
+          "canonical": "americanarraysolar.com/solar/solar-contractors-alameda",
+          "domain": "americanarraysolar.com",
+          "title": "Alameda Solar Contractors - Residential & Commercial Solar Panel ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose/",
+          "canonical": "simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose",
+          "domain": "simmitri.com",
+          "title": "San Jose Commercial Solar Energy Company - Simmitri",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.comsolaraz.com/",
+          "canonical": "comsolaraz.com/",
+          "domain": "comsolaraz.com",
+          "title": "Commercial Solar Arizona: Commercial & Industrial Solar Contractors",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://westcoastsolarenergy.com/commercial-solar/",
+          "canonical": "westcoastsolarenergy.com/commercial-solar",
+          "domain": "westcoastsolarenergy.com",
+          "title": "Commercial Solar Panels in CA - Westcoast Solar Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=opeLHC369HQ",
+          "canonical": "youtube.com/watch?v=opeLHC369HQ",
+          "domain": "youtube.com",
+          "title": "Commercial Solar ROI (Watch Before Installing Solar!) - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://citadelrs.com/commercial/solar/",
+          "canonical": "citadelrs.com/commercial/solar",
+          "domain": "citadelrs.com",
+          "title": "Commercial Solar Panel System Installation - Citadel Roofing & Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://renewepi.com/orange-ca-county/",
+          "canonical": "renewepi.com/orange-ca-county",
+          "domain": "renewepi.com",
+          "title": "Orange County - Commercial Solar Energy Company",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.okie.solar/solar-company-tulsa/",
+          "canonical": "okie.solar/solar-company-tulsa",
+          "domain": "okie.solar",
+          "title": "Residential & Commercial Solar Company in Tulsa - Okie Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarpaneltalk.com/",
+          "canonical": "solarpaneltalk.com/",
+          "domain": "solarpaneltalk.com",
+          "title": "Solar Panels Forum: Forums - Solar Panels",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/solarobjections/",
+          "canonical": "facebook.com/groups/solarobjections",
+          "domain": "facebook.com",
+          "title": "Solar Community Forum (formerly Solar Objections) | Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://forum.cleanenergyreviews.info/t/solar-power-dc-metro-northern-virginia/528",
+          "canonical": "forum.cleanenergyreviews.info/t/solar-power-dc-metro-northern-virginia/528",
+          "domain": "forum.cleanenergyreviews.info",
+          "title": "Solar Power DC Metro, Northern Virginia",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://diysolarforum.com/",
+          "canonical": "diysolarforum.com/",
+          "domain": "diysolarforum.com",
+          "title": "DIY Solar Power Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://community.ases.org/communities/community-home/digestviewer/viewthread?MessageKey=c8d60f29-e508-4213-8971-8a148ed36550&CommunityKey=c6070e36-6969-4c68-a4d4-3f7844c89ba5",
+          "canonical": "community.ases.org/communities/community-home/digestviewer/viewthread?MessageKey=c8d60f29-e508-4213-8971-8a148ed36550&CommunityKey=c6070e36-6969-4c68-a4d4-3f7844c89ba5",
+          "domain": "community.ases.org",
+          "title": "American home solar “experience” | Everything Solar Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://lucidowners.com/threads/solar-panel-and-company-recommendations.2470/",
+          "canonical": "lucidowners.com/threads/solar-panel-and-company-recommendations.2470",
+          "domain": "lucidowners.com",
+          "title": "Solar panel and company recommendations",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mygrandrv.com/threads/looking-for-solar-installer.63770/",
+          "canonical": "mygrandrv.com/threads/looking-for-solar-installer.63770",
+          "domain": "mygrandrv.com",
+          "title": "looking for solar installer - Grand Design RV Forum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.woodmac.com/events/north-american-power-renewables-forum/",
+          "canonical": "woodmac.com/events/north-american-power-renewables-forum",
+          "domain": "woodmac.com",
+          "title": "North American Power & Renewables Forum 2027 - Wood Mackenzie",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.solarpaneltalk.com/forum/solar/the-pros-and-cons-of-solar-energy/21751-solar-companies-vs-private-contractor",
+          "canonical": "solarpaneltalk.com/forum/solar/the-pros-and-cons-of-solar-energy/21751-solar-companies-vs-private-contractor",
+          "domain": "solarpaneltalk.com",
+          "title": "Solar Companies vs Private Contractor - Solar Panels Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.facebook.com/groups/solarobjections/posts/3221366114683467/",
+          "canonical": "facebook.com/groups/solarobjections/posts/3221366114683467",
+          "domain": "facebook.com",
+          "title": "Solar Community Forum (formerly Solar Objections) - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/solarobjections/posts/3541222249364517/",
+          "canonical": "facebook.com/groups/solarobjections/posts/3541222249364517",
+          "domain": "facebook.com",
+          "title": "What are the best commercial solar companies in MD, DE, and PA?",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://forum.solar-electric.com/categories/pv-installers-forum-nec-wiring-installation",
+          "canonical": "forum.solar-electric.com/categories/pv-installers-forum-nec-wiring-installation",
+          "domain": "forum.solar-electric.com",
+          "title": "PV Installers Forum - NEC, Wiring, Installation",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.timesunion.com/best/map/best-solar-companies-albany/",
+          "canonical": "timesunion.com/best/map/best-solar-companies-albany",
+          "domain": "timesunion.com",
+          "title": "The Best Solar Companies Near Albany - Times Union",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.comalli.com/energy-services/solar-installation/",
+          "canonical": "comalli.com/energy-services/solar-installation",
+          "domain": "comalli.com",
+          "title": "Albany, NY Solar Installation | Comalli Group, Inc.",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Homes/Choosing-a-Contractor/Residential-Installers",
+          "canonical": "nyserda.ny.gov/All-Programs/NY-Sun/On-site-Solar/Homes/Choosing-a-Contractor/Residential-Installers",
+          "domain": "nyserda.ny.gov",
+          "title": "Residential & Small Commercial Solar Contractors - nyserda - NY.Gov",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/349151699180460/",
+          "canonical": "facebook.com/groups/349151699180460",
+          "domain": "facebook.com",
+          "title": "Solar and Roofing Town Forum | Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=euOonc2RFhU",
+          "canonical": "youtube.com/watch?v=euOonc2RFhU",
+          "domain": "youtube.com",
+          "title": "Avoid Solar Industry Scams! w/ Alternative Methods to Install a ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://seia.org/research-resources/solar-means-business/",
+          "canonical": "seia.org/research-resources/solar-means-business",
+          "domain": "seia.org",
+          "title": "Solar Means Business 2024 - SEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pv-magazine-usa.com/",
+          "canonical": "pv-magazine-usa.com/",
+          "domain": "pv-magazine-usa.com",
+          "title": "pv magazine USA: US Solar News & Renewable Energy Insights",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarmagazine.com/",
+          "canonical": "solarmagazine.com/",
+          "domain": "solarmagazine.com",
+          "title": "Solar Magazine | Solar Industry News and Insights",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarlandscape.com/news/inc-magazine-names-solar-landscape-best-in-business-2023/",
+          "canonical": "solarlandscape.com/news/inc-magazine-names-solar-landscape-best-in-business-2023",
+          "domain": "solarlandscape.com",
+          "title": "Inc. Magazine Names Solar Landscape \"Best in Business 2023\"",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.pvresources.com/en/periodicals/periodicals.php",
+          "canonical": "pvresources.com/en/periodicals/periodicals.php",
+          "domain": "pvresources.com",
+          "title": "Photovoltaic & Renewable Energy Magazines in English Language",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://midwestrenew.org/business-member-directory/",
+          "canonical": "midwestrenew.org/business-member-directory",
+          "domain": "midwestrenew.org",
+          "title": "Business Member Directory - Midwest Renewable Energy Association",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ases.org/the-evolution-of-commercial-solar-lessons-from-discontinued-solar-brands/",
+          "canonical": "ases.org/the-evolution-of-commercial-solar-lessons-from-discontinued-solar-brands",
+          "domain": "ases.org",
+          "title": "The Evolution of Commercial Solar: Lessons from Discontinued ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.renewableenergymagazine.com/",
+          "canonical": "renewableenergymagazine.com/",
+          "domain": "renewableenergymagazine.com",
+          "title": "Renewable energy magazine",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solar-distribution-us.baywa-re.com/solar-r-e-view-magazine/the-current/commercial-solar-podcast-a-view-of-the-market-for-installers-exploring-the-field/",
+          "canonical": "solar-distribution-us.baywa-re.com/solar-r-e-view-magazine/the-current/commercial-solar-podcast-a-view-of-the-market-for-installers-exploring-the-field",
+          "domain": "solar-distribution-us.baywa-re.com",
+          "title": "Commercial Solar Podcast: A View of the Market for Installers ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.slideshare.net/slideshow/top-corporatesolar/14252362",
+          "canonical": "slideshare.net/slideshow/top-corporatesolar/14252362",
+          "domain": "slideshare.net",
+          "title": "Solar Means Business: Top Commercial Solar Customers in the U.S.",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://americas.rwe.com/our-energy/solar-energy/commercial-and-industrial-solar/",
+          "canonical": "americas.rwe.com/our-energy/solar-energy/commercial-and-industrial-solar",
+          "domain": "americas.rwe.com",
+          "title": "Commercial & Industrial Solar | RWE in the Americas",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarpowerworldonline.com/2024-top-commercial-solar-contractors/",
+          "canonical": "solarpowerworldonline.com/2024-top-commercial-solar-contractors",
+          "domain": "solarpowerworldonline.com",
+          "title": "2024 Top Commercial Solar Contractors",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://cedarcreekenergy.com/",
+          "canonical": "cedarcreekenergy.com/",
+          "domain": "cedarcreekenergy.com",
+          "title": "Minnesota Solar Energy Company - MN Solar System Installers",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fsg.com/solar/",
+          "canonical": "fsg.com/solar",
+          "domain": "fsg.com",
+          "title": "Commercial Solar Installation & Power Solutions - FSG",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://hesrenewables.com/commercial-solar/",
+          "canonical": "hesrenewables.com/commercial-solar",
+          "domain": "hesrenewables.com",
+          "title": "Commercial Solar - HES Renewables",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.masscec.com/resources/commercial-solar-information-hub",
+          "canonical": "masscec.com/resources/commercial-solar-information-hub",
+          "domain": "masscec.com",
+          "title": "Commercial Solar Information Hub | MassCEC",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.paradisesolarenergy.com/",
+          "canonical": "paradisesolarenergy.com/",
+          "domain": "paradisesolarenergy.com",
+          "title": "Solar Panel Installations for Commercial, Farms & Homes | Paradise ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.investopedia.com/10-biggest-solar-companies-5077655",
+          "canonical": "investopedia.com/10-biggest-solar-companies-5077655",
+          "domain": "investopedia.com",
+          "title": "10 Biggest Solar Companies - Investopedia",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.positiveenergysolar.com/",
+          "canonical": "positiveenergysolar.com/",
+          "domain": "positiveenergysolar.com",
+          "title": "Positive Energy Solar: Local Solar Company in Albuquerque ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.srpnet.com/energy-savings-rebates/business/renewable-energy-solutions/installing-solar-panels",
+          "canonical": "srpnet.com/energy-savings-rebates/business/renewable-energy-solutions/installing-solar-panels",
+          "domain": "srpnet.com",
+          "title": "Getting and installing solar panels at your business - SRP",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://stellarsolar.net/",
+          "canonical": "stellarsolar.net/",
+          "domain": "stellarsolar.net",
+          "title": "Stellar Solar: San Diego's Best Solar Installation Company",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.namastesolar.com/commercial/commercial-industrial/",
+          "canonical": "namastesolar.com/commercial/commercial-industrial",
+          "domain": "namastesolar.com",
+          "title": "Commercial Solar Installations",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://recsolar.com/commercial-solar-in-hawaii/",
+          "canonical": "recsolar.com/commercial-solar-in-hawaii",
+          "domain": "recsolar.com",
+          "title": "Commercial Solar Provider in Hawai'i",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "solarlandscape.com",
+          "solarmeusa.com",
+          "earthlighttech.com",
+          "aurora-energy.com",
+          "tencosolar.net",
+          "kcgreenenergy.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "sources": [
+        {
+          "url": "https://solarlandscape.com/",
+          "canonical": "solarlandscape.com/",
+          "domain": "solarlandscape.com",
+          "title": "Solar Landscape | Commercial Rooftop Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarmeusa.com/services/commercial-solar-installation",
+          "canonical": "solarmeusa.com/services/commercial-solar-installation",
+          "domain": "solarmeusa.com",
+          "title": "Commercial Solar Installation Company In NJ",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.earthlighttech.com/commercial-solar/",
+          "canonical": "earthlighttech.com/commercial-solar",
+          "domain": "earthlighttech.com",
+          "title": "Commercial Solar Installation in CT & MA - Earthlight Technologies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aurora-energy.com/baltimore-commercial-solar-company/",
+          "canonical": "aurora-energy.com/baltimore-commercial-solar-company",
+          "domain": "aurora-energy.com",
+          "title": "Baltimore Commercial Solar Company - Aurora Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tencosolar.net/commercial-solar",
+          "canonical": "tencosolar.net/commercial-solar",
+          "domain": "tencosolar.net",
+          "title": "Commercial Solar Installation & Design | TENCO SOLAR",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.kcgreenenergy.com/service-areas/new-jersey/",
+          "canonical": "kcgreenenergy.com/service-areas/new-jersey",
+          "domain": "kcgreenenergy.com",
+          "title": "Solar Installation in New Jersey | Residential & Commercial",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mnseia.org/find-installer",
+          "canonical": "mnseia.org/find-installer",
+          "domain": "mnseia.org",
+          "title": "Find an Installer - MnSEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarreviews.com/solar-companies/new-jersey",
+          "canonical": "solarreviews.com/solar-companies/new-jersey",
+          "domain": "solarreviews.com",
+          "title": "7 Best Solar Companies in New Jersey (2026 Top Solar Installers)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sunwiseusa.com/",
+          "canonical": "sunwiseusa.com/",
+          "domain": "sunwiseusa.com",
+          "title": "Solar Panel Installation Company in Cherry Hill NJ | Sunwise",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://greenpowerenergy.com/commercial-programs/",
+          "canonical": "greenpowerenergy.com/commercial-programs",
+          "domain": "greenpowerenergy.com",
+          "title": "Commercial Solar Panel Installations | 15+ Years Experience",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://allbaysolar.com/",
+          "canonical": "allbaysolar.com/",
+          "domain": "allbaysolar.com",
+          "title": "Bay Area Solar Installation, Energy Storage, Roofing & Construction",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solartribune.com/your-home/solar-companies/california/bay-area/",
+          "canonical": "solartribune.com/your-home/solar-companies/california/bay-area",
+          "domain": "solartribune.com",
+          "title": "Best Solar Companies in Bay Area - Solar Tribune",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.americanarraysolar.com/solar/solar-contractors-alameda/",
+          "canonical": "americanarraysolar.com/solar/solar-contractors-alameda",
+          "domain": "americanarraysolar.com",
+          "title": "Alameda Solar Contractors - Residential & Commercial Solar Panel ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose/",
+          "canonical": "simmitri.com/service-areas/california/san-jose/commercial-solar-energy-san-jose",
+          "domain": "simmitri.com",
+          "title": "San Jose Commercial Solar Energy Company - Simmitri",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.comsolaraz.com/",
+          "canonical": "comsolaraz.com/",
+          "domain": "comsolaraz.com",
+          "title": "Commercial Solar Arizona: Commercial & Industrial Solar Contractors",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://westcoastsolarenergy.com/commercial-solar/",
+          "canonical": "westcoastsolarenergy.com/commercial-solar",
+          "domain": "westcoastsolarenergy.com",
+          "title": "Commercial Solar Panels in CA - Westcoast Solar Energy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=opeLHC369HQ",
+          "canonical": "youtube.com/watch?v=opeLHC369HQ",
+          "domain": "youtube.com",
+          "title": "Commercial Solar ROI (Watch Before Installing Solar!) - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://citadelrs.com/commercial/solar/",
+          "canonical": "citadelrs.com/commercial/solar",
+          "domain": "citadelrs.com",
+          "title": "Commercial Solar Panel System Installation - Citadel Roofing & Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://renewepi.com/orange-ca-county/",
+          "canonical": "renewepi.com/orange-ca-county",
+          "domain": "renewepi.com",
+          "title": "Orange County - Commercial Solar Energy Company",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.okie.solar/solar-company-tulsa/",
+          "canonical": "okie.solar/solar-company-tulsa",
+          "domain": "okie.solar",
+          "title": "Residential & Commercial Solar Company in Tulsa - Okie Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.johnmillselectric.com/commercial-industrial/solar/commercial-solar-installation/",
+          "canonical": "johnmillselectric.com/commercial-industrial/solar/commercial-solar-installation",
+          "domain": "johnmillselectric.com",
+          "title": "Commercial Solar Installation in Twin Tiers, NY",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aurora-energy.com/why-commercial-solar-installation-is-a-smart-investment-for-businesses/",
+          "canonical": "aurora-energy.com/why-commercial-solar-installation-is-a-smart-investment-for-businesses",
+          "domain": "aurora-energy.com",
+          "title": "Why Commercial Solar Installation is a Smart Investment for ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://manufyn.com/resources/solar/industries-specific/commercial-solar-installation/",
+          "canonical": "manufyn.com/resources/solar/industries-specific/commercial-solar-installation",
+          "domain": "manufyn.com",
+          "title": "Commercial Solar Installation Guide for Businesses - Manufyn",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.linkedin.com/top-content/technology/renewable-and-alternative-energy-options/commercial-solar-installation-and-maintenance-guide/",
+          "canonical": "linkedin.com/top-content/technology/renewable-and-alternative-energy-options/commercial-solar-installation-and-maintenance-guide",
+          "domain": "linkedin.com",
+          "title": "Commercial Solar Installation and Maintenance Guide - LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false
+        },
+        {
+          "url": "https://mirasolsolar.com/commercial-solar-solar-by-mirasol-solar/",
+          "canonical": "mirasolsolar.com/commercial-solar-solar-by-mirasol-solar",
+          "domain": "mirasolsolar.com",
+          "title": "Commercial Solar Installation | Mirasol Solar Solutions",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.theguardian.com/sustainable-business/commercial-solar-energy-installation-uk",
+          "canonical": "theguardian.com/sustainable-business/commercial-solar-energy-installation-uk",
+          "domain": "theguardian.com",
+          "title": "Why the UK lags behind in commercial solar installation | Governance",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher theguardian.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DUp3L6HkqrP/",
+          "canonical": "instagram.com/reel/DUp3L6HkqrP",
+          "domain": "instagram.com",
+          "title": "£2.1 million Supports net zero goals, energy independence & CSR ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://sunergysolutionsllc.com/commercial-solar-companies/",
+          "canonical": "sunergysolutionsllc.com/commercial-solar-companies",
+          "domain": "sunergysolutionsllc.com",
+          "title": "A List of Leading Commercial Solar Installation Companies",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.linkedin.com/posts/gl-electrical_glsolar-commercialsolar-solarcasestudy-activity-7441812625102962690-4i1H",
+          "canonical": "linkedin.com/posts/gl-electrical_glsolar-commercialsolar-solarcasestudy-activity-7441812625102962690-4i1H",
+          "domain": "linkedin.com",
+          "title": "131kW Commercial Solar Installation in Salford with Trinasolar and ...",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false
+        },
+        {
+          "url": "https://northeastautomotivealliance.com/ar-power-complete-commercial-solar-installation-for-smd/",
+          "canonical": "northeastautomotivealliance.com/ar-power-complete-commercial-solar-installation-for-smd",
+          "domain": "northeastautomotivealliance.com",
+          "title": "AR Power complete commercial solar installation for SMD",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarvisionai.com/commercial-solar-panel-installation/",
+          "canonical": "solarvisionai.com/commercial-solar-panel-installation",
+          "domain": "solarvisionai.com",
+          "title": "Engineering Guide 2026 (Costs, Design & ROI) - Solar Panels",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://vocal.media/journal/a-step-by-step-guide-on-commercial-solar-panel-installation-process",
+          "canonical": "vocal.media/journal/a-step-by-step-guide-on-commercial-solar-panel-installation-process",
+          "domain": "vocal.media",
+          "title": "A Step By Step Guide on Commercial Solar Panel Installation Process",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.scribd.com/document/887933159/Part-6-Installation-Procedures",
+          "canonical": "scribd.com/document/887933159/Part-6-Installation-Procedures",
+          "domain": "scribd.com",
+          "title": "Solar Power System Installation Guide | PDF - Scribd",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.smsupplies.com/blogs/green-energy-solutions/solarguide",
+          "canonical": "smsupplies.com/blogs/green-energy-solutions/solarguide",
+          "domain": "smsupplies.com",
+          "title": "Empower Your Business: Our Step by Step Solar Installation Guide",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solahartgoldcoast.com.au/blog/the-guide-to-commercial-solar-panel-installation/",
+          "canonical": "solahartgoldcoast.com.au/blog/the-guide-to-commercial-solar-panel-installation",
+          "domain": "solahartgoldcoast.com.au",
+          "title": "The Guide to Commercial Solar Panel Installation",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.linkedin.com/posts/jasonohrum_commercialsolar-solarenergy-pennsylvania-activity-7451960049314418689-jEJc",
+          "canonical": "linkedin.com/posts/jasonohrum_commercialsolar-solarenergy-pennsylvania-activity-7451960049314418689-jEJc",
+          "domain": "linkedin.com",
+          "title": "TPO Roof Solar Installation Guide for Commercial Buildings | Jason ...",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false
+        },
+        {
+          "url": "https://solarmeusa.com/blog/commercial-solar-for-nj-businesses-what-owners-and-property-managers-need-to-know",
+          "canonical": "solarmeusa.com/blog/commercial-solar-for-nj-businesses-what-owners-and-property-managers-need-to-know",
+          "domain": "solarmeusa.com",
+          "title": "Commercial Solar NJ: A Guide for Business Owners | Solar Me",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://energize-solar.co.uk/the-best-types-of-solar-panels-for-commercial-use-in-the-uk/",
+          "canonical": "energize-solar.co.uk/the-best-types-of-solar-panels-for-commercial-use-in-the-uk",
+          "domain": "energize-solar.co.uk",
+          "title": "The Best Types of Solar Panels for Commercial Use in the UK",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://advancesolar.com/blog/",
+          "canonical": "advancesolar.com/blog",
+          "domain": "advancesolar.com",
+          "title": "Florida Solar Panel Tips, Guides & Energy Insights",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://washingtonsolarauthority.com/washington-solar-energy-for-commercial-properties/",
+          "canonical": "washingtonsolarauthority.com/washington-solar-energy-for-commercial-properties",
+          "domain": "washingtonsolarauthority.com",
+          "title": "Solar Energy Systems for Commercial Properties in Washington",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://seia.org/research-resources/solar-market-insight-report-2024-year-in-review/",
+          "canonical": "seia.org/research-resources/solar-market-insight-report-2024-year-in-review",
+          "domain": "seia.org",
+          "title": "Solar Market Insight Report 2024 Year in Review – SEIA",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://researchrepository.wvu.edu/cgi/viewcontent.cgi?article=1207&context=rri_pubs",
+          "canonical": "researchrepository.wvu.edu/cgi/viewcontent.cgi?article=1207&context=rri_pubs",
+          "domain": "researchrepository.wvu.edu",
+          "title": "[PDF] How U.S. States Attract Solar Investments from Large Corporations",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://icma.org/sites/default/files/306503_Sunshot%20Solar%20Outreach%20Partnership-Gainesville.pdf",
+          "canonical": "icma.org/sites/default/files/306503_Sunshot%20Solar%20Outreach%20Partnership-Gainesville.pdf",
+          "domain": "icma.org",
+          "title": "[PDF] Sunshot Solar Outreach Partnership Case Study: Gainesville, Florida",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mapc.org/wp-content/uploads/2017/10/Solar-Permitting-and-Zoning-Bylaw-Guidance.pdf",
+          "canonical": "mapc.org/wp-content/uploads/2017/10/Solar-Permitting-and-Zoning-Bylaw-Guidance.pdf",
+          "domain": "mapc.org",
+          "title": "[PDF] Solar Permitting and Zoning Bylaw Guidance",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ourenergypolicy.org/wp-content/uploads/2014/04/ABB.pdf",
+          "canonical": "ourenergypolicy.org/wp-content/uploads/2014/04/ABB.pdf",
+          "domain": "ourenergypolicy.org",
+          "title": "[PDF] Ensuring Success In Global Utility Solar PV Projects - OurEnergyPolicy",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://seia.org/wp-content/uploads/2025/03/SMI-2024-YIR-ES.pdf",
+          "canonical": "seia.org/wp-content/uploads/2025/03/SMI-2024-YIR-ES.pdf",
+          "domain": "seia.org",
+          "title": "[PDF] US solar market insight executive summary",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://peer.asee.org/enlightened-education-solar-engineering-design-to-energize-school-facilities.pdf",
+          "canonical": "peer.asee.org/enlightened-education-solar-engineering-design-to-energize-school-facilities.pdf",
+          "domain": "peer.asee.org",
+          "title": "[PDF] Solar Engineering Design to Energize School Facilities - ASEE PEER",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "http://www.acgov.org/board/bos_calendar/documents/DocsAgendaReg_10_19_20/GENERAL%20ADMINISTRATION/Regular%20Calendar/Draft_solar_policies_AC_ECAP_10_19_20.pdf",
+          "canonical": "acgov.org/board/bos_calendar/documents/DocsAgendaReg_10_19_20/GENERAL%20ADMINISTRATION/Regular%20Calendar/Draft_solar_policies_AC_ECAP_10_19_20.pdf",
+          "domain": "acgov.org",
+          "title": "[PDF] ALAMEDA COUNTY COMMUNITY DEVELOPMENT AGENCY",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://dx.doi.org/10.1108/BEPAM-11-2018-0151?icid=int.sj-abstract.citing-articles.1",
+          "canonical": "dx.doi.org/10.1108/BEPAM-11-2018-0151?icid=int.sj-abstract.citing-articles.1",
+          "domain": "dx.doi.org",
+          "title": "Renewable energy sources and technologies in commercial buildings",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.amherstindy.org/2024/05/03/reservations-remain-about-shutesbury-road-solar-project/",
+          "canonical": "amherstindy.org/2024/05/03/reservations-remain-about-shutesbury-road-solar-project",
+          "domain": "amherstindy.org",
+          "title": "Reservations Remain about Shutesbury Road Solar Project",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://freedomsolarpower.com/portfolio/commercial",
+          "canonical": "freedomsolarpower.com/portfolio/commercial",
+          "domain": "freedomsolarpower.com",
+          "title": "Commercial Projects - Freedom Solar Power",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://chariotenergy.com/blog/the-benefits-of-professional-commercial-solar-panel-installation/",
+          "canonical": "chariotenergy.com/blog/the-benefits-of-professional-commercial-solar-panel-installation",
+          "domain": "chariotenergy.com",
+          "title": "The Benefits Of Professional Commercial Solar Panel Installation",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coherentmarketinsights.com/industry-reports/commercial-solar-pv-market",
+          "canonical": "coherentmarketinsights.com/industry-reports/commercial-solar-pv-market",
+          "domain": "coherentmarketinsights.com",
+          "title": "Commercial Solar PV Market Size, Trends & Forecast, 2025-2032",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.scribd.com/document/726610763/OD4494-20Solar-20Panel-20Installation-20in-20the-20US-20Industry-20Report",
+          "canonical": "scribd.com/document/726610763/OD4494-20Solar-20Panel-20Installation-20in-20the-20US-20Industry-20Report",
+          "domain": "scribd.com",
+          "title": "US Solar Panel Installation Trends 2023 | PDF - Scribd",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/txsolarandstorage/posts/26575947408686672/",
+          "canonical": "facebook.com/groups/txsolarandstorage/posts/26575947408686672",
+          "domain": "facebook.com",
+          "title": "Our new commercial solar installation in South Central Texas",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://ir.sunation.com/news-events/press-releases/detail/67/pineapple-energy-subsidiary-sunation-is-named-top-new",
+          "canonical": "ir.sunation.com/news-events/press-releases/detail/67/pineapple-energy-subsidiary-sunation-is-named-top-new",
+          "domain": "ir.sunation.com",
+          "title": "Pineapple Energy Subsidiary SUNation Is Named Top New York ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tandfonline.com/doi/abs/10.1080/09692290.2026.2640905",
+          "canonical": "tandfonline.com/doi/abs/10.1080/09692290.2026.2640905",
+          "domain": "tandfonline.com",
+          "title": "Does manufacturing matter? Foreign investment and local linkages ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://berner.com/news/berner-goes-solar/",
+          "canonical": "berner.com/news/berner-goes-solar",
+          "domain": "berner.com",
+          "title": "Berner Goes Solar",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://provisionsolar.com/hilo-commercial-solar-installation/",
+          "canonical": "provisionsolar.com/hilo-commercial-solar-installation",
+          "domain": "provisionsolar.com",
+          "title": "Hilo Commercial Solar Installation",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://labusinessjournal.com/weekly/sungreen-integrates-energy-management-solar-instal/",
+          "canonical": "labusinessjournal.com/weekly/sungreen-integrates-energy-management-solar-instal",
+          "domain": "labusinessjournal.com",
+          "title": "SunGreen Integrates Energy Management With Solar Installation for ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://emp.lbl.gov/news/webinar-announcement-commercial",
+          "canonical": "emp.lbl.gov/news/webinar-announcement-commercial",
+          "domain": "emp.lbl.gov",
+          "title": "Commercial Rooftop Solar Energy Market Installation Trends",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://seia.org/research-resources/solar-means-business/",
+          "canonical": "seia.org/research-resources/solar-means-business",
+          "domain": "seia.org",
+          "title": "Solar Means Business 2024 - SEIA",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nlr.gov/solar/market-research-analysis/solar-energy-innovation-network-round-3",
+          "canonical": "nlr.gov/solar/market-research-analysis/solar-energy-innovation-network-round-3",
+          "domain": "nlr.gov",
+          "title": "Solar for Households, Small Business, and Nonprofits: Solar Energy ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://colitetech.com/blog/category/webinar/",
+          "canonical": "colitetech.com/blog/category/webinar",
+          "domain": "colitetech.com",
+          "title": "Webinar | Commercial Solar Installation | Save with Colite ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://empower-solar.com/en/blog/empower-s-commercial-solar-webinar/",
+          "canonical": "empower-solar.com/en/blog/empower-s-commercial-solar-webinar",
+          "domain": "empower-solar.com",
+          "title": "EmPower's Commercial Solar Webinar - EmPower Solar",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://clean-coalition.org/news/webinar-paec-solar-siting-surveys/",
+          "canonical": "clean-coalition.org/news/webinar-paec-solar-siting-surveys",
+          "domain": "clean-coalition.org",
+          "title": "Webinar: How Solar Siting Surveys identify the potential for local ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.solarplaza.com/resources/?query=&resource_type=Webinar",
+          "canonical": "solarplaza.com/resources?query=&resource_type=Webinar",
+          "domain": "solarplaza.com",
+          "title": "Resources - Solarplaza",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sustainableenergyaction.org/clean-energy-webinar-and-resource-center/",
+          "canonical": "sustainableenergyaction.org/clean-energy-webinar-and-resource-center",
+          "domain": "sustainableenergyaction.org",
+          "title": "Clean Energy Webinar and Resource Center",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://icma.org/events/solarscale-webinar-series",
+          "canonical": "icma.org/events/solarscale-webinar-series",
+          "domain": "icma.org",
+          "title": "Solar@Scale Webinar Series | icma.org",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/OfficialGIKI/posts/webinar-designing-solar-pv-systems-using-open-source-toolsthe-session-will-focus/1280302724124778/",
+          "canonical": "facebook.com/OfficialGIKI/posts/webinar-designing-solar-pv-systems-using-open-source-toolsthe-session-will-focus/1280302724124778",
+          "domain": "facebook.com",
+          "title": "Webinar: Designing Solar PV Systems Using Open Source Tools ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.crowngasandpower.co.uk/commercial-solar-installation/",
+          "canonical": "crowngasandpower.co.uk/commercial-solar-installation",
+          "domain": "crowngasandpower.co.uk",
+          "title": "Commercial Solar Installation - Crown Gas & Power",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://arsolutions.us/commercial-solar-installation/",
+          "canonical": "arsolutions.us/commercial-solar-installation",
+          "domain": "arsolutions.us",
+          "title": "Commercial Solar Installation | Solar Panel Installers for Businesses",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://vocal.media/lifehack/can-solar-panels-be-installed-in-commercial-buildings",
+          "canonical": "vocal.media/lifehack/can-solar-panels-be-installed-in-commercial-buildings",
+          "domain": "vocal.media",
+          "title": "Can Solar Panels Be Installed in Commercial Buildings? | Lifehack",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.qualis.energy/post/financing-commercial-solar-installation-in-doncaster-the-2026-business-guide",
+          "canonical": "qualis.energy/post/financing-commercial-solar-installation-in-doncaster-the-2026-business-guide",
+          "domain": "qualis.energy",
+          "title": "Financing Commercial Solar Installation in Doncaster: The 2026 ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://solarpanelsforschools.co.uk/locations/scotland",
+          "canonical": "solarpanelsforschools.co.uk/locations/scotland",
+          "domain": "solarpanelsforschools.co.uk",
+          "title": "Solar Panels for Schools in Scotland",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://carijournals.org/journals/JE/article/download/3498/4095/9682?srsltid=AfmBOoqypZvrs22uUUKK1S1GbcnEd6z4rGugVtVNYsMCYhuumkph9hIC",
+          "canonical": "carijournals.org/journals/JE/article/download/3498/4095/9682?srsltid=AfmBOoqypZvrs22uUUKK1S1GbcnEd6z4rGugVtVNYsMCYhuumkph9hIC",
+          "domain": "carijournals.org",
+          "title": "[PDF] Challenges, Policies, and Opportunities in Large Scale Solar Energy ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ageconsearch.umn.edu/record/274449/files/Abstracts_18_05_23_14_06_36_06__157_182_56_175_0.pdf",
+          "canonical": "ageconsearch.umn.edu/record/274449/files/Abstracts_18_05_23_14_06_36_06__157_182_56_175_0.pdf",
+          "domain": "ageconsearch.umn.edu",
+          "title": "[PDF] How states attract solar investments from large corporations Jed ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://blog.constructionmarketingassociation.org/set-solar-panels-commercial-building/",
+          "canonical": "blog.constructionmarketingassociation.org/set-solar-panels-commercial-building",
+          "domain": "blog.constructionmarketingassociation.org",
+          "title": "How To Set Up Solar Panels In A Commercial Building",
+          "category": "trade_pub",
+          "signal": "association/standards path signal",
+          "longTail": true
+        }
+      ],
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"commercial solar installation\" AND (industry association OR standards body) -vendor -product",
+          "\"commercial solar installation\" intitle:guide OR manual -company -buy -price",
+          "\"commercial solar installation\" site:.org OR site:.edu (regional report OR local case study) -blog -forum",
+          "\"commercial solar installation\" AND (trade publication OR journal) AND (2023 OR 2024) -amazon -ebay",
+          "\"commercial solar installation\" inurl:conference OR inurl:webinar OR inurl:research -sales -quote",
+          "\"commercial solar installation\" AND (regional news OR local government) -site:.com -site:.net"
+        ],
+        "results": 80
+      }
+    }
+  }
+}

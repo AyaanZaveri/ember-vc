@@ -1,0 +1,620 @@
+{
+  "discovery": {
+    "query": "commercial espresso machine manufacturers",
+    "queriesRun": [
+      "commercial espresso machine manufacturers",
+      "top brands of espresso machines for cafes and restaurants",
+      "commercial vs residential espresso machine suppliers",
+      "wholesale commercial espresso machine manufacturers"
+    ],
+    "rawSourceCount": 35,
+    "classifiedSources": [
+      {
+        "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+        "title": "Commercial Espresso Machines | Pro Coffee Gear",
+        "description": "Pro Coffee Gear carries commercial espresso machines from the brands that define the category: La Cimbali, Nuova Simonelli, Sanremo, Rocket Espresso, Wega, ...",
+        "foundVia": [
+          "commercial espresso machine manufacturers",
+          "top brands of espresso machines for cafes and restaurants",
+          "commercial vs residential espresso machine suppliers",
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+        "title": "New Commercial Espresso Machines",
+        "description": "Experience the latest in coffee innovation with our new arrivals of espresso machines, featuring brands like Sanremo, LA Marzocco, and Victoria Arduino.",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://lamarzoccousa.com/",
+        "title": "La Marzocco USA - Handmade in Florence",
+        "description": "Espresso machines and grinders trusted by the world's finest coffee roasters, cafès, and restaurants for their reliability, durability, and timeless aesthetics.",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "manufacturer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+        "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+        "description": "Commercial espresso machines and grinders from La Marzocco, Mahlkönig, and Rocket. Curated for cafés and mobile coffee businesses.",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+        "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+        "description": "To meet the needs of cafes and coffee shops, we've carefully selected a list of top-notch espresso machine manufacturers: Astoria, La Marzocco, Nuova Simonelli, ...",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+        "title": "Commercial Espresso Machines | Ascaso USA",
+        "description": "Ascaso commercial espresso machines—Barista T Plus 2G & 3G and Baby T Plus—offer café-grade performance, precise temperature, and durable design.",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+        "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+        "description": "Shop professional Espresso Machines for cafés or home use. Premium brands, expert setup, and reliable service from Artizan Coffee.",
+        "foundVia": [
+          "commercial espresso machine manufacturers",
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+        "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+        "description": "Commercial Semi-automatic Espresso Machines ; Nuova Simonelli (4) ; Rancilio (9) ; Rocket Espresso (3) ; Victoria Arduino (3).",
+        "foundVia": [
+          "commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+        "title": "Italian Commercial Espresso Machines",
+        "description": "Buy professional commercial espresso machines for your business. Browse Top Italian Espresso Maker brands & get the Best Professional Coffee Machine. Shop now!",
+        "foundVia": [
+          "commercial espresso machine manufacturers",
+          "commercial vs residential espresso machine suppliers",
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOorxEFtMY1Br1hEeIbpmwLwPCQ8jxzgR6pr29Xm__z4EJ7uW0AGr",
+        "title": "Best Commercial Espresso Machines for Cafes in 2026",
+        "description": "You'll find Nuova Simonelli, Victoria Arduino, Kees Van Der Westen, Rocket Espresso, and Slayer — each selected for shot quality, build ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "vendor_blog",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://coffeegeek.com/opinions/state-of-coffee/the-best-espresso-machine/",
+        "title": "The Best Espresso Machine - CoffeeGeek",
+        "description": "The La Marzocco GS3. One is the Lelit Bianca V3 espresso machine. It's the Breville Bambino Plus. your top machines are Breville brands.",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "vendor_blog",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.coffeemachinedepot.com/collections/commercial-espresso-machines?srsltid=AfmBOooDmoXKgs2DuCLuEaJqDjsCTlU4nhQ5J9ycgA9hBTWczooLAkOa",
+        "title": "Commercial Espresso Machines",
+        "description": "Explore commercial espresso machines from brands like La Marzocco, Nuova Simonelli, Victoria Arduino, and Rocket Espresso and elevate your espresso.",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants",
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.seriouseats.com/best-espresso-machines-5185482",
+        "title": "The 14 Best Espresso Machines of 2026, Tested & Reviewed",
+        "description": "Our favorite espresso machine is the Breville Bambino Plus. We also highly recommend the Breville Barista Express Impress, worthy of any café. ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "mainstream_press",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.quora.com/What-are-some-good-commercial-espresso-machines-for-a-coffee-shop-or-restaurant",
+        "title": "What are some good commercial espresso machines for a coffee ...",
+        "description": "Solid commercial espresso machines are Sanremo and Elektra for shop durability. SUBMINIMAL commercial grade tools boost them as a wonderful ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "community_forum",
+        "matches": true,
+        "confidence": "high",
+        "extractable": false,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=_eCuy8pzgqM",
+        "title": "Best Coffee Machine for Small Business & Coffee Trailers ... - YouTube",
+        "description": "We use a Simonelli Musica on our trailer. Our daily sales range between $200-$400 (up to $1,000 during events) and, for a single group ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants",
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "other",
+        "matches": false,
+        "confidence": "high",
+        "extractable": false,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.wholelattelove.com/blogs/reviews/the-best-espresso-machine?srsltid=AfmBOortCdYsOUX61tBeF9h0tE29jTC0Q-9gCn5W3kiizsY0pTKlgKVZ",
+        "title": "Best Espresso Machine: the Final, Definitive Answer",
+        "description": "Top Espresso Machine Brands · Gaggia · ECM · Profitec · Solis · JURA · Rocket ... cafe-quality drink. Brian also mentioned the Stone Lite's style ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "vendor_blog",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOopuaWhRRl09zDQrLsvas69vGB74cnCtMKnH1P0bUhaOXunHlcPD",
+        "title": "Best Espresso Machine Brands W/Free Shipping",
+        "description": "Our top espresso machine brands include La Marzocco, Sanremo, Schaerer, Synesso, Astoria, Mavam, Modbar, Nuova Simonelli, Rocket, Slayer, Victoria Arduino and ...",
+        "foundVia": [
+          "top brands of espresso machines for cafes and restaurants"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.coffeeforums.com/threads/home-use-vs-commercial-use-espresso-makers.3518/",
+        "title": "HOme use Vs Commercial use Espresso makers - Coffee Forums",
+        "description": "As home use Espresso makers is about 5-10 times cheaper than commercial use Espresso makers. May I know the difference in term of quality of the ...",
+        "foundVia": [
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "niche_forum",
+        "matches": true,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://idealcoffeemachines.com/our-blogs/home-vs-commercial-coffee-machines-brewed-for-different-worlds",
+        "title": "Home Vs Commercial Coffee Machines: Brewed for Different Worlds",
+        "description": "The domestic coffee machines are best suited for lazy and quiet mornings in a home kitchen. The commercial coffee machines are made in order to serve the ...",
+        "foundVia": [
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "vendor_blog",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.quora.com/What-is-the-difference-between-a-home-espresso-machine-and-a-commercial-espresso-machine",
+        "title": "What is the difference between a home espresso machine ... - Quora",
+        "description": "COMMERCIAL coffee machine can make 100+ cups in a day, whereas domestic coffee machine are capable of 10–15days per day. brewing technology : ...",
+        "foundVia": [
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "community_forum",
+        "matches": true,
+        "confidence": "high",
+        "extractable": false,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.home-barista.com/advice/commercial-espresso-machines-worth-buying-for-home-use-t72209.html",
+        "title": "Commercial espresso machines worth buying for home use",
+        "description": "The only reason a home user should ever spring for a commercial machine is if it's something special to them and not because it could be found at a hefty ...",
+        "foundVia": [
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "niche_forum",
+        "matches": true,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.seattlecoffeegear.com/blogs/scg-blog/what-separates-commercial-espresso-machines?srsltid=AfmBOorTBdLtjrO_XptlZ4mZVEZN33BQ9xtK4uJ1D_f_ATFxQ4mNJCVS",
+        "title": "What Separates Commercial Espresso Machines?",
+        "description": "A Place for Everything. The first myth to dispel here is that commercial machines are just higher quality versions of what you can buy for home.",
+        "foundVia": [
+          "commercial vs residential espresso machine suppliers"
+        ],
+        "category": "vendor_blog",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://passportcoffee.com/collections/espresso-machines-equipment-passport-coffee",
+        "title": "Espresso Machines & Equipment - Passport Coffee & Tea",
+        "description": "Our collection features the most trusted names in espresso: La Marzocco, Victoria Arduino, and Nuova Simonelli — the same brands powering top cafés and coffee ...",
+        "foundVia": [
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOopznizYmK3TfamKQX0S4HgexDs7_AB31H4DRgXYJvynt-Buvnfg",
+        "title": "Coffee Machine Depot: Commercial Espresso Machines & Coffee ...",
+        "description": "400+ commercial & home espresso machines in stock. Free consultation, financing available. Authorized La Marzocco, Nuova Simonelli & more.",
+        "foundVia": [
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://laprima.com/pages/equipment?srsltid=AfmBOorC6KZ3LrfnzHIyjqHFn1CIgTRJ5mBjEqilqp1iYDk5XzNiVwEV",
+        "title": "Wholesale Coffee Supplier & Equipment | La Prima Espresso Co.",
+        "description": "We offer wholesale coffee beans and commercial espresso machine service for restaurants and cafes. -leading equipment from La Cimbali, Nuova Simonelli, Fetco, ...",
+        "foundVia": [
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://espressooutlet.com/?srsltid=AfmBOooS3dCqhALU30iEF73_E00aV_8XM1uK6a7-JfsamvmefVJwKXe4",
+        "title": "Espresso Outlet LLC - Espresso Machines & Grinders for Home ...",
+        "description": "Espresso Outlet LLC is the exclusive USA distributor of Turin Grinders, Kaleido Roasters, and Wendougee coffee equipment brands. Let customers speak for us.",
+        "foundVia": [
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      },
+      {
+        "url": "https://tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopU3CEBpcLLl-tl8d3VoVgPVCCulW2y_f2dNt-wHBcoOWECUc7f",
+        "title": "Commercial Espresso Super-Auto Machines",
+        "description": "Browse our huge selection of commercial espresso machines, and feel free to ask any questions you might have.",
+        "foundVia": [
+          "wholesale commercial espresso machine manufacturers"
+        ],
+        "category": "retailer",
+        "matches": false,
+        "confidence": "high",
+        "extractable": true,
+        "parseFailed": false
+      }
+    ]
+  },
+  "report": {
+    "query": "commercial espresso machine manufacturers",
+    "queriesRun": [
+      "commercial espresso machine manufacturers",
+      "top brands of espresso machines for cafes and restaurants",
+      "commercial vs residential espresso machine suppliers",
+      "wholesale commercial espresso machine manufacturers"
+    ],
+    "profileInclude": [
+      "trade_pub",
+      "regional_press",
+      "community_forum",
+      "niche_forum"
+    ],
+    "totalSourcesFound": 27,
+    "droppedCount": 23,
+    "byCategory": [
+      {
+        "category": "trade_pub",
+        "wanted": true,
+        "count": 0,
+        "sources": []
+      },
+      {
+        "category": "regional_press",
+        "wanted": true,
+        "count": 0,
+        "sources": []
+      },
+      {
+        "category": "mainstream_press",
+        "wanted": false,
+        "count": 1,
+        "sources": [
+          {
+            "url": "https://www.seriouseats.com/best-espresso-machines-5185482",
+            "title": "The 14 Best Espresso Machines of 2026, Tested & Reviewed",
+            "confidence": "high",
+            "extractable": true
+          }
+        ]
+      },
+      {
+        "category": "community_forum",
+        "wanted": true,
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://www.quora.com/What-are-some-good-commercial-espresso-machines-for-a-coffee-shop-or-restaurant",
+            "title": "What are some good commercial espresso machines for a coffee ...",
+            "confidence": "high",
+            "extractable": false
+          },
+          {
+            "url": "https://www.quora.com/What-is-the-difference-between-a-home-espresso-machine-and-a-commercial-espresso-machine",
+            "title": "What is the difference between a home espresso machine ... - Quora",
+            "confidence": "high",
+            "extractable": false
+          }
+        ]
+      },
+      {
+        "category": "niche_forum",
+        "wanted": true,
+        "count": 2,
+        "sources": [
+          {
+            "url": "https://www.coffeeforums.com/threads/home-use-vs-commercial-use-espresso-makers.3518/",
+            "title": "HOme use Vs Commercial use Espresso makers - Coffee Forums",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.home-barista.com/advice/commercial-espresso-machines-worth-buying-for-home-use-t72209.html",
+            "title": "Commercial espresso machines worth buying for home use",
+            "confidence": "high",
+            "extractable": true
+          }
+        ]
+      },
+      {
+        "category": "manufacturer",
+        "wanted": false,
+        "count": 1,
+        "sources": [
+          {
+            "url": "https://lamarzoccousa.com/",
+            "title": "La Marzocco USA - Handmade in Florence",
+            "confidence": "high",
+            "extractable": true
+          }
+        ]
+      },
+      {
+        "category": "retailer",
+        "wanted": false,
+        "count": 15,
+        "sources": [
+          {
+            "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+            "title": "Commercial Espresso Machines | Pro Coffee Gear",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+            "title": "New Commercial Espresso Machines",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+            "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+            "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+            "title": "Commercial Espresso Machines | Ascaso USA",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+            "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+            "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+            "title": "Italian Commercial Espresso Machines",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.coffeemachinedepot.com/collections/commercial-espresso-machines?srsltid=AfmBOooDmoXKgs2DuCLuEaJqDjsCTlU4nhQ5J9ycgA9hBTWczooLAkOa",
+            "title": "Commercial Espresso Machines",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOopuaWhRRl09zDQrLsvas69vGB74cnCtMKnH1P0bUhaOXunHlcPD",
+            "title": "Best Espresso Machine Brands W/Free Shipping",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://passportcoffee.com/collections/espresso-machines-equipment-passport-coffee",
+            "title": "Espresso Machines & Equipment - Passport Coffee & Tea",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOopznizYmK3TfamKQX0S4HgexDs7_AB31H4DRgXYJvynt-Buvnfg",
+            "title": "Coffee Machine Depot: Commercial Espresso Machines & Coffee ...",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://laprima.com/pages/equipment?srsltid=AfmBOorC6KZ3LrfnzHIyjqHFn1CIgTRJ5mBjEqilqp1iYDk5XzNiVwEV",
+            "title": "Wholesale Coffee Supplier & Equipment | La Prima Espresso Co.",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://espressooutlet.com/?srsltid=AfmBOooS3dCqhALU30iEF73_E00aV_8XM1uK6a7-JfsamvmefVJwKXe4",
+            "title": "Espresso Outlet LLC - Espresso Machines & Grinders for Home ...",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopU3CEBpcLLl-tl8d3VoVgPVCCulW2y_f2dNt-wHBcoOWECUc7f",
+            "title": "Commercial Espresso Super-Auto Machines",
+            "confidence": "high",
+            "extractable": true
+          }
+        ]
+      },
+      {
+        "category": "vendor_blog",
+        "wanted": false,
+        "count": 5,
+        "sources": [
+          {
+            "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOorxEFtMY1Br1hEeIbpmwLwPCQ8jxzgR6pr29Xm__z4EJ7uW0AGr",
+            "title": "Best Commercial Espresso Machines for Cafes in 2026",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://coffeegeek.com/opinions/state-of-coffee/the-best-espresso-machine/",
+            "title": "The Best Espresso Machine - CoffeeGeek",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.wholelattelove.com/blogs/reviews/the-best-espresso-machine?srsltid=AfmBOortCdYsOUX61tBeF9h0tE29jTC0Q-9gCn5W3kiizsY0pTKlgKVZ",
+            "title": "Best Espresso Machine: the Final, Definitive Answer",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://idealcoffeemachines.com/our-blogs/home-vs-commercial-coffee-machines-brewed-for-different-worlds",
+            "title": "Home Vs Commercial Coffee Machines: Brewed for Different Worlds",
+            "confidence": "high",
+            "extractable": true
+          },
+          {
+            "url": "https://www.seattlecoffeegear.com/blogs/scg-blog/what-separates-commercial-espresso-machines?srsltid=AfmBOorTBdLtjrO_XptlZ4mZVEZN33BQ9xtK4uJ1D_f_ATFxQ4mNJCVS",
+            "title": "What Separates Commercial Espresso Machines?",
+            "confidence": "high",
+            "extractable": true
+          }
+        ]
+      },
+      {
+        "category": "other",
+        "wanted": false,
+        "count": 1,
+        "sources": [
+          {
+            "url": "https://www.youtube.com/watch?v=_eCuy8pzgqM",
+            "title": "Best Coffee Machine for Small Business & Coffee Trailers ... - YouTube",
+            "confidence": "high",
+            "extractable": false
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      "trade_pub",
+      "regional_press"
+    ],
+    "thin": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "aggregate": {
+    "baseline": {
+      "totalExtractableLongTail": 0,
+      "totalLongTail": 2,
+      "meanLongTailFraction": 0.017,
+      "totalCategoryCoverage": 2
+    },
+    "operators": {
+      "totalExtractableLongTail": 32,
+      "totalLongTail": 34,
+      "meanLongTailFraction": 0.24,
+      "totalCategoryCoverage": 8
+    },
+    "llm-operators": {
+      "totalExtractableLongTail": 8,
+      "totalLongTail": 11,
+      "meanLongTailFraction": 0.06,
+      "totalCategoryCoverage": 8
+    },
+    "ember": {
+      "totalExtractableLongTail": 4,
+      "totalLongTail": 5,
+      "meanLongTailFraction": 0.065,
+      "totalCategoryCoverage": 3
+    }
+  }
+}

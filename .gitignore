@@ -34,3 +34,10 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code local config — never commit (contains local paths/permissions)
+.claude/
+
+# Python
+__pycache__/
+*.pyc

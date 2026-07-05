@@ -1,0 +1,2503 @@
+{
+  "query": "commercial espresso machine manufacturers",
+  "slug": "espresso",
+  "generatedAt": "2026-07-04T23:41:30.539Z",
+  "results": {
+    "baseline": {
+      "sources": [
+        {
+          "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "canonical": "procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "domain": "procoffeegear.com",
+          "title": "Commercial Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "canonical": "coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "domain": "coffeemachinedepot.com",
+          "title": "New Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso/",
+          "canonical": "reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso",
+          "domain": "reddit.com",
+          "title": "What's everyone's favourite commercial espresso machine? : r/Coffee",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://lamarzoccousa.com/",
+          "canonical": "lamarzoccousa.com/",
+          "domain": "lamarzoccousa.com",
+          "title": "La Marzocco USA - Handmade in Florence",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzoccousa.com",
+          "longTail": false
+        },
+        {
+          "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "canonical": "clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "domain": "clivecoffee.com",
+          "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "canonical": "prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "domain": "prima-coffee.com",
+          "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "canonical": "ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "domain": "ascaso-usa.com",
+          "title": "Commercial Espresso Machines | Ascaso USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "canonical": "artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "domain": "artizancoffee.com",
+          "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "canonical": "seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "domain": "seattlecoffeegear.com",
+          "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "domain": "chriscoffee.com",
+          "title": "Italian Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine/",
+          "canonical": "reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine",
+          "domain": "reddit.com",
+          "title": "Which Commercial Espresso Machine…",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "canonical": "coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "domain": "coffeemachinedepot.com",
+          "title": "Coffee Machine Depot: Commercial Espresso Machines ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "canonical": "fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "domain": "fostercoffee.co",
+          "title": "Unveiling the Best Commercial Espresso Machine Brands",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "canonical": "voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Shop Espresso Machines W/Free Shipping",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands/",
+          "canonical": "azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands",
+          "domain": "azcoffeeshops.com",
+          "title": "Top Commercial Espresso Machine Brands (Pricing & Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ranciliogroup.com/",
+          "canonical": "ranciliogroup.com/",
+          "domain": "ranciliogroup.com",
+          "title": "Rancilio Group: The best Italian espresso coffe machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "canonical": "procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "domain": "procoffeegear.com",
+          "title": "Pro Coffee Gear: Espresso Machine Supplier - Coffee ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "canonical": "youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "domain": "youtube.com",
+          "title": "The BEST Espresso Machines for Coffee Carts in 2025",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://lamarzoccousa.com/commercial-products/espresso-machines/",
+          "canonical": "lamarzoccousa.com/commercial-products/espresso-machines",
+          "domain": "lamarzoccousa.com",
+          "title": "Espresso Machines - La Marzocco USA",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzoccousa.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeeness.de/en/best-commercial-espresso-machine/",
+          "canonical": "coffeeness.de/en/best-commercial-espresso-machine",
+          "domain": "coffeeness.de",
+          "title": "Best Commercial Espresso Machines in 2026: Our Top 6 Picks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "canonical": "blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "domain": "blog.busybeancoffee.com",
+          "title": "Compare the top commercial espresso machine brands in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOopc1rZimtrpQKkysA0QfVuSaGenzEZIARxiSOazcXzFC-7utUcO",
+          "canonical": "thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOopc1rZimtrpQKkysA0QfVuSaGenzEZIARxiSOazcXzFC-7utUcO",
+          "domain": "thehorecastore.com",
+          "title": "Top Commercial Espresso Machine Brands for Cafes - HorecaStore",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://kaldi.com/collections/coffee-shop-equipment/commercial-espresso-machines?srsltid=AfmBOoq_uGbfiPavnuhBFVtS1cYBK22OOSKqd5nUIE4xN9Ru5r82GLoy",
+          "canonical": "kaldi.com/collections/coffee-shop-equipment/commercial-espresso-machines?srsltid=AfmBOoq_uGbfiPavnuhBFVtS1cYBK22OOSKqd5nUIE4xN9Ru5r82GLoy",
+          "domain": "kaldi.com",
+          "title": "Commercial Coffee Shop Equipment & Café Supplies | Kaldi.com",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://coffeebroker.net/commercial-coffee-machines.html",
+          "canonical": "coffeebroker.net/commercial-coffee-machines.html",
+          "domain": "coffeebroker.net",
+          "title": "Commercial Coffee Machines | Buy or Lease | San Fernando Valley",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/?srsltid=AfmBOor7R4wF4-3aUvCuFWvhDH6fR4m2lmilGa08s18sHE4KTyZg3E_x",
+          "canonical": "chriscoffee.com/?srsltid=AfmBOor7R4wF4-3aUvCuFWvhDH6fR4m2lmilGa08s18sHE4KTyZg3E_x",
+          "domain": "chriscoffee.com",
+          "title": "Chris' Coffee: Coffee Machine Suppliers",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/espresso-machines-made-in-the-usa?srsltid=AfmBOoqUxuhSnFEAJ2_-U0PgciJPymlUJSrN5aihb-r5YsPL-rvDUou8",
+          "canonical": "voltagecoffeesupply.com/collections/espresso-machines-made-in-the-usa?srsltid=AfmBOoqUxuhSnFEAJ2_-U0PgciJPymlUJSrN5aihb-r5YsPL-rvDUou8",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Espresso Machines Made in the USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "http://magisterespresso.com/",
+          "canonical": "magisterespresso.com/",
+          "domain": "magisterespresso.com",
+          "title": "Magister Espresso: Commercial Espresso Coffee Machine ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.amazon.com/Commercial-Espresso-Machines-Coffee-Makers/b?ie=UTF8&node=5315101011",
+          "canonical": "amazon.com/Commercial-Espresso-Machines-Coffee-Makers/b?ie=UTF8&node=5315101011",
+          "domain": "amazon.com",
+          "title": "Commercial Espresso Machines & Coffee Makers - Amazon.com",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOooPpWcBDiE4AvXk82-_AwyR-OpeIregI5NJgaUXjrWtBSy99Fq7",
+          "canonical": "voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOooPpWcBDiE4AvXk82-_AwyR-OpeIregI5NJgaUXjrWtBSy99Fq7",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Best Espresso Machine Brands W/Free Shipping",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/?srsltid=AfmBOoqIWBeKbpRklTTpeisRG2oh1yy6wzUaj_dZ_G2u-ittH9tUdk-j",
+          "canonical": "seattlecoffeegear.com/?srsltid=AfmBOoqIWBeKbpRklTTpeisRG2oh1yy6wzUaj_dZ_G2u-ittH9tUdk-j",
+          "domain": "seattlecoffeegear.com",
+          "title": "Seattle Coffee Gear: Espresso Machines | Coffee Beans | Reviews",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://anthonysespresso.com/collections/commercial?srsltid=AfmBOopZngCIknFeaSwY0kJyJ_4EixnrN0-uataw9R2CBQ1f_Iri_Ohc",
+          "canonical": "anthonysespresso.com/collections/commercial?srsltid=AfmBOopZngCIknFeaSwY0kJyJ_4EixnrN0-uataw9R2CBQ1f_Iri_Ohc",
+          "domain": "anthonysespresso.com",
+          "title": "Commercial Espresso Machines in Canada",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.1st-line.com/shop/espresso-equipment/espresso-machines/cafe-espresso-machines/?srsltid=AfmBOoqsN4GiBRCvywHJkXzsVRm01Yls9RaDxehsD1kE1-ZRpJSF5zo1",
+          "canonical": "1st-line.com/shop/espresso-equipment/espresso-machines/cafe-espresso-machines?srsltid=AfmBOoqsN4GiBRCvywHJkXzsVRm01Yls9RaDxehsD1kE1-ZRpJSF5zo1",
+          "domain": "1st-line.com",
+          "title": "Commercial Espresso Machines - 1st Line",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://coffeeexpressco.com/espresso-machines-grinders/",
+          "canonical": "coffeeexpressco.com/espresso-machines-grinders",
+          "domain": "coffeeexpressco.com",
+          "title": "Commercial Espresso Machines | Michigan",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1hlfDmTddNg",
+          "canonical": "youtube.com/watch?v=1hlfDmTddNg",
+          "domain": "youtube.com",
+          "title": "A Guide To Buying A Commercial Espresso Machine (Victoria ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://capitalcityroasters.com/product-category/commercial-espresso-machines/?srsltid=AfmBOor0w2mi90Woc4XyeQwn39XQfmw9BJu2cR5BkFno8IlqtAMGJn3L",
+          "canonical": "capitalcityroasters.com/product-category/commercial-espresso-machines?srsltid=AfmBOor0w2mi90Woc4XyeQwn39XQfmw9BJu2cR5BkFno8IlqtAMGJn3L",
+          "domain": "capitalcityroasters.com",
+          "title": "Commercial Espresso Machines - Capital City Coffee Roasters",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.webstaurantstore.com/13977/cappuccino-espresso-machines.html?srsltid=AfmBOoojFCHyQPR72HdNsb-RIWXzfkceUAiOdOFsZ8dpt7s_uaCsCPoB",
+          "canonical": "webstaurantstore.com/13977/cappuccino-espresso-machines.html?srsltid=AfmBOoojFCHyQPR72HdNsb-RIWXzfkceUAiOdOFsZ8dpt7s_uaCsCPoB",
+          "domain": "webstaurantstore.com",
+          "title": "Cappuccino / Espresso Machines - WebstaurantStore",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ameritalia.com/",
+          "canonical": "ameritalia.com/",
+          "domain": "ameritalia.com",
+          "title": "Buy Affordable Automatic Commercial Espresso Machines in USA at ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://mrespresso.com/all-commercial/",
+          "canonical": "mrespresso.com/all-commercial",
+          "domain": "mrespresso.com",
+          "title": "All Commercial - Mr. Espresso",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://majestycoffee.com/collections/commercial-espresso-machines",
+          "canonical": "majestycoffee.com/collections/commercial-espresso-machines",
+          "domain": "majestycoffee.com",
+          "title": "Commercial Espresso Machines - Majesty Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://beanandbrewtech.com/?srsltid=AfmBOoqTGr7nRyeoQGjJwZfgcOV3aHMM9tKPQ0mfcJFMujQXbrgoLpB7",
+          "canonical": "beanandbrewtech.com/?srsltid=AfmBOoqTGr7nRyeoQGjJwZfgcOV3aHMM9tKPQ0mfcJFMujQXbrgoLpB7",
+          "domain": "beanandbrewtech.com",
+          "title": "Commercial Coffee Equipment Sales & Service - NJ, NY, CT",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://machina-coffee.com/pages/commercial-espresso-machine-buying-guide?srsltid=AfmBOopaZuprVO3cRbj8RaMHoNfixyExxiAlD_6bPBAO7EhO1wfbWhrf",
+          "canonical": "machina-coffee.com/pages/commercial-espresso-machine-buying-guide?srsltid=AfmBOopaZuprVO3cRbj8RaMHoNfixyExxiAlD_6bPBAO7EhO1wfbWhrf",
+          "domain": "machina-coffee.com",
+          "title": "Commercial Espresso Machine Buying Guide",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.wuxiswf.com/blog/Top-3-Popular-Commercial-Espresso-Machine-Manufacturers-in-America4",
+          "canonical": "wuxiswf.com/blog/Top-3-Popular-Commercial-Espresso-Machine-Manufacturers-in-America4",
+          "domain": "wuxiswf.com",
+          "title": "Top 3 Popular Commercial Espresso Machine Manufacturers in ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.espressoparts.com/blogs/news/best-commercial-espresso-machines?srsltid=AfmBOorKLgkOxLaWZ9mZARDnOqV68GZiqgpwieTjzLQ--_6t4JjuqBnk",
+          "canonical": "espressoparts.com/blogs/news/best-commercial-espresso-machines?srsltid=AfmBOorKLgkOxLaWZ9mZARDnOqV68GZiqgpwieTjzLQ--_6t4JjuqBnk",
+          "domain": "espressoparts.com",
+          "title": "8 Best Commercial Espresso Machines for Cafés & Businesses ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.espressoplus.com/",
+          "canonical": "espressoplus.com/",
+          "domain": "espressoplus.com",
+          "title": "Commercial Coffee Machines | Commercial Espresso Machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://supramatic.com/",
+          "canonical": "supramatic.com/",
+          "domain": "supramatic.com",
+          "title": "Supramatic Inc. > Commercial Coffee and Espresso Machines Canada",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.veracoffeesolutions.com/?srsltid=AfmBOopFOSb9Edg6Sv7rtvXqeVhliT-tSzObHZAN7al2FWfGkNxcLvLh",
+          "canonical": "veracoffeesolutions.com/?srsltid=AfmBOopFOSb9Edg6Sv7rtvXqeVhliT-tSzObHZAN7al2FWfGkNxcLvLh",
+          "domain": "veracoffeesolutions.com",
+          "title": "Vera Coffee Solutions: The Commercial Espresso Coffee Machine ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://aramarkrefreshments.com/explore-products/equipment/brewers",
+          "canonical": "aramarkrefreshments.com/explore-products/equipment/brewers",
+          "domain": "aramarkrefreshments.com",
+          "title": "Commercial Coffee Machines For Office | Fresh Brew Coffee Systems",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "sources": [
+        {
+          "url": "https://www.home-barista.com/advice/commercial-espresso-machines-worth-buying-for-home-use-t72209.html",
+          "canonical": "home-barista.com/advice/commercial-espresso-machines-worth-buying-for-home-use-t72209.html",
+          "domain": "home-barista.com",
+          "title": "Commercial espresso machines worth buying for home use",
+          "category": "niche_forum",
+          "signal": "specialist forum home-barista.com",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.instagram.com/reel/C7NHzmrS4wV/",
+          "canonical": "instagram.com/reel/C7NHzmrS4wV",
+          "domain": "instagram.com",
+          "title": "Embark on your coffee journey with confidence! At Coffee Machine ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.kl5coffee.com/",
+          "canonical": "kl5coffee.com/",
+          "domain": "kl5coffee.com",
+          "title": "KL5 — Home",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DZNCaMJGT3_/",
+          "canonical": "instagram.com/reel/DZNCaMJGT3_",
+          "domain": "instagram.com",
+          "title": "The best cafés aren't built with just any coffee machine ... - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://achillescoffeeroasters.com/blogs/specialty-coffee-blog/the-history-of-espresso-from-steam-powered-invention-to-global-coffee-culture?srsltid=AfmBOoosA6o6Q9Co1NH2aHPBMuhequjhogRySuIRGFrH28kMaMxQ9MdW",
+          "canonical": "achillescoffeeroasters.com/blogs/specialty-coffee-blog/the-history-of-espresso-from-steam-powered-invention-to-global-coffee-culture?srsltid=AfmBOoosA6o6Q9Co1NH2aHPBMuhequjhogRySuIRGFrH28kMaMxQ9MdW",
+          "domain": "achillescoffeeroasters.com",
+          "title": "The History of Espresso: From Steam-Powered Invention to Global ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.coffeeforums.com/threads/best-commercial-espresso-machine.6645/",
+          "canonical": "coffeeforums.com/threads/best-commercial-espresso-machine.6645",
+          "domain": "coffeeforums.com",
+          "title": "Best Commercial Espresso Machine? - Coffee Forums",
+          "category": "niche_forum",
+          "signal": "specialist forum coffeeforums.com",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=pMdO7nLeC4g&vl=en",
+          "canonical": "youtube.com/watch?v=pMdO7nLeC4g&vl=en",
+          "domain": "youtube.com",
+          "title": "The Best Coffee Equipment for Every Budget (Small to High Volume)",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://beanandbrewtech.com/blogs/espresso-machines/1-group-vs-2-group-vs-3-group-which-espresso-machine-does-your-business-need?srsltid=AfmBOopsZHmYCptgS-zWEWE3_Z1vXB_03i9AOnxk8SKHXPjRLoQZ3o77",
+          "canonical": "beanandbrewtech.com/blogs/espresso-machines/1-group-vs-2-group-vs-3-group-which-espresso-machine-does-your-business-need?srsltid=AfmBOopsZHmYCptgS-zWEWE3_Z1vXB_03i9AOnxk8SKHXPjRLoQZ3o77",
+          "domain": "beanandbrewtech.com",
+          "title": "1 vs 2 vs 3-Group Espresso Machines: Which Is Right for You?",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Espresso_machine",
+          "canonical": "en.wikipedia.org/wiki/Espresso_machine",
+          "domain": "en.wikipedia.org",
+          "title": "Espresso machine - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.newsfilecorp.com/release/181127/Majesty-Coffee-Reports-a-60-Increase-in-Demand-for-CommercialGrade-Espresso-Equipment-for-Coffee-Trucks-Carts",
+          "canonical": "newsfilecorp.com/release/181127/Majesty-Coffee-Reports-a-60-Increase-in-Demand-for-CommercialGrade-Espresso-Equipment-for-Coffee-Trucks-Carts",
+          "domain": "newsfilecorp.com",
+          "title": "Majesty Coffee Reports a 60% Increase in Demand for Commercial ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://forum.audiogon.com/discussions/ot-espresso-machines/post?postid=2801153",
+          "canonical": "forum.audiogon.com/discussions/ot-espresso-machines/post?postid=2801153",
+          "domain": "forum.audiogon.com",
+          "title": "OT: Espresso machines - Audiogon Discussion Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://coffeetime.freeflarum.com/d/1134-looking-for-next-level-espresso-machine?page=2",
+          "canonical": "coffeetime.freeflarum.com/d/1134-looking-for-next-level-espresso-machine?page=2",
+          "domain": "coffeetime.freeflarum.com",
+          "title": "Looking for next level espresso machine - Coffeetime - FreeFlarum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://forum.slowtwitch.com/t/home-espresso-machine-recommendations/772273",
+          "canonical": "forum.slowtwitch.com/t/home-espresso-machine-recommendations/772273",
+          "domain": "forum.slowtwitch.com",
+          "title": "Home espresso machine recommendations? - Slowtwitch Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.houzz.com/discussions/5545607/should-i-commercial-espresso-machine",
+          "canonical": "houzz.com/discussions/5545607/should-i-commercial-espresso-machine",
+          "domain": "houzz.com",
+          "title": "Should I? Commercial Espresso Machine. | Houzz Forum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "community_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://homeroasters.org/forum/viewforum.php?forum_id=164",
+          "canonical": "homeroasters.org/forum/viewforum.php?forum_id=164",
+          "domain": "homeroasters.org",
+          "title": "Discussion Forum: ALL ABOUT ESPRESSO MACHINES",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.baristaexchange.com/forum/categories/classifieds-1/listForCategory",
+          "canonical": "baristaexchange.com/forum/categories/classifieds-1/listForCategory",
+          "domain": "baristaexchange.com",
+          "title": "Discussion Forum - Barista Exchange",
+          "category": "niche_forum",
+          "signal": "specialist forum baristaexchange.com",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "canonical": "procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "domain": "procoffeegear.com",
+          "title": "Commercial Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "canonical": "coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "domain": "coffeemachinedepot.com",
+          "title": "New Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://lamarzoccousa.com/",
+          "canonical": "lamarzoccousa.com/",
+          "domain": "lamarzoccousa.com",
+          "title": "La Marzocco USA - Handmade in Florence",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzoccousa.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "canonical": "clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "domain": "clivecoffee.com",
+          "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "canonical": "prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "domain": "prima-coffee.com",
+          "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "canonical": "ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "domain": "ascaso-usa.com",
+          "title": "Commercial Espresso Machines | Ascaso USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "canonical": "artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "domain": "artizancoffee.com",
+          "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "canonical": "seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "domain": "seattlecoffeegear.com",
+          "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "domain": "chriscoffee.com",
+          "title": "Italian Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOorxEFtMY1Br1hEeIbpmwLwPCQ8jxzgR6pr29Xm__z4EJ7uW0AGr",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOorxEFtMY1Br1hEeIbpmwLwPCQ8jxzgR6pr29Xm__z4EJ7uW0AGr",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://coffeegeek.com/opinions/state-of-coffee/the-best-espresso-machine/",
+          "canonical": "coffeegeek.com/opinions/state-of-coffee/the-best-espresso-machine",
+          "domain": "coffeegeek.com",
+          "title": "The Best Espresso Machine - CoffeeGeek",
+          "category": "niche_forum",
+          "signal": "specialist forum coffeegeek.com",
+          "longTail": true,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/collections/commercial-espresso-machines?srsltid=AfmBOooDmoXKgs2DuCLuEaJqDjsCTlU4nhQ5J9ycgA9hBTWczooLAkOa",
+          "canonical": "coffeemachinedepot.com/collections/commercial-espresso-machines?srsltid=AfmBOooDmoXKgs2DuCLuEaJqDjsCTlU4nhQ5J9ycgA9hBTWczooLAkOa",
+          "domain": "coffeemachinedepot.com",
+          "title": "Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.seriouseats.com/best-espresso-machines-5185482",
+          "canonical": "seriouseats.com/best-espresso-machines-5185482",
+          "domain": "seriouseats.com",
+          "title": "The 14 Best Espresso Machines of 2026, Tested & Reviewed",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher seriouseats.com",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.quora.com/What-are-some-good-commercial-espresso-machines-for-a-coffee-shop-or-restaurant",
+          "canonical": "quora.com/What-are-some-good-commercial-espresso-machines-for-a-coffee-shop-or-restaurant",
+          "domain": "quora.com",
+          "title": "What are some good commercial espresso machines for a coffee ...",
+          "category": "community_forum",
+          "signal": "community domain quora.com",
+          "longTail": true,
+          "emberCategory": "community_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_eCuy8pzgqM",
+          "canonical": "youtube.com/watch?v=_eCuy8pzgqM",
+          "domain": "youtube.com",
+          "title": "Best Coffee Machine for Small Business & Coffee Trailers ... - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.wholelattelove.com/blogs/reviews/the-best-espresso-machine?srsltid=AfmBOortCdYsOUX61tBeF9h0tE29jTC0Q-9gCn5W3kiizsY0pTKlgKVZ",
+          "canonical": "wholelattelove.com/blogs/reviews/the-best-espresso-machine?srsltid=AfmBOortCdYsOUX61tBeF9h0tE29jTC0Q-9gCn5W3kiizsY0pTKlgKVZ",
+          "domain": "wholelattelove.com",
+          "title": "Best Espresso Machine: the Final, Definitive Answer",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOopuaWhRRl09zDQrLsvas69vGB74cnCtMKnH1P0bUhaOXunHlcPD",
+          "canonical": "voltagecoffeesupply.com/collections/best-espresso-machine-brands?srsltid=AfmBOopuaWhRRl09zDQrLsvas69vGB74cnCtMKnH1P0bUhaOXunHlcPD",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Best Espresso Machine Brands W/Free Shipping",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.coffeeforums.com/threads/home-use-vs-commercial-use-espresso-makers.3518/",
+          "canonical": "coffeeforums.com/threads/home-use-vs-commercial-use-espresso-makers.3518",
+          "domain": "coffeeforums.com",
+          "title": "HOme use Vs Commercial use Espresso makers - Coffee Forums",
+          "category": "niche_forum",
+          "signal": "specialist forum coffeeforums.com",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://idealcoffeemachines.com/our-blogs/home-vs-commercial-coffee-machines-brewed-for-different-worlds",
+          "canonical": "idealcoffeemachines.com/our-blogs/home-vs-commercial-coffee-machines-brewed-for-different-worlds",
+          "domain": "idealcoffeemachines.com",
+          "title": "Home Vs Commercial Coffee Machines: Brewed for Different Worlds",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.quora.com/What-is-the-difference-between-a-home-espresso-machine-and-a-commercial-espresso-machine",
+          "canonical": "quora.com/What-is-the-difference-between-a-home-espresso-machine-and-a-commercial-espresso-machine",
+          "domain": "quora.com",
+          "title": "What is the difference between a home espresso machine ... - Quora",
+          "category": "community_forum",
+          "signal": "community domain quora.com",
+          "longTail": true,
+          "emberCategory": "community_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/blogs/scg-blog/what-separates-commercial-espresso-machines?srsltid=AfmBOorTBdLtjrO_XptlZ4mZVEZN33BQ9xtK4uJ1D_f_ATFxQ4mNJCVS",
+          "canonical": "seattlecoffeegear.com/blogs/scg-blog/what-separates-commercial-espresso-machines?srsltid=AfmBOorTBdLtjrO_XptlZ4mZVEZN33BQ9xtK4uJ1D_f_ATFxQ4mNJCVS",
+          "domain": "seattlecoffeegear.com",
+          "title": "What Separates Commercial Espresso Machines?",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://passportcoffee.com/collections/espresso-machines-equipment-passport-coffee",
+          "canonical": "passportcoffee.com/collections/espresso-machines-equipment-passport-coffee",
+          "domain": "passportcoffee.com",
+          "title": "Espresso Machines & Equipment - Passport Coffee & Tea",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOopznizYmK3TfamKQX0S4HgexDs7_AB31H4DRgXYJvynt-Buvnfg",
+          "canonical": "coffeemachinedepot.com/?srsltid=AfmBOopznizYmK3TfamKQX0S4HgexDs7_AB31H4DRgXYJvynt-Buvnfg",
+          "domain": "coffeemachinedepot.com",
+          "title": "Coffee Machine Depot: Commercial Espresso Machines & Coffee ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://laprima.com/pages/equipment?srsltid=AfmBOorC6KZ3LrfnzHIyjqHFn1CIgTRJ5mBjEqilqp1iYDk5XzNiVwEV",
+          "canonical": "laprima.com/pages/equipment?srsltid=AfmBOorC6KZ3LrfnzHIyjqHFn1CIgTRJ5mBjEqilqp1iYDk5XzNiVwEV",
+          "domain": "laprima.com",
+          "title": "Wholesale Coffee Supplier & Equipment | La Prima Espresso Co.",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://espressooutlet.com/?srsltid=AfmBOooS3dCqhALU30iEF73_E00aV_8XM1uK6a7-JfsamvmefVJwKXe4",
+          "canonical": "espressooutlet.com/?srsltid=AfmBOooS3dCqhALU30iEF73_E00aV_8XM1uK6a7-JfsamvmefVJwKXe4",
+          "domain": "espressooutlet.com",
+          "title": "Espresso Outlet LLC - Espresso Machines & Grinders for Home ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopU3CEBpcLLl-tl8d3VoVgPVCCulW2y_f2dNt-wHBcoOWECUc7f",
+          "canonical": "tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopU3CEBpcLLl-tl8d3VoVgPVCCulW2y_f2dNt-wHBcoOWECUc7f",
+          "domain": "tmwardcoffee.com",
+          "title": "Commercial Espresso Super-Auto Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.lamarzocco.com/it/en/?srsltid=AfmBOopvOgFsoCsahKNu8u0vDX9FL2tQDckjLnjSpqv8-tnWqvq7dx8G",
+          "canonical": "lamarzocco.com/it/en?srsltid=AfmBOopvOgFsoCsahKNu8u0vDX9FL2tQDckjLnjSpqv8-tnWqvq7dx8G",
+          "domain": "lamarzocco.com",
+          "title": "La Marzocco - Handmade in Florence",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzocco.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/La_Marzocco",
+          "canonical": "en.wikipedia.org/wiki/La_Marzocco",
+          "domain": "en.wikipedia.org",
+          "title": "La Marzocco",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/lamarzocco/?hl=en",
+          "canonical": "instagram.com/lamarzocco?hl=en",
+          "domain": "instagram.com",
+          "title": "(@lamarzocco) • Instagram photos and videos",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.lamarzocco.com/fr/en/",
+          "canonical": "lamarzocco.com/fr/en",
+          "domain": "lamarzocco.com",
+          "title": "La Marzocco: Premium espresso machines and grinders",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzocco.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://prima-coffee.com/manufacturers/la-marzocco?srsltid=AfmBOorl74_10gnDh4hEAVWzl8E99lfToLZnrx2XGQ-GjF7YfUfKKrAA",
+          "canonical": "prima-coffee.com/manufacturers/la-marzocco?srsltid=AfmBOorl74_10gnDh4hEAVWzl8E99lfToLZnrx2XGQ-GjF7YfUfKKrAA",
+          "domain": "prima-coffee.com",
+          "title": "la marzocco espresso machines - Prima Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.simonelliusa.com/",
+          "canonical": "simonelliusa.com/",
+          "domain": "simonelliusa.com",
+          "title": "Nuova Simonelli",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://nuovasimonelli.com/en/",
+          "canonical": "nuovasimonelli.com/en",
+          "domain": "nuovasimonelli.com",
+          "title": "Nuova Simonelli - the coffee machines you can trust",
+          "category": "manufacturer",
+          "signal": "manufacturer nuovasimonelli.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://procoffeegear.com/collections/nuova-simonelli?srsltid=AfmBOorl0yEhWmlIIycpsVK4z4mxdU8DT4_6Ob1wE60VDVv4X2ETtpdK",
+          "canonical": "procoffeegear.com/collections/nuova-simonelli?srsltid=AfmBOorl0yEhWmlIIycpsVK4z4mxdU8DT4_6Ob1wE60VDVv4X2ETtpdK",
+          "domain": "procoffeegear.com",
+          "title": "Nuova Simonelli Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/brands/nuova-simonelli/?srsltid=AfmBOooNrnJttrkEazc37dW1lTnnefgkpyteHp0as-CMrNlmnFcJxS2e",
+          "canonical": "visionsespresso.com/espresso-machines/brands/nuova-simonelli?srsltid=AfmBOooNrnJttrkEazc37dW1lTnnefgkpyteHp0as-CMrNlmnFcJxS2e",
+          "domain": "visionsespresso.com",
+          "title": "Commercial Espresso Machines - BRANDS - Nuova Simonelli",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/nuovasimonelliofficial/",
+          "canonical": "instagram.com/nuovasimonelliofficial",
+          "domain": "instagram.com",
+          "title": "Nuova Simonelli Official (@nuovasimonelliofficial) - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=i00i6fIIZ5Y",
+          "canonical": "youtube.com/watch?v=i00i6fIIZ5Y",
+          "domain": "youtube.com",
+          "title": "Nuova Simonelli Musica Coffee Machine Review - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines/nuova-simonelli?srsltid=AfmBOoq9rzaC-0vs2cJGyh2nulJ3qUV8Bx5SrGjiVs-lBuS7edXQnS9R",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines/nuova-simonelli?srsltid=AfmBOoq9rzaC-0vs2cJGyh2nulJ3qUV8Bx5SrGjiVs-lBuS7edXQnS9R",
+          "domain": "chriscoffee.com",
+          "title": "Commercial Espresso Machines - Nuova Simonelli - Chris' Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://rocket-espresso.com/",
+          "canonical": "rocket-espresso.com/",
+          "domain": "rocket-espresso.com",
+          "title": "Rocket Espresso: Home",
+          "category": "manufacturer",
+          "signal": "manufacturer rocket-espresso.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/rocket-espresso?srsltid=AfmBOorcfnLtKzwh8sTdPayWlblKe0MTYfX7xfI8_aLYsgH3nBPSRi8s",
+          "canonical": "seattlecoffeegear.com/collections/rocket-espresso?srsltid=AfmBOorcfnLtKzwh8sTdPayWlblKe0MTYfX7xfI8_aLYsgH3nBPSRi8s",
+          "domain": "seattlecoffeegear.com",
+          "title": "Rocket Espresso: Prosumer Espresso Machines and ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.rocket-espressousa.com/",
+          "canonical": "rocket-espressousa.com/",
+          "domain": "rocket-espressousa.com",
+          "title": "Rocket Espresso USA | Espresso Machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://procoffeegear.com/collections/rocket-espresso?srsltid=AfmBOorNbkeNBmyxtwxS0JfSFBnTG44BoBn0cl_wiMdQtATMXXy-EB_f",
+          "canonical": "procoffeegear.com/collections/rocket-espresso?srsltid=AfmBOorNbkeNBmyxtwxS0JfSFBnTG44BoBn0cl_wiMdQtATMXXy-EB_f",
+          "domain": "procoffeegear.com",
+          "title": "Rocket Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://espressosale.com/collections/rocket-espresso-machines?srsltid=AfmBOoovvEj34O4cZ76ZDUZqycBBDyI_M-xhJdlT69ruFR-aChGS8DjJ",
+          "canonical": "espressosale.com/collections/rocket-espresso-machines?srsltid=AfmBOoovvEj34O4cZ76ZDUZqycBBDyI_M-xhJdlT69ruFR-aChGS8DjJ",
+          "domain": "espressosale.com",
+          "title": "Rocket Espresso Milano",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hq-DEYONzhg&vl=en",
+          "canonical": "youtube.com/watch?v=hq-DEYONzhg&vl=en",
+          "domain": "youtube.com",
+          "title": "We Tested Every Rocket Espresso Machine So You Don't ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/rocketespresso/?hl=en",
+          "canonical": "instagram.com/rocketespresso?hl=en",
+          "domain": "instagram.com",
+          "title": "Rocket Milano S.R.L. (@rocketespresso) · Truccazzano",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://victoriaarduino.com/en/",
+          "canonical": "victoriaarduino.com/en",
+          "domain": "victoriaarduino.com",
+          "title": "Victoria Arduino: Homepage",
+          "category": "manufacturer",
+          "signal": "manufacturer victoriaarduino.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/victoriaarduinoofficial/?hl=en",
+          "canonical": "instagram.com/victoriaarduinoofficial?hl=en",
+          "domain": "instagram.com",
+          "title": "Victoria Arduino Official (@victoriaarduinoofficial) - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://procoffeegear.com/collections/victoria-arduino?srsltid=AfmBOooVgeH8muEcqe96Mdz4eDBqJwXMFIw_Db2-R3gRpyeakuRM0ngH",
+          "canonical": "procoffeegear.com/collections/victoria-arduino?srsltid=AfmBOooVgeH8muEcqe96Mdz4eDBqJwXMFIw_Db2-R3gRpyeakuRM0ngH",
+          "domain": "procoffeegear.com",
+          "title": "Victoria Arduino - Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://spechtdesign.com/collections/victoria-arduino-espresso-machines?srsltid=AfmBOookAVT0NaD4m77tXVCH4ssU46O-ljVK3MftIg4bqfj70eJdDdfK",
+          "canonical": "spechtdesign.com/collections/victoria-arduino-espresso-machines?srsltid=AfmBOookAVT0NaD4m77tXVCH4ssU46O-ljVK3MftIg4bqfj70eJdDdfK",
+          "domain": "spechtdesign.com",
+          "title": "Victoria Arduino Espresso Machines - Specht Design",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=AdkGQeKUsoA",
+          "canonical": "youtube.com/watch?v=AdkGQeKUsoA",
+          "domain": "youtube.com",
+          "title": "Victoria Arduino Eagle One Prima EXP: The Best Espresso Machine ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.firstcoastespresso.com/shop/p/victoria-arduino-grinders",
+          "canonical": "firstcoastespresso.com/shop/p/victoria-arduino-grinders",
+          "domain": "firstcoastespresso.com",
+          "title": "Victoria Arduino Grinders | First Coast Espresso",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/@VictoriaArduinoOfficial",
+          "canonical": "youtube.com/@VictoriaArduinoOfficial",
+          "domain": "youtube.com",
+          "title": "Victoria Arduino - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.sanremomachines.com/en/home-en/",
+          "canonical": "sanremomachines.com/en/home-en",
+          "domain": "sanremomachines.com",
+          "title": "Sanremo Coffee Machines: Home",
+          "category": "manufacturer",
+          "signal": "manufacturer sanremomachines.com",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Sanremo",
+          "canonical": "en.wikipedia.org/wiki/Sanremo",
+          "domain": "en.wikipedia.org",
+          "title": "Sanremo - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.italia.it/en/liguria/things-to-do/what-to-see-in-sanremo-in-5-days-the-itinerary",
+          "canonical": "italia.it/en/liguria/things-to-do/what-to-see-in-sanremo-in-5-days-the-itinerary",
+          "domain": "italia.it",
+          "title": "What to see in Sanremo in 5 days: the itinerary - Italia.it",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "regional_press",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.tripadvisor.com/Tourism-g194900-Sanremo_Italian_Riviera_Liguria-Vacations.html",
+          "canonical": "tripadvisor.com/Tourism-g194900-Sanremo_Italian_Riviera_Liguria-Vacations.html",
+          "domain": "tripadvisor.com",
+          "title": "Sanremo, Italy: All You Must Know Before You Go (2026) - Tripadvisor",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Tsh2QBwrzW8",
+          "canonical": "youtube.com/watch?v=Tsh2QBwrzW8",
+          "domain": "youtube.com",
+          "title": "Best Things To Do In San Remo | Italy Travel Guide 2026 - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.imdb.com/title/tt11114992/",
+          "canonical": "imdb.com/title/tt11114992",
+          "domain": "imdb.com",
+          "title": "Sanremo (2020) - IMDb",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.travelandleisure.com/san-remo-italy-alternative-to-french-riviera-8575533",
+          "canonical": "travelandleisure.com/san-remo-italy-alternative-to-french-riviera-8575533",
+          "domain": "travelandleisure.com",
+          "title": "Discover San Remo, Italy's Charming Answer to the French Riviera",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Sanremo_Music_Festival",
+          "canonical": "en.wikipedia.org/wiki/Sanremo_Music_Festival",
+          "domain": "en.wikipedia.org",
+          "title": "Sanremo Music Festival - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        }
+      ],
+      "meta": {
+        "queriesRun": [
+          "commercial espresso machine manufacturers",
+          "top brands of espresso machines for cafes and restaurants",
+          "commercial vs residential espresso machine suppliers",
+          "wholesale commercial espresso machine manufacturers",
+          "La Marzocco",
+          "Nuova Simonelli",
+          "Rocket Espresso",
+          "Victoria Arduino",
+          "Sanremo",
+          "commercial espresso machine manufacturers (magazine OR journal OR association OR \"espresso machine manufacturer\")",
+          "commercial espresso machine manufacturers (\"local news\" OR \"now open\" OR \"new coffee shop opens\")",
+          "commercial espresso machine manufacturers (discussion OR forum OR \"coffee shop owners\")",
+          "commercial espresso machine manufacturers intitle:forum"
+        ],
+        "rawSourceCount": 91,
+        "results": 76
+      }
+    },
+    "operators": {
+      "sources": [
+        {
+          "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "canonical": "procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "domain": "procoffeegear.com",
+          "title": "Commercial Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "canonical": "coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "domain": "coffeemachinedepot.com",
+          "title": "New Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso/",
+          "canonical": "reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso",
+          "domain": "reddit.com",
+          "title": "What's everyone's favourite commercial espresso machine? : r/Coffee",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://lamarzoccousa.com/",
+          "canonical": "lamarzoccousa.com/",
+          "domain": "lamarzoccousa.com",
+          "title": "La Marzocco USA - Handmade in Florence",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzoccousa.com",
+          "longTail": false
+        },
+        {
+          "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "canonical": "clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "domain": "clivecoffee.com",
+          "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "canonical": "prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "domain": "prima-coffee.com",
+          "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "canonical": "ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "domain": "ascaso-usa.com",
+          "title": "Commercial Espresso Machines | Ascaso USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "canonical": "artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "domain": "artizancoffee.com",
+          "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "canonical": "seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "domain": "seattlecoffeegear.com",
+          "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "domain": "chriscoffee.com",
+          "title": "Italian Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine/",
+          "canonical": "reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine",
+          "domain": "reddit.com",
+          "title": "Which Commercial Espresso Machine…",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "canonical": "coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "domain": "coffeemachinedepot.com",
+          "title": "Coffee Machine Depot: Commercial Espresso Machines ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "canonical": "fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "domain": "fostercoffee.co",
+          "title": "Unveiling the Best Commercial Espresso Machine Brands",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "canonical": "voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Shop Espresso Machines W/Free Shipping",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands/",
+          "canonical": "azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands",
+          "domain": "azcoffeeshops.com",
+          "title": "Top Commercial Espresso Machine Brands (Pricing & Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ranciliogroup.com/",
+          "canonical": "ranciliogroup.com/",
+          "domain": "ranciliogroup.com",
+          "title": "Rancilio Group: The best Italian espresso coffe machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "canonical": "procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "domain": "procoffeegear.com",
+          "title": "Pro Coffee Gear: Espresso Machine Supplier - Coffee ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "canonical": "youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "domain": "youtube.com",
+          "title": "The BEST Espresso Machines for Coffee Carts in 2025",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://forum.audiogon.com/discussions/ot-espresso-machines/post?postid=2801153",
+          "canonical": "forum.audiogon.com/discussions/ot-espresso-machines/post?postid=2801153",
+          "domain": "forum.audiogon.com",
+          "title": "OT: Espresso machines - Audiogon Discussion Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://coffeetime.freeflarum.com/d/1134-looking-for-next-level-espresso-machine?page=2",
+          "canonical": "coffeetime.freeflarum.com/d/1134-looking-for-next-level-espresso-machine?page=2",
+          "domain": "coffeetime.freeflarum.com",
+          "title": "Looking for next level espresso machine - Coffeetime - FreeFlarum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://forum.slowtwitch.com/t/home-espresso-machine-recommendations/772273",
+          "canonical": "forum.slowtwitch.com/t/home-espresso-machine-recommendations/772273",
+          "domain": "forum.slowtwitch.com",
+          "title": "Home espresso machine recommendations? - Slowtwitch Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.houzz.com/discussions/5545607/should-i-commercial-espresso-machine",
+          "canonical": "houzz.com/discussions/5545607/should-i-commercial-espresso-machine",
+          "domain": "houzz.com",
+          "title": "Should I? Commercial Espresso Machine. | Houzz Forum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://homeroasters.org/forum/viewforum.php?forum_id=164",
+          "canonical": "homeroasters.org/forum/viewforum.php?forum_id=164",
+          "domain": "homeroasters.org",
+          "title": "Discussion Forum: ALL ABOUT ESPRESSO MACHINES",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://worldmanufacturing.org/activities/world-manufacturing-forum-company-visits-2024/",
+          "canonical": "worldmanufacturing.org/activities/world-manufacturing-forum-company-visits-2024",
+          "domain": "worldmanufacturing.org",
+          "title": "World Manufacturing Forum Company Visits",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.facebook.com/groups/decentespresso/posts/1958114971039051/",
+          "canonical": "facebook.com/groups/decentespresso/posts/1958114971039051",
+          "domain": "facebook.com",
+          "title": "Decent reorganizes forum access, searching and docs - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.baristaexchange.com/forum/categories/classifieds-1/listForCategory",
+          "canonical": "baristaexchange.com/forum/categories/classifieds-1/listForCategory",
+          "domain": "baristaexchange.com",
+          "title": "Discussion Forum - Barista Exchange",
+          "category": "niche_forum",
+          "signal": "specialist forum baristaexchange.com",
+          "longTail": true
+        },
+        {
+          "url": "https://coffeetime.freeflarum.com/t/lever-machines",
+          "canonical": "coffeetime.freeflarum.com/t/lever-machines",
+          "domain": "coffeetime.freeflarum.com",
+          "title": "Lever Machines - Coffeetime - A non-commercial coffee forum",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/pakcoffeeforum/posts/26615519964755512/",
+          "canonical": "facebook.com/groups/pakcoffeeforum/posts/26615519964755512",
+          "domain": "facebook.com",
+          "title": "Pakistan Coffee Forum - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/Coffee/comments/tsrpl6/where_can_i_find_discussion_and_reviews_of/",
+          "canonical": "reddit.com/r/Coffee/comments/tsrpl6/where_can_i_find_discussion_and_reviews_of",
+          "domain": "reddit.com",
+          "title": "Where can I find discussion and reviews of commercial espresso ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.coffeeforums.com/threads/best-commercial-espresso-machine.6645/",
+          "canonical": "coffeeforums.com/threads/best-commercial-espresso-machine.6645",
+          "domain": "coffeeforums.com",
+          "title": "Best Commercial Espresso Machine? - Coffee Forums",
+          "category": "niche_forum",
+          "signal": "specialist forum coffeeforums.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.home-barista.com/",
+          "canonical": "home-barista.com/",
+          "domain": "home-barista.com",
+          "title": "Home-Barista.com - Espresso Machine & Coffee Grinder Reviews ...",
+          "category": "niche_forum",
+          "signal": "specialist forum home-barista.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.facebook.com/groups/795642191387813/posts/1361828994769127/",
+          "canonical": "facebook.com/groups/795642191387813/posts/1361828994769127",
+          "domain": "facebook.com",
+          "title": "Commercial espresso machine brands and grinders - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOop38mJVILJyVt08KznL9ecnPcNzHL_9QTfIDzI6f5LSIEdFHsuR",
+          "canonical": "thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOop38mJVILJyVt08KznL9ecnPcNzHL_9QTfIDzI6f5LSIEdFHsuR",
+          "domain": "thehorecastore.com",
+          "title": "Top Commercial Espresso Machine Brands for Cafes - HorecaStore",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOorODqyTiZvOfNShwoG_0hyMgXgE_pBNRwkAUtg-pPZncXTTLkRt",
+          "canonical": "fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOorODqyTiZvOfNShwoG_0hyMgXgE_pBNRwkAUtg-pPZncXTTLkRt",
+          "domain": "fostercoffee.co",
+          "title": "Elevating Espresso Excellence: Unveiling the Best Commercial ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOooeXH2IIBianfeMHlB69LOPgRG4s-OB3ZMYTCYSdiVwLqzWZRc3",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOooeXH2IIBianfeMHlB69LOPgRG4s-OB3ZMYTCYSdiVwLqzWZRc3",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2Audyg648bk",
+          "canonical": "youtube.com/watch?v=2Audyg648bk",
+          "domain": "youtube.com",
+          "title": "Best Commercial Espresso Machines in 2026 - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.baristaexchange.com/forum/topics/best-commercial-espresso",
+          "canonical": "baristaexchange.com/forum/topics/best-commercial-espresso",
+          "domain": "baristaexchange.com",
+          "title": "Best commercial espresso machine - Barista Exchange",
+          "category": "niche_forum",
+          "signal": "specialist forum baristaexchange.com",
+          "longTail": true
+        },
+        {
+          "url": "https://sca.coffee/sca-certified/commercial-equipment",
+          "canonical": "sca.coffee/sca-certified/commercial-equipment",
+          "domain": "sca.coffee",
+          "title": "SCA Certified Commercial Equipment Program",
+          "category": "trade_pub",
+          "signal": "trade/industry publisher sca.coffee",
+          "longTail": true
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOoqTQVf7osSFwoTYDQlbX0WqC0lAIHTiH4ZWKw-yHVbjpvfalwLe",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOoqTQVf7osSFwoTYDQlbX0WqC0lAIHTiH4ZWKw-yHVbjpvfalwLe",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://dailycoffeenews.com/2025/12/23/2025-year-in-review-new-commercial-espresso-and-brewing-equipment/",
+          "canonical": "dailycoffeenews.com/2025/12/23/2025-year-in-review-new-commercial-espresso-and-brewing-equipment",
+          "domain": "dailycoffeenews.com",
+          "title": "2025 Year In Review: New Commercial Espresso and Brewing ...",
+          "category": "trade_pub",
+          "signal": "trade/industry publisher dailycoffeenews.com",
+          "longTail": true
+        },
+        {
+          "url": "https://nymag.com/strategist/article/best-espresso-machine.html",
+          "canonical": "nymag.com/strategist/article/best-espresso-machine.html",
+          "domain": "nymag.com",
+          "title": "13 Best Espresso Machines | The Strategist - New York Magazine",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.bestcoffeegear.com/tradeshows",
+          "canonical": "bestcoffeegear.com/tradeshows",
+          "domain": "bestcoffeegear.com",
+          "title": "Trade Shows & Events | Commercial Espresso Machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "canonical": "blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "domain": "blog.busybeancoffee.com",
+          "title": "Compare the top commercial espresso machine brands in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.businessresearchinsights.com/market-reports/espresso-machines-market-108015",
+          "canonical": "businessresearchinsights.com/market-reports/espresso-machines-market-108015",
+          "domain": "businessresearchinsights.com",
+          "title": "Espresso Machines Market Size, Report Analysis By 2035",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://esncommercialespressoequipment.com/",
+          "canonical": "esncommercialespressoequipment.com/",
+          "domain": "esncommercialespressoequipment.com",
+          "title": "Commercial Espresso Equipment | Espresso Service Network",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOopafw40nWL4SgElSU6Ry9PUEyvGr0-qkvf5vyaP2bG118_2QBYW",
+          "canonical": "procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOopafw40nWL4SgElSU6Ry9PUEyvGr0-qkvf5vyaP2bG118_2QBYW",
+          "domain": "procoffeegear.com",
+          "title": "Commercial Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.smithsonianmag.com/arts-culture/the-long-history-of-the-espresso-machine-126012814/",
+          "canonical": "smithsonianmag.com/arts-culture/the-long-history-of-the-espresso-machine-126012814",
+          "domain": "smithsonianmag.com",
+          "title": "The Long History of the Espresso Machine",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopGIiKxKY-bdVYdVlhiP67lDDAuQg9vJRoDDMFrhmgvcjcG3c2l",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopGIiKxKY-bdVYdVlhiP67lDDAuQg9vJRoDDMFrhmgvcjcG3c2l",
+          "domain": "chriscoffee.com",
+          "title": "Italian Commercial Espresso Machines - Chris' Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOoq3uA5RJzWshJ7Cz_PqnezjoqDl6wWHGMPAABSGKOicn436nCiZ",
+          "canonical": "artizancoffee.com/collections/espresso-machines?srsltid=AfmBOoq3uA5RJzWshJ7Cz_PqnezjoqDl6wWHGMPAABSGKOicn436nCiZ",
+          "domain": "artizancoffee.com",
+          "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeeionado.com/collections/commercial-espresso-machines?srsltid=AfmBOoqu8XTE36nZFSgZ8PNivmgiFjzt1V64uiyP_3MVzICv6McoDfv4",
+          "canonical": "coffeeionado.com/collections/commercial-espresso-machines?srsltid=AfmBOoqu8XTE36nZFSgZ8PNivmgiFjzt1V64uiyP_3MVzICv6McoDfv4",
+          "domain": "coffeeionado.com",
+          "title": "Commercial Espresso Machines for Sale - Ships Free - 1 Yr Warranty",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorxPqzLRp8RYHZxQeuGmlMfDf0w0pJn0SGtyVEglh5pzvTpf79x",
+          "canonical": "seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorxPqzLRp8RYHZxQeuGmlMfDf0w0pJn0SGtyVEglh5pzvTpf79x",
+          "domain": "seattlecoffeegear.com",
+          "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOop0ZPOywacCiNfKNoaQj1MwF5F6CPmvuAbhIaG69RIOgaFlCm8Y",
+          "canonical": "ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOop0ZPOywacCiNfKNoaQj1MwF5F6CPmvuAbhIaG69RIOgaFlCm8Y",
+          "domain": "ascaso-usa.com",
+          "title": "Commercial Espresso Machines | Ascaso USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoooAtQ3aOhxrMvlCdTADVYLJVomJOo2DPjXqAAOYG9h5Xha3Nlj",
+          "canonical": "prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoooAtQ3aOhxrMvlCdTADVYLJVomJOo2DPjXqAAOYG9h5Xha3Nlj",
+          "domain": "prima-coffee.com",
+          "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.unic-espresso.com/",
+          "canonical": "unic-espresso.com/",
+          "domain": "unic-espresso.com",
+          "title": "Unic Espresso: Professional and commercial espresso machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.faema.com/us-en/professional",
+          "canonical": "faema.com/us-en/professional",
+          "domain": "faema.com",
+          "title": "Faema Professional: commercial coffee makers, equipment & news",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeeness.de/en/best-commercial-espresso-machine/",
+          "canonical": "coffeeness.de/en/best-commercial-espresso-machine",
+          "domain": "coffeeness.de",
+          "title": "Best Commercial Espresso Machines in 2026: Our Top 6 Picks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOoqy-e0xb0BAJRd-Tb3fck-cNLH5c_-sCdZk2SSVcr9FgBTuMCc2",
+          "canonical": "fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOoqy-e0xb0BAJRd-Tb3fck-cNLH5c_-sCdZk2SSVcr9FgBTuMCc2",
+          "domain": "fostercoffee.co",
+          "title": "Elevating Espresso Excellence: Unveiling the Best Commercial ...",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.1stincoffee.com/brands.html?srsltid=AfmBOopugY27z8SwIr9Zp28FbKLF22ZE5d3PIo0x0hS-Z2I08_gxmacm",
+          "canonical": "1stincoffee.com/brands.html?srsltid=AfmBOopugY27z8SwIr9Zp28FbKLF22ZE5d3PIo0x0hS-Z2I08_gxmacm",
+          "domain": "1stincoffee.com",
+          "title": "Coffee Machine & Maker Brands | Espresso Coffee Brands",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Espresso_machine",
+          "canonical": "en.wikipedia.org/wiki/Espresso_machine",
+          "domain": "en.wikipedia.org",
+          "title": "Espresso machine - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false
+        },
+        {
+          "url": "https://tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopNvQgsfAX2L_-HULMy7lhIQZzOnjCJkqlOxwrkSyVHvS84N-ee",
+          "canonical": "tmwardcoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOopNvQgsfAX2L_-HULMy7lhIQZzOnjCJkqlOxwrkSyVHvS84N-ee",
+          "domain": "tmwardcoffee.com",
+          "title": "Commercial Espresso Super-Auto Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "procoffeegear.com",
+          "coffeemachinedepot.com",
+          "reddit.com",
+          "ranciliogroup.com",
+          "lamarzoccousa.com",
+          "clivecoffee.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "sources": [
+        {
+          "url": "https://procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "canonical": "procoffeegear.com/collections/commercial-espresso-machines?srsltid=AfmBOor7OT2zPckSMShOH19IaFPhM2Yz_fnFZPAgol2QZ9sT_o_b4WSJ",
+          "domain": "procoffeegear.com",
+          "title": "Commercial Espresso Machines | Pro Coffee Gear",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "canonical": "coffeemachinedepot.com/collections/new-commercial-espresso-machines?srsltid=AfmBOorl5nfE4za4oFLTok5wAMsTglP5oJGmqhGkiQBjYnfs7xcE6Pd4",
+          "domain": "coffeemachinedepot.com",
+          "title": "New Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso/",
+          "canonical": "reddit.com/r/Coffee/comments/9h3a7d/whats_everyones_favourite_commercial_espresso",
+          "domain": "reddit.com",
+          "title": "What's everyone's favourite commercial espresso machine? : r/Coffee",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://lamarzoccousa.com/",
+          "canonical": "lamarzoccousa.com/",
+          "domain": "lamarzoccousa.com",
+          "title": "La Marzocco USA - Handmade in Florence",
+          "category": "manufacturer",
+          "signal": "manufacturer lamarzoccousa.com",
+          "longTail": false
+        },
+        {
+          "url": "https://clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "canonical": "clivecoffee.com/collections/commercial?srsltid=AfmBOooVbPkz9Gi6B26NByZIUSBH5kZHarNwR8yKbhSsvaHpwi6aRWVK",
+          "domain": "clivecoffee.com",
+          "title": "Commercial Espresso Machines & Grinders - Clive Coffee",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "canonical": "prima-coffee.com/cafe/espresso-machines?srsltid=AfmBOoqcbdqnpOjPIYGoNWKK-ZKSP6LY1NEcDk4LlcSYR0ZI7dN7yVyk",
+          "domain": "prima-coffee.com",
+          "title": "Commercial Espresso Machines - For Quality-Minded Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "canonical": "ascaso-usa.com/collections/commercial-espresso-machines?srsltid=AfmBOooJC2AqE0VsuI7dOXH91tb8AAQp_BysHtUo-4FuwVyaupDLyqkc",
+          "domain": "ascaso-usa.com",
+          "title": "Commercial Espresso Machines | Ascaso USA",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "canonical": "artizancoffee.com/collections/espresso-machines?srsltid=AfmBOorA50RgoK4bkSYRAGBvqbZvuXV53eS2wlz0GTv0-HnvAxhCondg",
+          "domain": "artizancoffee.com",
+          "title": "Commercial & Home Espresso Machines | Artizan Coffee Equipment",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "canonical": "seattlecoffeegear.com/collections/commercial-semi-automatic?srsltid=AfmBOorEkDzfTvuxq9zmJXoHqIJz2mGM9IpC9D0jgjhD37TV77NpXiJR",
+          "domain": "seattlecoffeegear.com",
+          "title": "Commercial Semi-Automatic Espresso Machines for Cafes",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "canonical": "chriscoffee.com/collections/commercial-espresso-machines?srsltid=AfmBOooWdR81jTQrxEx9u9MsGxvjE4Z44mkuoqle6hC9LaQlQskHiQmw",
+          "domain": "chriscoffee.com",
+          "title": "Italian Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine/",
+          "canonical": "reddit.com/r/espresso/comments/19ffzai/which_commercial_espresso_machine",
+          "domain": "reddit.com",
+          "title": "Which Commercial Espresso Machine…",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "canonical": "coffeemachinedepot.com/?srsltid=AfmBOooxqz0rJv6a-FVRN2KORUY2nCVZMrkQbsYBlnsUQmsGdcRACOZZ",
+          "domain": "coffeemachinedepot.com",
+          "title": "Coffee Machine Depot: Commercial Espresso Machines ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines/?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "canonical": "visionsespresso.com/espresso-machines/commercial-espresso-machines/top-rated-commercial-espresso-machines?srsltid=AfmBOoqEhJ2JONNlvrwYopzBbESfHLN9oI7VCT_5_mGEIH8K552eMPzR",
+          "domain": "visionsespresso.com",
+          "title": "Best Commercial Espresso Machines for Cafes in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "canonical": "fostercoffee.co/blogs/news/elevating-espresso-excellence-unveiling-the-best-commercial-espresso-machine-brands?srsltid=AfmBOopnsBVzRlrpc_QzvzYnljptFA54JrAO1-O_KMy3hHHsBl2sqLoG",
+          "domain": "fostercoffee.co",
+          "title": "Unveiling the Best Commercial Espresso Machine Brands",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "canonical": "voltagecoffeesupply.com/collections/espresso-machines?srsltid=AfmBOoqTSvDz3gWtiBTpQC7vyPAqjDeLsCX2fYTJQ-V9DriAs-iOD5U9",
+          "domain": "voltagecoffeesupply.com",
+          "title": "Shop Espresso Machines W/Free Shipping",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands/",
+          "canonical": "azcoffeeshops.com/coffee-guide/commercial-espresso-machine-brands",
+          "domain": "azcoffeeshops.com",
+          "title": "Top Commercial Espresso Machine Brands (Pricing & Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ranciliogroup.com/",
+          "canonical": "ranciliogroup.com/",
+          "domain": "ranciliogroup.com",
+          "title": "Rancilio Group: The best Italian espresso coffe machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "canonical": "procoffeegear.com/?srsltid=AfmBOoqhp7VzE7spuCJCWf9AVGynv4iEiMD-7jLiUIgn-U4DLW5gGKRZ",
+          "domain": "procoffeegear.com",
+          "title": "Pro Coffee Gear: Espresso Machine Supplier - Coffee ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "canonical": "youtube.com/watch?v=tI11J4RaTxk&vl=en",
+          "domain": "youtube.com",
+          "title": "The BEST Espresso Machines for Coffee Carts in 2025",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOoqe0zrDmnhgEENHOy-fHm4cjNGEnCrbztaFFiB9K8IQlvrRNWqk",
+          "canonical": "thehorecastore.com/blog/best-brands-for-commercial-espresso-machines?srsltid=AfmBOoqe0zrDmnhgEENHOy-fHm4cjNGEnCrbztaFFiB9K8IQlvrRNWqk",
+          "domain": "thehorecastore.com",
+          "title": "Top Commercial Espresso Machine Brands for Cafes - HorecaStore",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeemachineguru.co.uk/index.php/send-for-articles/info-espresso-machine-range",
+          "canonical": "coffeemachineguru.co.uk/index.php/send-for-articles/info-espresso-machine-range",
+          "domain": "coffeemachineguru.co.uk",
+          "title": "Commercial Espresso Machine Brands | Expobar LaSpaziale Wega ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/popular/3-group-commercial-espresso-machine/",
+          "canonical": "instagram.com/popular/3-group-commercial-espresso-machine",
+          "domain": "instagram.com",
+          "title": "3 Group Commercial Espresso Machine - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/142934894581003/posts/1273726781501803/",
+          "canonical": "facebook.com/groups/142934894581003/posts/1273726781501803",
+          "domain": "facebook.com",
+          "title": "**FOR SALE: IZENSSO COMMERCIAL ESPRESSO MACHINE ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/3219509608357252/posts/3890513944590145/",
+          "canonical": "facebook.com/groups/3219509608357252/posts/3890513944590145",
+          "domain": "facebook.com",
+          "title": "La Marzocco Linea PB – 2 Group Commercial Espresso Machine ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://kaldi.com/products/mahlkonig-cpu-and-display-e65w-gbs-706142?srsltid=AfmBOoooeAfyb34sAojiMxThrWp-D_iGyZP7Uj_VL4iRKYliARLlkykU",
+          "canonical": "kaldi.com/products/mahlkonig-cpu-and-display-e65w-gbs-706142?srsltid=AfmBOoooeAfyb34sAojiMxThrWp-D_iGyZP7Uj_VL4iRKYliARLlkykU",
+          "domain": "kaldi.com",
+          "title": "Mahlkonig 706142 CPU and Display E65W GBS | Fits E65T",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://kaldi.com/products/mazzer-titanium-super-jolly-burrs-33d-m28213-t?srsltid=AfmBOooeGf08KSPe3IOWH6JwJzdJPN7wZ7_1IAlVcidOJgmIxw4w70rj",
+          "canonical": "kaldi.com/products/mazzer-titanium-super-jolly-burrs-33d-m28213-t?srsltid=AfmBOooeGf08KSPe3IOWH6JwJzdJPN7wZ7_1IAlVcidOJgmIxw4w70rj",
+          "domain": "kaldi.com",
+          "title": "Mazzer M28213/T Titanium Super Jolly Burrs, 33D",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mkmheater.com/best-commercial-espresso-machine-2024/",
+          "canonical": "mkmheater.com/best-commercial-espresso-machine-2024",
+          "domain": "mkmheater.com",
+          "title": "Best Commercial Espresso Machine 2024: Custom Suppliers ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://bestespressomachines.coffee/simonelli-aurelia-wave-digit-commercial-espresso-machine/",
+          "canonical": "bestespressomachines.coffee/simonelli-aurelia-wave-digit-commercial-espresso-machine",
+          "domain": "bestespressomachines.coffee",
+          "title": "Simonelli Aurelia WAVE Digit Commercial Espresso Machine",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Espresso_machine",
+          "canonical": "en.wikipedia.org/wiki/Espresso_machine",
+          "domain": "en.wikipedia.org",
+          "title": "Espresso machine - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false
+        },
+        {
+          "url": "https://espressoservicenetwork.org/newsletter-sign-up",
+          "canonical": "espressoservicenetwork.org/newsletter-sign-up",
+          "domain": "espressoservicenetwork.org",
+          "title": "Newsletter Sign Up | Espresso Service Network",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.asme.org/topics-resources/content/how-espresso-machines-work-the-engineering-inside",
+          "canonical": "asme.org/topics-resources/content/how-espresso-machines-work-the-engineering-inside",
+          "domain": "asme.org",
+          "title": "How Espresso Machines Work: The Engineering Inside - ASME",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://info.nsf.org/Certified/food/Listings.asp?CompanyName=La%20Marzocco",
+          "canonical": "info.nsf.org/Certified/food/Listings.asp?CompanyName=La+Marzocco",
+          "domain": "info.nsf.org",
+          "title": "NSF Product and Service Listings",
+          "category": "trade_pub",
+          "signal": "association/standards path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://news.pcusa.org/best-commercial-espresso-machine-small-coffee-shop/",
+          "canonical": "news.pcusa.org/best-commercial-espresso-machine-small-coffee-shop",
+          "domain": "news.pcusa.org",
+          "title": "Best Commercial Espresso Machines for Small Coffee Shops",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://hanrose.org/",
+          "canonical": "hanrose.org/",
+          "domain": "hanrose.org",
+          "title": "Hanrose® Espresso Machine | Official Site Coffee Makers",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://seabase.core.cli.mbl.edu/best-commercial-espresso-machine/",
+          "canonical": "seabase.core.cli.mbl.edu/best-commercial-espresso-machine",
+          "domain": "seabase.core.cli.mbl.edu",
+          "title": "Best Commercial Espresso Machine Top Rated Models for High ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.filterstories.org/episodes/blog-post-title-one-eew9k-tbn38-gnk57-yyy26-rm3ah-6afdf-zfydj",
+          "canonical": "filterstories.org/episodes/blog-post-title-one-eew9k-tbn38-gnk57-yyy26-rm3ah-6afdf-zfydj",
+          "domain": "filterstories.org",
+          "title": "Espresso Technology — Filter Stories Podcast",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://espressoservicenetwork.org/p/resources/diy-refurbishing-your-own-espresso-machine",
+          "canonical": "espressoservicenetwork.org/p/resources/diy-refurbishing-your-own-espresso-machine",
+          "domain": "espressoservicenetwork.org",
+          "title": "DIY Refurbishing Your Own Espresso Machine",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeeforum.org.au/discussion/1027/should-you-keep-your-commercial-machine-on-24-7",
+          "canonical": "coffeeforum.org.au/discussion/1027/should-you-keep-your-commercial-machine-on-24-7",
+          "domain": "coffeeforum.org.au",
+          "title": "Should you keep your commercial machine on 24/7 - Coffee Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.coffeemachinedepot.com/?srsltid=AfmBOopwR4qLzFy-3_lQmrEHm5p-Yy1iZgQcAWfZBhfCZfsYKmieL65l",
+          "canonical": "coffeemachinedepot.com/?srsltid=AfmBOopwR4qLzFy-3_lQmrEHm5p-Yy1iZgQcAWfZBhfCZfsYKmieL65l",
+          "domain": "coffeemachinedepot.com",
+          "title": "Coffee Machine Depot: Commercial Espresso Machines & Coffee ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1hlfDmTddNg",
+          "canonical": "youtube.com/watch?v=1hlfDmTddNg",
+          "domain": "youtube.com",
+          "title": "A Guide To Buying A Commercial Espresso Machine (Victoria ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://coffeebroker.net/",
+          "canonical": "coffeebroker.net/",
+          "domain": "coffeebroker.net",
+          "title": "Coffee Service | Restaurants, Hotels and Offices | LA | Cold Brew ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://visionsespresso.com/?srsltid=AfmBOor2GBe3JPWIssOU9kfpvQ0T0_mLFwEpbDlVUKT26TADogcUYfv2",
+          "canonical": "visionsespresso.com/?srsltid=AfmBOor2GBe3JPWIssOU9kfpvQ0T0_mLFwEpbDlVUKT26TADogcUYfv2",
+          "domain": "visionsespresso.com",
+          "title": "Visions Espresso | Buy Commercial Coffee Machines and Coffee ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.espressoplus.com/",
+          "canonical": "espressoplus.com/",
+          "domain": "espressoplus.com",
+          "title": "Commercial Coffee Machines | Commercial Espresso Machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://kaapimachines.com/",
+          "canonical": "kaapimachines.com/",
+          "domain": "kaapimachines.com",
+          "title": "Kaapi Machines | Explore Premium Commercial Coffee Machines",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "canonical": "blog.busybeancoffee.com/top-commercial-espresso-machine-brands",
+          "domain": "blog.busybeancoffee.com",
+          "title": "Compare the top commercial espresso machine brands in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.coffeeionado.com/?srsltid=AfmBOoodqZS8JIne5O3bS5mN5G0Bu4DliSDxGMSn8PWqigRVtMUz5-pk",
+          "canonical": "coffeeionado.com/?srsltid=AfmBOoodqZS8JIne5O3bS5mN5G0Bu4DliSDxGMSn8PWqigRVtMUz5-pk",
+          "domain": "coffeeionado.com",
+          "title": "Coffeeionado: Professional Coffee Equipment | Trusted by 500+ Cafes",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/359226107796542/posts/1855270658192072/",
+          "canonical": "facebook.com/groups/359226107796542/posts/1855270658192072",
+          "domain": "facebook.com",
+          "title": "What coffee companies supply espresso machines and brewers?",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DY98EPtMfml/",
+          "canonical": "instagram.com/reel/DY98EPtMfml",
+          "domain": "instagram.com",
+          "title": "Henlo on Instagram: \"Day 2 done From espresso chats and machine ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/nuovasimonelliofficial/posts/the-isx-coffee-machine-opened-the-door-to-international-markets-giving-a-strong-/945836014242827/",
+          "canonical": "facebook.com/nuovasimonelliofficial/posts/the-isx-coffee-machine-opened-the-door-to-international-markets-giving-a-strong-/945836014242827",
+          "domain": "facebook.com",
+          "title": "Nuova Simonelli - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/worldwidecoffeegroup/posts/review-magister-delta-espresso-machine-for-international-customers-exclusively-b/3696571747284754/",
+          "canonical": "facebook.com/worldwidecoffeegroup/posts/review-magister-delta-espresso-machine-for-international-customers-exclusively-b/3696571747284754",
+          "domain": "facebook.com",
+          "title": "Review Magister DELTA Espresso Machine for International ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://espressocompany.com.au/collections/commercial-coffee-machine?page=3",
+          "canonical": "espressocompany.com.au/collections/commercial-coffee-machine?page=3",
+          "domain": "espressocompany.com.au",
+          "title": "Commercial Coffee Machine Australia",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://careforcafe.en.made-in-china.com/product/yruRkjwDpOVF/China-Italian-Homehold-Semi-Automatic-Espresso-Coffee-Machine-with-Stainless-Steel-Body.html",
+          "canonical": "careforcafe.en.made-in-china.com/product/yruRkjwDpOVF/China-Italian-Homehold-Semi-Automatic-Espresso-Coffee-Machine-with-Stainless-Steel-Body.html",
+          "domain": "careforcafe.en.made-in-china.com",
+          "title": "Italian Homehold Semi-Automatic Espresso Coffee Machine with ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DMqBM1sPWXQ/?hl=en",
+          "canonical": "instagram.com/reel/DMqBM1sPWXQ?hl=en",
+          "domain": "instagram.com",
+          "title": "Gemilai Factory | Precision Builds Professionalism With ... - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.jiehuicoffee.com/coffee-grinder/commercial-coffee-grinder/commercial-espresso-machine-grinders.html",
+          "canonical": "jiehuicoffee.com/coffee-grinder/commercial-coffee-grinder/commercial-espresso-machine-grinders.html",
+          "domain": "jiehuicoffee.com",
+          "title": "China Custom Commercial Espresso Machine Grinders ...",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.gminsights.com/industry-analysis/pressure-coffee-machines-market",
+          "canonical": "gminsights.com/industry-analysis/pressure-coffee-machines-market",
+          "domain": "gminsights.com",
+          "title": "Pressure Coffee Machines Market, Growth Report 2035",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://commercialkitchencompany.com.au/product-category/coffee-equipment/coffee-machines/page/3/?srsltid=AfmBOook4VILJhuWEYXhRT8uMCAXbEAn6wiDL1CGsyYaEENaJCmNzd5t",
+          "canonical": "commercialkitchencompany.com.au/product-category/coffee-equipment/coffee-machines/page/3?srsltid=AfmBOook4VILJhuWEYXhRT8uMCAXbEAn6wiDL1CGsyYaEENaJCmNzd5t",
+          "domain": "commercialkitchencompany.com.au",
+          "title": "Commercial Coffee Machines | 1-4 Group | Brisbane",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://espresso.ca/collections/commercial-espresso-machine?srsltid=AfmBOorr5s5lyOxmUekvV8PX3HrITDgWY5L3x8PuWz1TyKEvgycbpoS_",
+          "canonical": "espresso.ca/collections/commercial-espresso-machine?srsltid=AfmBOorr5s5lyOxmUekvV8PX3HrITDgWY5L3x8PuWz1TyKEvgycbpoS_",
+          "domain": "espresso.ca",
+          "title": "Commercial Espresso Machines",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tiktok.com/@coffeemachinefactory/video/7595052025931451703",
+          "canonical": "tiktok.com/@coffeemachinefactory/video/7595052025931451703",
+          "domain": "tiktok.com",
+          "title": "Under Counter Espresso Machines for Coffee Shops - TikTok",
+          "category": "social_video",
+          "signal": "social/video tiktok.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DRkKxXtEZbj/",
+          "canonical": "instagram.com/reel/DRkKxXtEZbj",
+          "domain": "instagram.com",
+          "title": "London Espresso | Full Technical Service Every extraction starts ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://outplacement.jobstars.com/second-hand-commercial-espresso-machines/",
+          "canonical": "outplacement.jobstars.com/second-hand-commercial-espresso-machines",
+          "domain": "outplacement.jobstars.com",
+          "title": "8+ Best Used Commercial Espresso Machines for Sale",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.linkedin.com/posts/santos-kumar-kamat-132306284_the-wendougee-s-dragon-is-a-commercial-grade-activity-7469027491026767872-CYPn",
+          "canonical": "linkedin.com/posts/santos-kumar-kamat-132306284_the-wendougee-s-dragon-is-a-commercial-grade-activity-7469027491026767872-CYPn",
+          "domain": "linkedin.com",
+          "title": "Wendougee S Dragon Commercial Espresso Machine Features ...",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false
+        },
+        {
+          "url": "https://longwoodce.org/wp-content/uploads/formidable/16/coffee-maker-repair-akron-or-espresso-machine-fix.pdf",
+          "canonical": "longwoodce.org/wp-content/uploads/formidable/16/coffee-maker-repair-akron-or-espresso-machine-fix.pdf",
+          "domain": "longwoodce.org",
+          "title": "[PDF] Coffee Maker Repair Akron | Espresso Machine Fix",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ia601800.us.archive.org/16/items/espresso-machine-down-in-buckeye-premium-repair-and-descaling-for-high-end-brands/espresso-machine-down-in-aurora-premium-repair-and-descaling-for-high-end-brands.pdf",
+          "canonical": "ia601800.us.archive.org/16/items/espresso-machine-down-in-buckeye-premium-repair-and-descaling-for-high-end-brands/espresso-machine-down-in-aurora-premium-repair-and-descaling-for-high-end-brands.pdf",
+          "domain": "ia601800.us.archive.org",
+          "title": "[PDF] Espresso Machine Down in Aurora? Premium Repair & Descaling ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tumblr.com/communities/appliance-repair-best-call-sup/post/816223338988011520/espresso-machine-down-in-pittsburgh-premium?source=share",
+          "canonical": "tumblr.com/communities/appliance-repair-best-call-sup/post/816223338988011520/espresso-machine-down-in-pittsburgh-premium",
+          "domain": "tumblr.com",
+          "title": "ESPRESSO MACHINE DOWN IN PITTSBURGH? PREMIUM ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://ksdksd.en.made-in-china.com/product/tUAYFWOcrdVb/China-3-Groups-360-Cups-Hour-Coffee-Machine-for-Large-Commercial-Cafe.html",
+          "canonical": "ksdksd.en.made-in-china.com/product/tUAYFWOcrdVb/China-3-Groups-360-Cups-Hour-Coffee-Machine-for-Large-Commercial-Cafe.html",
+          "domain": "ksdksd.en.made-in-china.com",
+          "title": "3 Groups 360 Cups Hour Coffee Machine for Large Commercial Cafe",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://espressovivace.com/archives/lucidcafe/LC02.pdf",
+          "canonical": "espressovivace.com/archives/lucidcafe/LC02.pdf",
+          "domain": "espressovivace.com",
+          "title": "[PDF] On The Table #2 - Espresso Vivace",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/reel/DVcmAOFjbeF/",
+          "canonical": "instagram.com/reel/DVcmAOFjbeF",
+          "domain": "instagram.com",
+          "title": "Our customized coffee machine features a modular design. Each ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/groups/1173999949882212/posts/2028018184480380/",
+          "canonical": "facebook.com/groups/1173999949882212/posts/2028018184480380",
+          "domain": "facebook.com",
+          "title": "Delonghi steam pressure issue after descaling? - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"commercial espresso machine\" AND (manufacturers OR production) AND (industry standards OR ISO) -product -review",
+          "\"commercial espresso machine\" manufacturers inurl:org OR inurl:edu -site:com -site:net",
+          "\"commercial espresso machine\" AND (trade publication OR industry journal) AND (regional manufacturing OR local supply) -amazon -ebay",
+          "\"commercial espresso machine\" manufacturers OR fabricators AND (association OR consortium OR standards body) AND (Europe OR Canada OR Australia) -blog -forum",
+          "intitle:\"commercial espresso machine\" AND (supply chain OR manufacturing ecosystem) AND (trade show OR exhibition) -product -price",
+          "\"commercial espresso machine\" manufacturers AND (specialist forum OR technical discussion) AND (boiler design OR group head) -shop -buy"
+        ],
+        "results": 69
+      }
+    }
+  }
+}

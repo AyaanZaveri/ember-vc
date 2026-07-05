@@ -1,0 +1,229 @@
+{
+  "query": "commercial espresso machine manufacturers",
+  "slug": "espresso",
+  "wantedCategories": [
+    "trade_pub",
+    "regional_press",
+    "community_forum",
+    "niche_forum"
+  ],
+  "gtSize": 7,
+  "scores": {
+    "baseline": {
+      "total": 48,
+      "totalDomains": 39,
+      "longTailCount": 2,
+      "longTailDomains": 1,
+      "longTailDomainList": [
+        "reddit.com"
+      ],
+      "longTailExtractableDomains": 0,
+      "longTailExtractableDomainList": [],
+      "longTailFraction": 0.02564102564102564,
+      "categoryCoverage": 1,
+      "categoriesCovered": [
+        "community_forum"
+      ],
+      "categoryDistribution": {
+        "retailer": 22,
+        "community_forum": 2,
+        "manufacturer": 2,
+        "other": 12,
+        "vendor_blog": 8,
+        "social_video": 2
+      },
+      "gtRecall": 0.2857142857142857,
+      "gtHits": 2,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "total": 76,
+      "totalDomains": 49,
+      "longTailCount": 10,
+      "longTailDomains": 8,
+      "longTailDomainList": [
+        "baristaexchange.com",
+        "coffeeforums.com",
+        "coffeegeek.com",
+        "forum.audiogon.com",
+        "forum.slowtwitch.com",
+        "home-barista.com",
+        "homeroasters.org",
+        "quora.com"
+      ],
+      "longTailExtractableDomains": 7,
+      "longTailExtractableDomainList": [
+        "baristaexchange.com",
+        "coffeeforums.com",
+        "coffeegeek.com",
+        "forum.audiogon.com",
+        "forum.slowtwitch.com",
+        "home-barista.com",
+        "homeroasters.org"
+      ],
+      "longTailFraction": 0.16326530612244897,
+      "categoryCoverage": 2,
+      "categoriesCovered": [
+        "community_forum",
+        "niche_forum"
+      ],
+      "categoryDistribution": {
+        "niche_forum": 8,
+        "social_video": 13,
+        "other": 13,
+        "vendor_blog": 6,
+        "reference": 4,
+        "retailer": 22,
+        "manufacturer": 7,
+        "mainstream_press": 1,
+        "community_forum": 2
+      },
+      "gtRecall": 0.14285714285714285,
+      "gtHits": 1,
+      "gtSize": 7,
+      "emberAgreement": 0.9473684210526315,
+      "meta": {
+        "queriesRun": [
+          "commercial espresso machine manufacturers",
+          "top brands of espresso machines for cafes and restaurants",
+          "commercial vs residential espresso machine suppliers",
+          "wholesale commercial espresso machine manufacturers",
+          "La Marzocco",
+          "Nuova Simonelli",
+          "Rocket Espresso",
+          "Victoria Arduino",
+          "Sanremo",
+          "commercial espresso machine manufacturers (magazine OR journal OR association OR \"espresso machine manufacturer\")",
+          "commercial espresso machine manufacturers (\"local news\" OR \"now open\" OR \"new coffee shop opens\")",
+          "commercial espresso machine manufacturers (discussion OR forum OR \"coffee shop owners\")",
+          "commercial espresso machine manufacturers intitle:forum"
+        ],
+        "rawSourceCount": 91,
+        "results": 76
+      }
+    },
+    "operators": {
+      "total": 61,
+      "totalDomains": 42,
+      "longTailCount": 13,
+      "longTailDomains": 10,
+      "longTailDomainList": [
+        "baristaexchange.com",
+        "coffeeforums.com",
+        "dailycoffeenews.com",
+        "forum.audiogon.com",
+        "forum.slowtwitch.com",
+        "home-barista.com",
+        "homeroasters.org",
+        "reddit.com",
+        "sca.coffee",
+        "worldmanufacturing.org"
+      ],
+      "longTailExtractableDomains": 9,
+      "longTailExtractableDomainList": [
+        "baristaexchange.com",
+        "coffeeforums.com",
+        "dailycoffeenews.com",
+        "forum.audiogon.com",
+        "forum.slowtwitch.com",
+        "home-barista.com",
+        "homeroasters.org",
+        "sca.coffee",
+        "worldmanufacturing.org"
+      ],
+      "longTailFraction": 0.23809523809523808,
+      "categoryCoverage": 3,
+      "categoriesCovered": [
+        "community_forum",
+        "niche_forum",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "retailer": 20,
+        "community_forum": 3,
+        "manufacturer": 1,
+        "other": 15,
+        "vendor_blog": 6,
+        "social_video": 5,
+        "niche_forum": 8,
+        "trade_pub": 2,
+        "reference": 1
+      },
+      "gtRecall": 0.42857142857142855,
+      "gtHits": 3,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "procoffeegear.com",
+          "coffeemachinedepot.com",
+          "reddit.com",
+          "ranciliogroup.com",
+          "lamarzoccousa.com",
+          "clivecoffee.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "total": 68,
+      "totalDomains": 51,
+      "longTailCount": 4,
+      "longTailDomains": 3,
+      "longTailDomainList": [
+        "coffeeforum.org.au",
+        "info.nsf.org",
+        "reddit.com"
+      ],
+      "longTailExtractableDomains": 2,
+      "longTailExtractableDomainList": [
+        "coffeeforum.org.au",
+        "info.nsf.org"
+      ],
+      "longTailFraction": 0.058823529411764705,
+      "categoryCoverage": 3,
+      "categoriesCovered": [
+        "community_forum",
+        "niche_forum",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "retailer": 19,
+        "community_forum": 2,
+        "manufacturer": 1,
+        "other": 23,
+        "vendor_blog": 5,
+        "social_video": 15,
+        "reference": 1,
+        "trade_pub": 1,
+        "niche_forum": 1
+      },
+      "gtRecall": 0.2857142857142857,
+      "gtHits": 2,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"commercial espresso machine\" AND (manufacturers OR production) AND (industry standards OR ISO) -product -review",
+          "\"commercial espresso machine\" manufacturers inurl:org OR inurl:edu -site:com -site:net",
+          "\"commercial espresso machine\" AND (trade publication OR industry journal) AND (regional manufacturing OR local supply) -amazon -ebay",
+          "\"commercial espresso machine\" manufacturers OR fabricators AND (association OR consortium OR standards body) AND (Europe OR Canada OR Australia) -blog -forum",
+          "intitle:\"commercial espresso machine\" AND (supply chain OR manufacturing ecosystem) AND (trade show OR exhibition) -product -price",
+          "\"commercial espresso machine\" manufacturers AND (specialist forum OR technical discussion) AND (boiler design OR group head) -shop -buy"
+        ],
+        "results": 69
+      }
+    }
+  }
+}

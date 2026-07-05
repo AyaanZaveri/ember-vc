@@ -1,0 +1,2397 @@
+{
+  "query": "small business accounting software",
+  "slug": "accounting",
+  "generatedAt": "2026-07-04T23:41:47.222Z",
+  "results": {
+    "baseline": {
+      "sources": [
+        {
+          "url": "https://quickbooks.intuit.com/accounting/",
+          "canonical": "quickbooks.intuit.com/accounting",
+          "domain": "quickbooks.intuit.com",
+          "title": "Best Accounting Software for Small Businesses | QuickBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.waveapps.com/accounting",
+          "canonical": "waveapps.com/accounting",
+          "domain": "waveapps.com",
+          "title": "Small Business Accounting Software - Start for Free - Wave",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.xero.com/us/accounting-software/",
+          "canonical": "xero.com/us/accounting-software",
+          "domain": "xero.com",
+          "title": "Online Accounting Software for Your Small Business | Xero US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what",
+          "domain": "reddit.com",
+          "title": "Owners who run their own businesses, what bookkeeping software ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.cnbc.com/select/best-accounting-software-for-small-businesses/",
+          "canonical": "cnbc.com/select/best-accounting-software-for-small-businesses",
+          "domain": "cnbc.com",
+          "title": "5 best accounting software services for small businesses - CNBC",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher cnbc.com",
+          "longTail": false
+        },
+        {
+          "url": "https://online.jwu.edu/blog/best-accounting-software-for-small-businesses/",
+          "canonical": "online.jwu.edu/blog/best-accounting-software-for-small-businesses",
+          "domain": "online.jwu.edu",
+          "title": "10 Best Accounting Software for Small Businesses | JWU Online",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sage.com/en-us/accounting-software/",
+          "canonical": "sage.com/en-us/accounting-software",
+          "domain": "sage.com",
+          "title": "Best Accounting Software for Small Businesses & More | Sage US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pilot.com/blog/bookkeeping-software-for-business",
+          "canonical": "pilot.com/blog/bookkeeping-software-for-business",
+          "domain": "pilot.com",
+          "title": "20+ Best Bookkeeping Software for Businesses (2026 Tool Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "canonical": "freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "domain": "freshbooks.com",
+          "title": "Small Business Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "canonical": "investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "domain": "investopedia.com",
+          "title": "Best Accounting Software for Small Business",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "canonical": "uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "domain": "uschamber.com",
+          "title": "10 Free Accounting Tools for Small Businesses | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.pcmag.com/picks/the-best-small-business-accounting-software",
+          "canonical": "pcmag.com/picks/the-best-small-business-accounting-software",
+          "domain": "pcmag.com",
+          "title": "The Best Accounting Software for Small Businesses in 2026",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher pcmag.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehartford.com/insights-center/business-management/best-software-for-small-businesses/",
+          "canonical": "thehartford.com/insights-center/business-management/best-software-for-small-businesses",
+          "domain": "thehartford.com",
+          "title": "Best Accounting Software for Small Businesses | Insights",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nav.com/marketplace/accounting-services/",
+          "canonical": "nav.com/marketplace/accounting-services",
+          "domain": "nav.com",
+          "title": "The Best Small Business Accounting Software 2025 - Nav",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tailorbrands.com/blog/best-accounting-software",
+          "canonical": "tailorbrands.com/blog/best-accounting-software",
+          "domain": "tailorbrands.com",
+          "title": "11 Best Accounting Software for Small Business 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nerdwallet.com/business/software/best/accounting-software",
+          "canonical": "nerdwallet.com/business/software/best/accounting-software",
+          "domain": "nerdwallet.com",
+          "title": "Best Accounting Software for Small Businesses of July 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tipalti.com/blog/small-business-accounting-software/",
+          "canonical": "tipalti.com/blog/small-business-accounting-software",
+          "domain": "tipalti.com",
+          "title": "What's the Best Accounting Software for Small Businesses?",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://zipbooks.com/",
+          "canonical": "zipbooks.com/",
+          "domain": "zipbooks.com",
+          "title": "ZipBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your",
+          "domain": "reddit.com",
+          "title": "What accounting software has worked best for your small business ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.sage.com/en-us/size/small-business/",
+          "canonical": "sage.com/en-us/size/small-business",
+          "domain": "sage.com",
+          "title": "Small business accounting, billing, time tracking, and HR solutions",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.usehaven.com/blog-posts/accounting-software-for-small-businesses",
+          "canonical": "usehaven.com/blog-posts/accounting-software-for-small-businesses",
+          "domain": "usehaven.com",
+          "title": "Top 5 Accounting Software for Small Businesses 2025 - Haven's tax",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.zoho.com/us/books/free-accounting-software/",
+          "canonical": "zoho.com/us/books/free-accounting-software",
+          "domain": "zoho.com",
+          "title": "Free Accounting Software for Small Businesses - Zoho Books",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.amazon.com/Accounting-Software-Small-Business/s?k=Accounting+Software+Small+Business",
+          "canonical": "amazon.com/Accounting-Software-Small-Business/s?k=Accounting+Software+Small+Business",
+          "domain": "amazon.com",
+          "title": "Accounting Software Small Business - Amazon.com",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.bookkeepingandaccountinginc.com/best-accounting-software-for-small-businesses/",
+          "canonical": "bookkeepingandaccountinginc.com/best-accounting-software-for-small-businesses",
+          "domain": "bookkeepingandaccountinginc.com",
+          "title": "The 12 Best Accounting Software for Small Businesses in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kICQlBSANV8",
+          "canonical": "youtube.com/watch?v=kICQlBSANV8",
+          "domain": "youtube.com",
+          "title": "Best Free Accounting & Bookkeeping Software for Small Business",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountingrabbit.com/blog/top-software-picks-for-small-business-accounting",
+          "canonical": "accountingrabbit.com/blog/top-software-picks-for-small-business-accounting",
+          "domain": "accountingrabbit.com",
+          "title": "Top Software Picks for Small Business Accounting",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.loydlegacy.com/post/best-business-accounting-software-tools-for-small-businesses",
+          "canonical": "loydlegacy.com/post/best-business-accounting-software-tools-for-small-businesses",
+          "domain": "loydlegacy.com",
+          "title": "Best Business Accounting Software Tools for Small Businesses",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.joinhomebase.com/blog/small-business-accounting-software",
+          "canonical": "joinhomebase.com/blog/small-business-accounting-software",
+          "domain": "joinhomebase.com",
+          "title": "Best Small Business Accounting Software In 2026 - Homebase",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZnlzPHM90FA",
+          "canonical": "youtube.com/watch?v=ZnlzPHM90FA",
+          "domain": "youtube.com",
+          "title": "How to Choose a Bookkeeping Software - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.businessnewsdaily.com/7543-best-accounting-software.html",
+          "canonical": "businessnewsdaily.com/7543-best-accounting-software.html",
+          "domain": "businessnewsdaily.com",
+          "title": "The Best Business Accounting Software Services of 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.mightycall.com/blog/best-accounting-software-for-small-businesses/",
+          "canonical": "mightycall.com/blog/best-accounting-software-for-small-businesses",
+          "domain": "mightycall.com",
+          "title": "Best Accounting Software for Small Businesses - MightyCall",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://myofficeops.com/resources/best-accounting-software-for-small-business/",
+          "canonical": "myofficeops.com/resources/best-accounting-software-for-small-business",
+          "domain": "myofficeops.com",
+          "title": "The Top 12 Best Accounting Software for Small Business in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tworoadsco.com/guide-best-small-business-accounting-software",
+          "canonical": "tworoadsco.com/guide-best-small-business-accounting-software",
+          "domain": "tworoadsco.com",
+          "title": "Best Small Business Accounting Software in 2026 - Two Roads",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://financfy.com/blog/easiest-accounting-software-for-small-business/",
+          "canonical": "financfy.com/blog/easiest-accounting-software-for-small-business",
+          "domain": "financfy.com",
+          "title": "What is the Easiest Accounting Software for Small Businesses 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.booxkeeping.com/the-best-accounting-software-for-small-business/",
+          "canonical": "booxkeeping.com/the-best-accounting-software-for-small-business",
+          "domain": "booxkeeping.com",
+          "title": "The Best Accounting Software for Small Business | BooXkeeping",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.techradar.com/best/accounting-software-small-business",
+          "canonical": "techradar.com/best/accounting-software-small-business",
+          "domain": "techradar.com",
+          "title": "Best accounting software for small business of 2026 - TechRadar",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher techradar.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WxMlH8p8C9A",
+          "canonical": "youtube.com/watch?v=WxMlH8p8C9A",
+          "domain": "youtube.com",
+          "title": "7 Best Free Accounting Software for Small Business and Accountants",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.ignitespot.com/best-online-software-small-businesses/financial-software",
+          "canonical": "ignitespot.com/best-online-software-small-businesses/financial-software",
+          "domain": "ignitespot.com",
+          "title": "The Best Small-Business Accounting Software: A Guide | Ignite Spot",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.airwallex.com/en-us/blog/compare-small-business-accounting-software",
+          "canonical": "airwallex.com/en-us/blog/compare-small-business-accounting-software",
+          "domain": "airwallex.com",
+          "title": "Top Five Small Business Accounting Software and Apps in US",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.business.org/finance/accounting/best-small-business-accounting-software/",
+          "canonical": "business.org/finance/accounting/best-small-business-accounting-software",
+          "domain": "business.org",
+          "title": "The 9 Best Small Business Accounting Software of 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tech.co/accounting-software/best-small-business-accounting-software",
+          "canonical": "tech.co/accounting-software/best-small-business-accounting-software",
+          "domain": "tech.co",
+          "title": "Best Small Business Accounting Software 2026 - Tech.co",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.globalfpo.com/blog/top-10-accounting-software-for-small-business-mostly-used-in-usa",
+          "canonical": "globalfpo.com/blog/top-10-accounting-software-for-small-business-mostly-used-in-usa",
+          "domain": "globalfpo.com",
+          "title": "Accounting Software for Small Businesses Mostly Used in USA",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://fitsmallbusiness.com/best-small-business-accounting-software/",
+          "canonical": "fitsmallbusiness.com/best-small-business-accounting-software",
+          "domain": "fitsmallbusiness.com",
+          "title": "8 Best Small Business Accounting Software 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://us.fitgap.com/search/accounting-software/small-business",
+          "canonical": "us.fitgap.com/search/accounting-software/small-business",
+          "domain": "us.fitgap.com",
+          "title": "Best accounting software for small business February 2026 | FitGap",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G4H-h2WI5fs",
+          "canonical": "youtube.com/watch?v=G4H-h2WI5fs",
+          "domain": "youtube.com",
+          "title": "The 5 Best Accounting Software for Small Businesses - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://softwareconnect.com/roundups/best-small-business-accounting-software/",
+          "canonical": "softwareconnect.com/roundups/best-small-business-accounting-software",
+          "domain": "softwareconnect.com",
+          "title": "The 9 Best Accounting Software for Small Businesses (2026)",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "sources": [
+        {
+          "url": "https://quickbooks.intuit.com/accounting/",
+          "canonical": "quickbooks.intuit.com/accounting",
+          "domain": "quickbooks.intuit.com",
+          "title": "Best Accounting Software for Small Businesses | QuickBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.waveapps.com/accounting",
+          "canonical": "waveapps.com/accounting",
+          "domain": "waveapps.com",
+          "title": "Small Business Accounting Software - Start for Free - Wave",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.cnbc.com/select/best-accounting-software-for-small-businesses/",
+          "canonical": "cnbc.com/select/best-accounting-software-for-small-businesses",
+          "domain": "cnbc.com",
+          "title": "5 best accounting software services for small businesses - CNBC",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher cnbc.com",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://online.jwu.edu/blog/best-accounting-software-for-small-businesses/",
+          "canonical": "online.jwu.edu/blog/best-accounting-software-for-small-businesses",
+          "domain": "online.jwu.edu",
+          "title": "10 Best Accounting Software for Small Businesses | JWU Online",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "canonical": "freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "domain": "freshbooks.com",
+          "title": "Small Business Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "canonical": "investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "domain": "investopedia.com",
+          "title": "Best Accounting Software for Small Business",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "canonical": "uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "domain": "uschamber.com",
+          "title": "10 Free Accounting Tools for Small Businesses | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.coursera.org/articles/small-business-accounting",
+          "canonical": "coursera.org/articles/small-business-accounting",
+          "domain": "coursera.org",
+          "title": "Your Guide to Small Business Accounting | Coursera",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.uschamber.com/co/start/strategy/small-business-accounting-setup",
+          "canonical": "uschamber.com/co/start/strategy/small-business-accounting-setup",
+          "domain": "uschamber.com",
+          "title": "Small Business Accounting Basics: A Step-by-Step Guide | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/best-accounting-software-small-business",
+          "canonical": "uschamber.com/co/run/finance/best-accounting-software-small-business",
+          "domain": "uschamber.com",
+          "title": "Best Accounting Software Options for Small Business | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "trade_pub",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.nerdwallet.com/business/software/best/accounting-bookkeeping-apps",
+          "canonical": "nerdwallet.com/business/software/best/accounting-bookkeeping-apps",
+          "domain": "nerdwallet.com",
+          "title": "Best Accounting and Bookkeeping Apps for Small Business in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.accountsjunction.com/blog/popular-accounting-software",
+          "canonical": "accountsjunction.com/blog/popular-accounting-software",
+          "domain": "accountsjunction.com",
+          "title": "Popular Accounting Software: How to Choose the Best One",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://bizionix.com/feeds/blog/local-business-software",
+          "canonical": "bizionix.com/feeds/blog/local-business-software",
+          "domain": "bizionix.com",
+          "title": "Best Local Business Software Tools & Solutions - Bizionix",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.eyeonannapolis.net/2021/04/popular-accounting-software-that-your-business-might-need/",
+          "canonical": "eyeonannapolis.net/2021/04/popular-accounting-software-that-your-business-might-need",
+          "domain": "eyeonannapolis.net",
+          "title": "Popular Accounting Software That Your Business Might Need",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "regional_press",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.instagram.com/reel/DMqCUtTSr3s/?hl=en",
+          "canonical": "instagram.com/reel/DMqCUtTSr3s?hl=en",
+          "domain": "instagram.com",
+          "title": "3 Accounting Apps That Make Life EASY for Every Business Owner ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rVH6vsQuAKA&vl=en-US",
+          "canonical": "youtube.com/watch?v=rVH6vsQuAKA&vl=en-US",
+          "domain": "youtube.com",
+          "title": "How To Know What The Best Accounting Software Is For Your Small ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.thesmallbusinessexpo.com/blog/small-business-accounting/",
+          "canonical": "thesmallbusinessexpo.com/blog/small-business-accounting",
+          "domain": "thesmallbusinessexpo.com",
+          "title": "Guide To Accounting For Small Business Owners",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://forum.another71.com/forum/welcome-cpa-exam-forum/ot-off-topic/topic/best-small-business-bookkeeping-software/",
+          "canonical": "forum.another71.com/forum/welcome-cpa-exam-forum/ot-off-topic/topic/best-small-business-bookkeeping-software",
+          "domain": "forum.another71.com",
+          "title": "Best small business bookkeeping software - Another71 Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://permies.com/t/186042/Recommendations-bookkeeping-software",
+          "canonical": "permies.com/t/186042/Recommendations-bookkeeping-software",
+          "domain": "permies.com",
+          "title": "Recommendations for bookkeeping software? - Permies.com",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1/",
+          "canonical": "grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1",
+          "domain": "grassrootsmotorsports.com",
+          "title": "Free small business accounting software? - Grassroots Motorsports",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://forum.babelgum.com/t/any-reliable-free-accounting-software-for-a-small-business/2055",
+          "canonical": "forum.babelgum.com/t/any-reliable-free-accounting-software-for-a-small-business/2055",
+          "domain": "forum.babelgum.com",
+          "title": "Any reliable free accounting software for a small business ...",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.halfpricesoft.com/forum/Posts/t8502-Need-easy-cheap-accounting-software-for-small-business/?srsltid=AfmBOoqECerpaCZtPiNOn3RsuRuRX9LKhYHEJLVVGf2qtaF2EhCkkaIK",
+          "canonical": "halfpricesoft.com/forum/Posts/t8502-Need-easy-cheap-accounting-software-for-small-business?srsltid=AfmBOoqECerpaCZtPiNOn3RsuRuRX9LKhYHEJLVVGf2qtaF2EhCkkaIK",
+          "domain": "halfpricesoft.com",
+          "title": "Need easy cheap accounting software for small business · Forum ...",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.business-software.com/blog/technology/community-forum/",
+          "canonical": "business-software.com/blog/technology/community-forum",
+          "domain": "business-software.com",
+          "title": "Latest Community Forum Software Articles and Reviews",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://akaunting.com/forum?page=36",
+          "canonical": "akaunting.com/forum?page=36",
+          "domain": "akaunting.com",
+          "title": "Forum - Akaunting",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://forum.slowtwitch.com/t/home-based-business-accounting-software-choices/752710",
+          "canonical": "forum.slowtwitch.com/t/home-based-business-accounting-software-choices/752710",
+          "domain": "forum.slowtwitch.com",
+          "title": "Home Based Business Accounting Software Choices",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true,
+          "emberCategory": "niche_forum",
+          "emberMatches": true
+        },
+        {
+          "url": "https://www.xero.com/us/accounting-software/",
+          "canonical": "xero.com/us/accounting-software",
+          "domain": "xero.com",
+          "title": "Online Accounting Software for Your Small Business | Xero US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.sage.com/en-us/accounting-software/",
+          "canonical": "sage.com/en-us/accounting-software",
+          "domain": "sage.com",
+          "title": "Best Accounting Software for Small Businesses & More | Sage US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://pilot.com/blog/bookkeeping-software-for-business",
+          "canonical": "pilot.com/blog/bookkeeping-software-for-business",
+          "domain": "pilot.com",
+          "title": "20+ Best Bookkeeping Software for Businesses (2026 Tool Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9a04BsKv26M&vl=en",
+          "canonical": "youtube.com/watch?v=9a04BsKv26M&vl=en",
+          "domain": "youtube.com",
+          "title": "Top 5 Accounting Software for Small Business (2026 Guide)",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://minutedock.com/academy/15-accounting-tools-that-every-small-business-needs",
+          "canonical": "minutedock.com/academy/15-accounting-tools-that-every-small-business-needs",
+          "domain": "minutedock.com",
+          "title": "Essential Accounting Tools Every Small Business Needs - MinuteDock",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.pcmag.com/picks/the-best-small-business-accounting-software",
+          "canonical": "pcmag.com/picks/the-best-small-business-accounting-software",
+          "domain": "pcmag.com",
+          "title": "The Best Accounting Software for Small Businesses in 2026 - PCMag",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher pcmag.com",
+          "longTail": false,
+          "emberCategory": "mainstream_press",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.accountingseed.com/resource/blog/best-accounting-software-solutions-for-small-to-midsize-businesses-including-salesforce-native-options/",
+          "canonical": "accountingseed.com/resource/blog/best-accounting-software-solutions-for-small-to-midsize-businesses-including-salesforce-native-options",
+          "domain": "accountingseed.com",
+          "title": "Accounting for Small to Midsize Businesses",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.bill.com/blog/best-smb-accounting-software",
+          "canonical": "bill.com/blog/best-smb-accounting-software",
+          "domain": "bill.com",
+          "title": "Best accounting software for small business - BILL",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-wholesale-businesses?srsltid=AfmBOoo-dwCi5p33S-lts77rKui-J5L6uaA_pFj-sIiD-sUkkx98TufF",
+          "canonical": "freshbooks.com/accounting-software/for-wholesale-businesses?srsltid=AfmBOoo-dwCi5p33S-lts77rKui-J5L6uaA_pFj-sIiD-sUkkx98TufF",
+          "domain": "freshbooks.com",
+          "title": "Wholesale Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://quickbooks.intuit.com/au/industry/wholesale-and-distribution/",
+          "canonical": "quickbooks.intuit.com/au/industry/wholesale-and-distribution",
+          "domain": "quickbooks.intuit.com",
+          "title": "Accounting Software For Wholesale & Distribution Businesses",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://salesorder.com/https://salesorder1.wpenginepowered.com/blog/whats-the-best-wholesale-accounting-software/",
+          "canonical": "salesorder.com/https://salesorder1.wpenginepowered.com/blog/whats-the-best-wholesale-accounting-software",
+          "domain": "salesorder.com",
+          "title": "What's The Best Wholesale Accounting Software? - Salesorder.com",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.sage.com/en-us/industry/wholesale-distribution/",
+          "canonical": "sage.com/en-us/industry/wholesale-distribution",
+          "domain": "sage.com",
+          "title": "Distribution Business Management & Accounting Software | Sage US",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://myofficeops.com/resources/best-accounting-software-for-small-business/",
+          "canonical": "myofficeops.com/resources/best-accounting-software-for-small-business",
+          "domain": "myofficeops.com",
+          "title": "The Top 12 Best Accounting Software for Small Business in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://quickbooks.intuit.com/",
+          "canonical": "quickbooks.intuit.com/",
+          "domain": "quickbooks.intuit.com",
+          "title": "QuickBooks®: Official Site | Smart Tools. Better Business.",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://accounts.intuit.com/",
+          "canonical": "accounts.intuit.com/",
+          "domain": "accounts.intuit.com",
+          "title": "Intuit Accounts - Sign In",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/QuickBooks",
+          "canonical": "en.wikipedia.org/wiki/QuickBooks",
+          "domain": "en.wikipedia.org",
+          "title": "QuickBooks",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.business.com/reviews/quickbooks-online/",
+          "canonical": "business.com/reviews/quickbooks-online",
+          "domain": "business.com",
+          "title": "QuickBooks Online Review and Pricing in 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.intuit.com/sign-in/",
+          "canonical": "intuit.com/sign-in",
+          "domain": "intuit.com",
+          "title": "Sign in to Access Your Intuit Products Account",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.intuit.quickbooks&hl=en_US",
+          "canonical": "play.google.com/store/apps/details?id=com.intuit.quickbooks&hl=en_US",
+          "domain": "play.google.com",
+          "title": "Intuit QuickBooks for Business - Apps on Google Play",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.xero.com/us/",
+          "canonical": "xero.com/us",
+          "domain": "xero.com",
+          "title": "Accounting Software for Small Businesses | Xero US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/xero",
+          "canonical": "youtube.com/xero",
+          "domain": "youtube.com",
+          "title": "Xero Accounting Software - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.xero.touch&hl=en_US",
+          "canonical": "play.google.com/store/apps/details?id=com.xero.touch&hl=en_US",
+          "domain": "play.google.com",
+          "title": "Xero Accounting for business - Apps on Google Play",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Xero",
+          "canonical": "en.wikipedia.org/wiki/Xero",
+          "domain": "en.wikipedia.org",
+          "title": "Xero - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/xero/?hl=en",
+          "canonical": "instagram.com/xero?hl=en",
+          "domain": "instagram.com",
+          "title": "Xero (@xero) • Instagram photos and videos",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.freshbooks.com/?srsltid=AfmBOoqSyc4KPLyhkgJx2evOWuR2XB5PQ-h3WiIv60kzKKxVVPCAAXNV",
+          "canonical": "freshbooks.com/?srsltid=AfmBOoqSyc4KPLyhkgJx2evOWuR2XB5PQ-h3WiIv60kzKKxVVPCAAXNV",
+          "domain": "freshbooks.com",
+          "title": "FreshBooks: Invoice and Accounting Software for Small Businesses",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.trustpilot.com/review/freshbooks.com",
+          "canonical": "trustpilot.com/review/freshbooks.com",
+          "domain": "trustpilot.com",
+          "title": "Read Customer Service Reviews of freshbooks.com - Trustpilot",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.forbes.com/advisor/business/software/freshbooks-review/",
+          "canonical": "forbes.com/advisor/business/software/freshbooks-review",
+          "domain": "forbes.com",
+          "title": "FreshBooks Review 2026: Features, Pros And Cons - Forbes",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher forbes.com",
+          "longTail": false,
+          "emberCategory": "vendor_blog",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/FreshBooks",
+          "canonical": "en.wikipedia.org/wiki/FreshBooks",
+          "domain": "en.wikipedia.org",
+          "title": "FreshBooks - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/freshbooks/?hl=en",
+          "canonical": "instagram.com/freshbooks?hl=en",
+          "domain": "instagram.com",
+          "title": "FreshBooks (@freshbooks) • Instagram photos and videos",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://my.waveapps.com/",
+          "canonical": "my.waveapps.com/",
+          "domain": "my.waveapps.com",
+          "title": "Wave • Sign in",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.wave.com/",
+          "canonical": "wave.com/",
+          "domain": "wave.com",
+          "title": "Wave",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://wave.co/",
+          "canonical": "wave.co/",
+          "domain": "wave.co",
+          "title": "Wave - AI Note Taker & Meeting Transcription App",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wave",
+          "canonical": "en.wikipedia.org/wiki/Wave",
+          "domain": "en.wikipedia.org",
+          "title": "Wave - Wikipedia",
+          "category": "reference",
+          "signal": "reference en.wikipedia.org",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?id=com.waveapps.sales&hl=en_US",
+          "canonical": "play.google.com/store/apps/details?id=com.waveapps.sales&hl=en_US",
+          "domain": "play.google.com",
+          "title": "Wave: Small Business Software - Apps on Google Play",
+          "category": "retailer",
+          "signal": "storefront domain/path signal",
+          "longTail": false,
+          "emberCategory": "retailer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.instagram.com/wave_hq/?hl=en",
+          "canonical": "instagram.com/wave_hq?hl=en",
+          "domain": "instagram.com",
+          "title": "Wave: Small Business Software (@wave_hq) - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/wave",
+          "canonical": "merriam-webster.com/dictionary/wave",
+          "domain": "merriam-webster.com",
+          "title": "WAVE Definition & Meaning - Merriam-Webster",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.trustpilot.com/review/waveapps.com",
+          "canonical": "trustpilot.com/review/waveapps.com",
+          "domain": "trustpilot.com",
+          "title": "Wave Reviews | Read Customer Service Reviews of waveapps.com",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.zoho.com/us/books/",
+          "canonical": "zoho.com/us/books",
+          "domain": "zoho.com",
+          "title": "Powerful Accounting Software for Your Business",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://books.zoho.eu/app",
+          "canonical": "books.zoho.eu/app",
+          "domain": "books.zoho.eu",
+          "title": "Zoho Books",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://books.zoho.in/",
+          "canonical": "books.zoho.in/",
+          "domain": "books.zoho.in",
+          "title": "Zoho Books",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/@Zoho_Books",
+          "canonical": "youtube.com/@Zoho_Books",
+          "domain": "youtube.com",
+          "title": "Zoho Books",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.zoho.com/accounting-software/",
+          "canonical": "zoho.com/accounting-software",
+          "domain": "zoho.com",
+          "title": "What is Accounting Software? | Business Accounting System",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false,
+          "emberCategory": "manufacturer",
+          "emberMatches": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=awhe4TQooZs&vl=en",
+          "canonical": "youtube.com/watch?v=awhe4TQooZs&vl=en",
+          "domain": "youtube.com",
+          "title": "Ultimate Zoho Books Tutorial 2026 | Free Bookkeeping software for ...",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false,
+          "emberCategory": "other",
+          "emberMatches": false
+        }
+      ],
+      "meta": {
+        "queriesRun": [
+          "small business accounting software",
+          "accounting tools for small businesses",
+          "best accounting software compared for small companies",
+          "wholesale small business accounting software providers",
+          "QuickBooks Online",
+          "Xero",
+          "FreshBooks",
+          "Wave",
+          "Zoho Books",
+          "small business accounting software (magazine OR journal OR association OR \"small business accounting\")",
+          "small business accounting software (\"local news\" OR \"now open\" OR \"local business software\")",
+          "small business accounting software (discussion OR forum OR \"business owners\")",
+          "small business accounting software intitle:forum"
+        ],
+        "rawSourceCount": 99,
+        "results": 68
+      }
+    },
+    "operators": {
+      "sources": [
+        {
+          "url": "https://quickbooks.intuit.com/accounting/",
+          "canonical": "quickbooks.intuit.com/accounting",
+          "domain": "quickbooks.intuit.com",
+          "title": "Best Accounting Software for Small Businesses | QuickBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.waveapps.com/accounting",
+          "canonical": "waveapps.com/accounting",
+          "domain": "waveapps.com",
+          "title": "Small Business Accounting Software - Start for Free - Wave",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.xero.com/us/accounting-software/",
+          "canonical": "xero.com/us/accounting-software",
+          "domain": "xero.com",
+          "title": "Online Accounting Software for Your Small Business | Xero US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what",
+          "domain": "reddit.com",
+          "title": "Owners who run their own businesses, what bookkeeping software ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.cnbc.com/select/best-accounting-software-for-small-businesses/",
+          "canonical": "cnbc.com/select/best-accounting-software-for-small-businesses",
+          "domain": "cnbc.com",
+          "title": "5 best accounting software services for small businesses - CNBC",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher cnbc.com",
+          "longTail": false
+        },
+        {
+          "url": "https://online.jwu.edu/blog/best-accounting-software-for-small-businesses/",
+          "canonical": "online.jwu.edu/blog/best-accounting-software-for-small-businesses",
+          "domain": "online.jwu.edu",
+          "title": "10 Best Accounting Software for Small Businesses | JWU Online",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sage.com/en-us/accounting-software/",
+          "canonical": "sage.com/en-us/accounting-software",
+          "domain": "sage.com",
+          "title": "Best Accounting Software for Small Businesses & More | Sage US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pilot.com/blog/bookkeeping-software-for-business",
+          "canonical": "pilot.com/blog/bookkeeping-software-for-business",
+          "domain": "pilot.com",
+          "title": "20+ Best Bookkeeping Software for Businesses (2026 Tool Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "canonical": "freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "domain": "freshbooks.com",
+          "title": "Small Business Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "canonical": "investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "domain": "investopedia.com",
+          "title": "Best Accounting Software for Small Business",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "canonical": "uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "domain": "uschamber.com",
+          "title": "10 Free Accounting Tools for Small Businesses | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.pcmag.com/picks/the-best-small-business-accounting-software",
+          "canonical": "pcmag.com/picks/the-best-small-business-accounting-software",
+          "domain": "pcmag.com",
+          "title": "The Best Accounting Software for Small Businesses in 2026",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher pcmag.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehartford.com/insights-center/business-management/best-software-for-small-businesses/",
+          "canonical": "thehartford.com/insights-center/business-management/best-software-for-small-businesses",
+          "domain": "thehartford.com",
+          "title": "Best Accounting Software for Small Businesses | Insights",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nav.com/marketplace/accounting-services/",
+          "canonical": "nav.com/marketplace/accounting-services",
+          "domain": "nav.com",
+          "title": "The Best Small Business Accounting Software 2025 - Nav",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tailorbrands.com/blog/best-accounting-software",
+          "canonical": "tailorbrands.com/blog/best-accounting-software",
+          "domain": "tailorbrands.com",
+          "title": "11 Best Accounting Software for Small Business 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nerdwallet.com/business/software/best/accounting-software",
+          "canonical": "nerdwallet.com/business/software/best/accounting-software",
+          "domain": "nerdwallet.com",
+          "title": "Best Accounting Software for Small Businesses of July 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tipalti.com/blog/small-business-accounting-software/",
+          "canonical": "tipalti.com/blog/small-business-accounting-software",
+          "domain": "tipalti.com",
+          "title": "What's the Best Accounting Software for Small Businesses?",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://zipbooks.com/",
+          "canonical": "zipbooks.com/",
+          "domain": "zipbooks.com",
+          "title": "ZipBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your",
+          "domain": "reddit.com",
+          "title": "What accounting software has worked best for your small business ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.sage.com/en-us/size/small-business/",
+          "canonical": "sage.com/en-us/size/small-business",
+          "domain": "sage.com",
+          "title": "Small business accounting, billing, time tracking, and HR solutions",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://forum.another71.com/forum/welcome-cpa-exam-forum/ot-off-topic/topic/best-small-business-bookkeeping-software/",
+          "canonical": "forum.another71.com/forum/welcome-cpa-exam-forum/ot-off-topic/topic/best-small-business-bookkeeping-software",
+          "domain": "forum.another71.com",
+          "title": "Best small business bookkeeping software - Another71 Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://permies.com/t/186042/Recommendations-bookkeeping-software",
+          "canonical": "permies.com/t/186042/Recommendations-bookkeeping-software",
+          "domain": "permies.com",
+          "title": "Recommendations for bookkeeping software? - Permies.com",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1/",
+          "canonical": "grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1",
+          "domain": "grassrootsmotorsports.com",
+          "title": "Free small business accounting software? - Grassroots Motorsports",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://forum.babelgum.com/t/any-reliable-free-accounting-software-for-a-small-business/2055",
+          "canonical": "forum.babelgum.com/t/any-reliable-free-accounting-software-for-a-small-business/2055",
+          "domain": "forum.babelgum.com",
+          "title": "Any reliable free accounting software for a small business ...",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.halfpricesoft.com/forum/Posts/t8502-Need-easy-cheap-accounting-software-for-small-business/?srsltid=AfmBOoqECerpaCZtPiNOn3RsuRuRX9LKhYHEJLVVGf2qtaF2EhCkkaIK",
+          "canonical": "halfpricesoft.com/forum/Posts/t8502-Need-easy-cheap-accounting-software-for-small-business?srsltid=AfmBOoqECerpaCZtPiNOn3RsuRuRX9LKhYHEJLVVGf2qtaF2EhCkkaIK",
+          "domain": "halfpricesoft.com",
+          "title": "Need easy cheap accounting software for small business · Forum ...",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.business-software.com/blog/technology/community-forum/",
+          "canonical": "business-software.com/blog/technology/community-forum",
+          "domain": "business-software.com",
+          "title": "Latest Community Forum Software Articles and Reviews",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://akaunting.com/forum?page=36",
+          "canonical": "akaunting.com/forum?page=36",
+          "domain": "akaunting.com",
+          "title": "Forum - Akaunting",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://forum.slowtwitch.com/t/home-based-business-accounting-software-choices/752710",
+          "canonical": "forum.slowtwitch.com/t/home-based-business-accounting-software-choices/752710",
+          "domain": "forum.slowtwitch.com",
+          "title": "Home Based Business Accounting Software Choices",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.thefastlaneforum.com/community/tags/bookkeeping-accounting/",
+          "canonical": "thefastlaneforum.com/community/tags/bookkeeping-accounting",
+          "domain": "thefastlaneforum.com",
+          "title": "bookkeeping; accounting - Fastlane Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.instagram.com/reel/DV4w-JUDoL8/",
+          "canonical": "instagram.com/reel/DV4w-JUDoL8",
+          "domain": "instagram.com",
+          "title": "Tell your software vendor when something sucks. Like go to the ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.bayarearidersforum.com/forums/threads/school-me-on-accounting-software-for-small-business.559924/page-2",
+          "canonical": "bayarearidersforum.com/forums/threads/school-me-on-accounting-software-for-small-business.559924/page-2",
+          "domain": "bayarearidersforum.com",
+          "title": "School me on accounting software for small business | Page 2",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.accountantforums.com/forums/accounting-software.40/",
+          "canonical": "accountantforums.com/forums/accounting-software.40",
+          "domain": "accountantforums.com",
+          "title": "Accounting Software - Forums",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.tworoadsco.com/guide-best-small-business-accounting-software",
+          "canonical": "tworoadsco.com/guide-best-small-business-accounting-software",
+          "domain": "tworoadsco.com",
+          "title": "Best Small Business Accounting Software in 2026 - Two Roads",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://forums.techsoup.org/t/accounting-software/1020",
+          "canonical": "forums.techsoup.org/t/accounting-software/1020",
+          "domain": "forums.techsoup.org",
+          "title": "Accounting Software - TechSoup Forums",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.facebook.com/groups/2141454752849625/posts/4365997303728681/",
+          "canonical": "facebook.com/groups/2141454752849625/posts/4365997303728681",
+          "domain": "facebook.com",
+          "title": "Recommendations for small business accounting software?",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.contractortalk.com/forums/accounting-software-discussion.108/",
+          "canonical": "contractortalk.com/forums/accounting-software-discussion.108",
+          "domain": "contractortalk.com",
+          "title": "Accounting Software & Discussion | Contractor Talk",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/best-accounting-software-small-business",
+          "canonical": "uschamber.com/co/run/finance/best-accounting-software-small-business",
+          "domain": "uschamber.com",
+          "title": "Best Accounting Software Options for Small Business | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountingtoday.com/tag/small-business-accounting-software",
+          "canonical": "accountingtoday.com/tag/small-business-accounting-software",
+          "domain": "accountingtoday.com",
+          "title": "Small business accounting software - Latest News",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.researchgate.net/publication/286730858_Helping_small_business_entrepreneurs_avoid_critical_mistakes_in_QuickBooks_accounting_software",
+          "canonical": "researchgate.net/publication/286730858_Helping_small_business_entrepreneurs_avoid_critical_mistakes_in_QuickBooks_accounting_software",
+          "domain": "researchgate.net",
+          "title": "(PDF) Helping small business entrepreneurs avoid critical mistakes ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9a04BsKv26M&vl=en",
+          "canonical": "youtube.com/watch?v=9a04BsKv26M&vl=en",
+          "domain": "youtube.com",
+          "title": "Top 5 Accounting Software for Small Business (2026 Guide)",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.businessnewsdaily.com/7543-best-accounting-software.html",
+          "canonical": "businessnewsdaily.com/7543-best-accounting-software.html",
+          "domain": "businessnewsdaily.com",
+          "title": "The Best Business Accounting Software Services of 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.artsyltech.com/blog/best-accounting-software-for-small-business",
+          "canonical": "artsyltech.com/blog/best-accounting-software-for-small-business",
+          "domain": "artsyltech.com",
+          "title": "Accounting for Small Business: The Ultimate Software Guide - Artsyl",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOoqRBjNsOlhqSLraPWwq1puQGnq-8wJj9MVJwG4x6C7MOkck_jah",
+          "canonical": "freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOoqRBjNsOlhqSLraPWwq1puQGnq-8wJj9MVJwG4x6C7MOkck_jah",
+          "domain": "freshbooks.com",
+          "title": "Small Business Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9a04BsKv26M",
+          "canonical": "youtube.com/watch?v=9a04BsKv26M",
+          "domain": "youtube.com",
+          "title": "Top 5 Accounting Software for Small Business (2026 Guide)",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://apps.apple.com/us/app/small-business-accounting/id1550552151",
+          "canonical": "apps.apple.com/us/app/small-business-accounting/id1550552151",
+          "domain": "apps.apple.com",
+          "title": "Small Business Accounting - App Store - Apple",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.bdc.ca/en/articles-tools/technology/free-low-cost-applications/accounting-software-free-low-cost-options",
+          "canonical": "bdc.ca/en/articles-tools/technology/free-low-cost-applications/accounting-software-free-low-cost-options",
+          "domain": "bdc.ca",
+          "title": "Accounting software: Free / low-cost options - BDC",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.patriotsoftware.com/",
+          "canonical": "patriotsoftware.com/",
+          "domain": "patriotsoftware.com",
+          "title": "Accounting and Payroll Software for Small Businesses",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountingseed.com/resource/blog/best-accounting-software-solutions-for-small-to-midsize-businesses-including-salesforce-native-options/",
+          "canonical": "accountingseed.com/resource/blog/best-accounting-software-solutions-for-small-to-midsize-businesses-including-salesforce-native-options",
+          "domain": "accountingseed.com",
+          "title": "Accounting for Small to Midsize Businesses",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://akaunting.com/",
+          "canonical": "akaunting.com/",
+          "domain": "akaunting.com",
+          "title": "Akaunting: Free Accounting Software for Small Businesses",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountingdepartment.com/blog/bid/387042/3-QuickBooks-Alternatives-For-Small-Business-Accounting-Software",
+          "canonical": "accountingdepartment.com/blog/bid/387042/3-QuickBooks-Alternatives-For-Small-Business-Accounting-Software",
+          "domain": "accountingdepartment.com",
+          "title": "3 QuickBooks Alternatives For Small Business Accounting Software",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountedge.com/",
+          "canonical": "accountedge.com/",
+          "domain": "accountedge.com",
+          "title": "AccountEdge: Desktop Accounting Software for Small Business",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.indeed.com/career-advice/career-development/accounting-software",
+          "canonical": "indeed.com/career-advice/career-development/accounting-software",
+          "domain": "indeed.com",
+          "title": "21 Accounting Software Programs To Fit Your Business Needs",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://patrickaccounting.com/blog/top-3-small-business-accounting-software-options-compared",
+          "canonical": "patrickaccounting.com/blog/top-3-small-business-accounting-software-options-compared",
+          "domain": "patrickaccounting.com",
+          "title": "Top 3 Small Business Accounting Software Options Compared in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "reddit.com",
+          "sage.com",
+          "quickbooks.intuit.com",
+          "waveapps.com",
+          "xero.com",
+          "cnbc.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "sources": [
+        {
+          "url": "https://quickbooks.intuit.com/accounting/",
+          "canonical": "quickbooks.intuit.com/accounting",
+          "domain": "quickbooks.intuit.com",
+          "title": "Best Accounting Software for Small Businesses | QuickBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.waveapps.com/accounting",
+          "canonical": "waveapps.com/accounting",
+          "domain": "waveapps.com",
+          "title": "Small Business Accounting Software - Start for Free - Wave",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.xero.com/us/accounting-software/",
+          "canonical": "xero.com/us/accounting-software",
+          "domain": "xero.com",
+          "title": "Online Accounting Software for Your Small Business | Xero US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1hw68kd/owners_who_run_their_own_businesses_what",
+          "domain": "reddit.com",
+          "title": "Owners who run their own businesses, what bookkeeping software ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.cnbc.com/select/best-accounting-software-for-small-businesses/",
+          "canonical": "cnbc.com/select/best-accounting-software-for-small-businesses",
+          "domain": "cnbc.com",
+          "title": "5 best accounting software services for small businesses - CNBC",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher cnbc.com",
+          "longTail": false
+        },
+        {
+          "url": "https://online.jwu.edu/blog/best-accounting-software-for-small-businesses/",
+          "canonical": "online.jwu.edu/blog/best-accounting-software-for-small-businesses",
+          "domain": "online.jwu.edu",
+          "title": "10 Best Accounting Software for Small Businesses | JWU Online",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sage.com/en-us/accounting-software/",
+          "canonical": "sage.com/en-us/accounting-software",
+          "domain": "sage.com",
+          "title": "Best Accounting Software for Small Businesses & More | Sage US",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pilot.com/blog/bookkeeping-software-for-business",
+          "canonical": "pilot.com/blog/bookkeeping-software-for-business",
+          "domain": "pilot.com",
+          "title": "20+ Best Bookkeeping Software for Businesses (2026 Tool Guide)",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "canonical": "freshbooks.com/accounting-software/for-small-business?srsltid=AfmBOorxz01kPJykaGr8cN3dgKL9ID8_GiM1KZ2mJmnscYchiix0ndlM",
+          "domain": "freshbooks.com",
+          "title": "Small Business Accounting Software - FreshBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "canonical": "investopedia.com/the-best-accounting-software-for-small-business-8780908",
+          "domain": "investopedia.com",
+          "title": "Best Accounting Software for Small Business",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "canonical": "uschamber.com/co/run/finance/free-accounting-tools-for-small-businesses",
+          "domain": "uschamber.com",
+          "title": "10 Free Accounting Tools for Small Businesses | CO",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.pcmag.com/picks/the-best-small-business-accounting-software",
+          "canonical": "pcmag.com/picks/the-best-small-business-accounting-software",
+          "domain": "pcmag.com",
+          "title": "The Best Accounting Software for Small Businesses in 2026",
+          "category": "mainstream_press",
+          "signal": "mainstream publisher pcmag.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.thehartford.com/insights-center/business-management/best-software-for-small-businesses/",
+          "canonical": "thehartford.com/insights-center/business-management/best-software-for-small-businesses",
+          "domain": "thehartford.com",
+          "title": "Best Accounting Software for Small Businesses | Insights",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nav.com/marketplace/accounting-services/",
+          "canonical": "nav.com/marketplace/accounting-services",
+          "domain": "nav.com",
+          "title": "The Best Small Business Accounting Software 2025 - Nav",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tailorbrands.com/blog/best-accounting-software",
+          "canonical": "tailorbrands.com/blog/best-accounting-software",
+          "domain": "tailorbrands.com",
+          "title": "11 Best Accounting Software for Small Business 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.nerdwallet.com/business/software/best/accounting-software",
+          "canonical": "nerdwallet.com/business/software/best/accounting-software",
+          "domain": "nerdwallet.com",
+          "title": "Best Accounting Software for Small Businesses of July 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tipalti.com/blog/small-business-accounting-software/",
+          "canonical": "tipalti.com/blog/small-business-accounting-software",
+          "domain": "tipalti.com",
+          "title": "What's the Best Accounting Software for Small Businesses?",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://zipbooks.com/",
+          "canonical": "zipbooks.com/",
+          "domain": "zipbooks.com",
+          "title": "ZipBooks",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your/",
+          "canonical": "reddit.com/r/smallbusiness/comments/1qvmalx/what_accounting_software_has_worked_best_for_your",
+          "domain": "reddit.com",
+          "title": "What accounting software has worked best for your small business ...",
+          "category": "community_forum",
+          "signal": "community domain reddit.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.sage.com/en-us/size/small-business/",
+          "canonical": "sage.com/en-us/size/small-business",
+          "domain": "sage.com",
+          "title": "Small business accounting, billing, time tracking, and HR solutions",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pass-port.com/small-business-accounting-software-what-is-gaap/",
+          "canonical": "pass-port.com/small-business-accounting-software-what-is-gaap",
+          "domain": "pass-port.com",
+          "title": "Small Business Accounting Software - GAAP Standards",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.sowaanerp.ae/accounting-software-for-small-business/",
+          "canonical": "sowaanerp.ae/accounting-software-for-small-business",
+          "domain": "sowaanerp.ae",
+          "title": "Small Business Accounting Software: The ultimate guide.",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://pimbrook.ie/events/small-business-useful-links/",
+          "canonical": "pimbrook.ie/events/small-business-useful-links",
+          "domain": "pimbrook.ie",
+          "title": "Small Business Links - Pimbrook Software",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.clinked.com/blog/best-small-business-accounting-software-uk",
+          "canonical": "clinked.com/blog/best-small-business-accounting-software-uk",
+          "domain": "clinked.com",
+          "title": "Best Small Business Accounting Software UK - Clinked",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.smebusinessadvice.co.uk/best-small-business-accounting-software/",
+          "canonical": "smebusinessadvice.co.uk/best-small-business-accounting-software",
+          "domain": "smebusinessadvice.co.uk",
+          "title": "Best Small Business Accounting Software UK 2026",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://giddh-accounting-software.weebly.com/",
+          "canonical": "giddh-accounting-software.weebly.com/",
+          "domain": "giddh-accounting-software.weebly.com",
+          "title": "Best small business accounting software - Blog",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.focuslyte.ae/accounting-software/termsandconditions",
+          "canonical": "focuslyte.ae/accounting-software/termsandconditions",
+          "domain": "focuslyte.ae",
+          "title": "Best Small Business Accounting Software | FocusLyte UAE",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tradejournal.co/best-trading-journal/",
+          "canonical": "tradejournal.co/best-trading-journal",
+          "domain": "tradejournal.co",
+          "title": "What is the Best Trading Journal in 2025? - TradeJournal.co",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tradejournal.co/about/case-study-winkler-capital",
+          "canonical": "tradejournal.co/about/case-study-winkler-capital",
+          "domain": "tradejournal.co",
+          "title": "Case Study: Winkler Capital Uses TradeJournal for Fund Analytics ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://faculty.washington.edu/vmenaldo/Articles%20in%20Journals/Intl.TradeJournal.pdf",
+          "canonical": "faculty.washington.edu/vmenaldo/Articles%20in%20Journals/Intl.TradeJournal.pdf",
+          "domain": "faculty.washington.edu",
+          "title": "[PDF] (Ignoring) the Prosperity Playbook - University of Washington",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://tradejournal.co.za/education/why-traders-fail",
+          "canonical": "tradejournal.co.za/education/why-traders-fail",
+          "domain": "tradejournal.co.za",
+          "title": "7 Brutal Truths About Why Most Forex Traders Fail - TradeJournal",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://s25180.pcdn.co/wp-content/uploads/woocommerce_uploads/2017/05/pcd-2023-IndustryReport-zguxpq.pdf",
+          "canonical": "s25180.pcdn.co/wp-content/uploads/woocommerce_uploads/2017/05/pcd-2023-IndustryReport-zguxpq.pdf",
+          "domain": "s25180.pcdn.co",
+          "title": "[PDF] professional carwashing fourth edition - industry report",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://bhvl.in/wp-content/uploads/2024/10/industryreport-india-hotel-sector-30102024.pdf",
+          "canonical": "bhvl.in/wp-content/uploads/2024/10/industryreport-india-hotel-sector-30102024.pdf",
+          "domain": "bhvl.in",
+          "title": "[PDF] Industry Report – - India Hotel Sector India Prepared for",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://eprints.qut.edu.au/85917/1/sbenrc_1.3futureofroads-industryreport.pdf",
+          "canonical": "eprints.qut.edu.au/85917/1/sbenrc_1.3futureofroads-industryreport.pdf",
+          "domain": "eprints.qut.edu.au",
+          "title": "[PDF] The Future of Roads - QUT ePrints",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://sr-website-01.shiprocket.in/sr-website/IndustryReport-MhCbDH.pdf",
+          "canonical": "sr-website-01.shiprocket.in/sr-website/IndustryReport-MhCbDH.pdf",
+          "domain": "sr-website-01.shiprocket.in",
+          "title": "[PDF] Redseer Strategy Consultants Private Limited, Prestige Obelisk ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://connection.com.my/en/industryreport/",
+          "canonical": "connection.com.my/en/industryreport",
+          "domain": "connection.com.my",
+          "title": "マレーシア市場調査｜マーケットデータ｜業界レポート",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://vietnamcredit.com.vn/Media/IndustryReport/2020/Preview/2020-Vietnam-Electricity-Industry-Report-Preview.pdf",
+          "canonical": "vietnamcredit.com.vn/Media/IndustryReport/2020/Preview/2020-Vietnam-Electricity-Industry-Report-Preview.pdf",
+          "domain": "vietnamcredit.com.vn",
+          "title": "[PDF] 2020-Vietnam-Electricity-Industry-Report-Preview.pdf - VietnamCredit",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.genemarks.com/columns/small-business-tech-roundup-best-small-business-accounting-software-of-2023/",
+          "canonical": "genemarks.com/columns/small-business-tech-roundup-best-small-business-accounting-software-of-2023",
+          "domain": "genemarks.com",
+          "title": "Best Small Business Accounting Software Of 2023 - GeneMarks.com",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://patch.com/washington/bellevue/the-best-small-business-accounting-apps-and-solutions",
+          "canonical": "patch.com/washington/bellevue/the-best-small-business-accounting-apps-and-solutions",
+          "domain": "patch.com",
+          "title": "The Best Small Business Accounting Apps and Solutions - Patch",
+          "category": "regional_press",
+          "signal": "regional outlet patch.com",
+          "longTail": true
+        },
+        {
+          "url": "https://patrickaccounting.com/blog/accounting-software-for-small-business",
+          "canonical": "patrickaccounting.com/blog/accounting-software-for-small-business",
+          "domain": "patrickaccounting.com",
+          "title": "How to Choose Accounting Software For Your Small Business in 2026",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://news.microsoft.com/source/2005/09/07/new-microsoft-office-offerings-deliver-big-advances-in-accounting-and-business-management-for-small-companies/",
+          "canonical": "news.microsoft.com/source/2005/09/07/new-microsoft-office-offerings-deliver-big-advances-in-accounting-and-business-management-for-small-companies",
+          "domain": "news.microsoft.com",
+          "title": "New Microsoft Office Offerings Deliver Big Advances in Accounting ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.cbsnews.com/brandstudio/xero/",
+          "canonical": "cbsnews.com/brandstudio/xero",
+          "domain": "cbsnews.com",
+          "title": "Xero's Role in Supercharging Small Business Growth - Brand Studio",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5-8kDawMXi4",
+          "canonical": "youtube.com/watch?v=5-8kDawMXi4",
+          "domain": "youtube.com",
+          "title": "Best Calgary Small Business Accounting Software - YouTube",
+          "category": "social_video",
+          "signal": "social/video youtube.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/lbellaccounting/posts/if-youve-noticed-any-of-the-signs-here-you-should-start-exploring-your-options-t/845622577707754/",
+          "canonical": "facebook.com/lbellaccounting/posts/if-youve-noticed-any-of-the-signs-here-you-should-start-exploring-your-options-t/845622577707754",
+          "domain": "facebook.com",
+          "title": "Find the right accounting software for your small business - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.seattlepi.com/business/article/Microsoft-Notebook-Magellan-readied-to-navigate-1170570.php",
+          "canonical": "seattlepi.com/business/article/Microsoft-Notebook-Magellan-readied-to-navigate-1170570.php",
+          "domain": "seattlepi.com",
+          "title": "Microsoft Notebook: Magellan readied to navigate small-biz market",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.lawnandlandscape.com/news/avoid-tax-time-train-wrecks-020810/",
+          "canonical": "lawnandlandscape.com/news/avoid-tax-time-train-wrecks-020810",
+          "domain": "lawnandlandscape.com",
+          "title": "How small businesses can avoid a tax time train wreck",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.buylocalfood.org/resources-for-farmers/tipsheets/financial-planning/",
+          "canonical": "buylocalfood.org/resources-for-farmers/tipsheets/financial-planning",
+          "domain": "buylocalfood.org",
+          "title": "Financial Planning and Business Decision Making",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1/",
+          "canonical": "grassrootsmotorsports.com/forum/off-topic-discussion/free-small-business-accounting-software/60890/page1",
+          "domain": "grassrootsmotorsports.com",
+          "title": "Free small business accounting software? - Grassroots Motorsports",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://www.zoho.com/us/books/small-business-accounting-software/",
+          "canonical": "zoho.com/us/books/small-business-accounting-software",
+          "domain": "zoho.com",
+          "title": "Small Business Accounting Software | Zoho Books",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/fieldpromaxFSMS/posts/the-best-small-business-accounting-software-in-2023-review-and-comparison-bestac/686092133221322/",
+          "canonical": "facebook.com/fieldpromaxFSMS/posts/the-best-small-business-accounting-software-in-2023-review-and-comparison-bestac/686092133221322",
+          "domain": "facebook.com",
+          "title": "The Best Small Business Accounting Software in 2023 - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.webdeskerp.com/2024/04/01/5-best-small-business-accounting-software-in-2024",
+          "canonical": "webdeskerp.com/2024/04/01/5-best-small-business-accounting-software-in-2024",
+          "domain": "webdeskerp.com",
+          "title": "5 Best Small Business Accounting Software in 2024",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.pinterest.com/pin/745486544557757777/",
+          "canonical": "pinterest.com/pin/745486544557757777",
+          "domain": "pinterest.com",
+          "title": "The Best Small Business Accounting Software We've Tested for 2026",
+          "category": "social_video",
+          "signal": "social/video pinterest.com",
+          "longTail": false
+        },
+        {
+          "url": "https://research.com/software/best-small-business-accounting-software",
+          "canonical": "research.com/software/best-small-business-accounting-software",
+          "domain": "research.com",
+          "title": "15 Best Small Business Accounting Software for 2026 - Research.com",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.4x4community.co.za/forum/showthread.php/374370-Small-Business-Accounting-Software/page2",
+          "canonical": "4x4community.co.za/forum/showthread.php/374370-Small-Business-Accounting-Software/page2",
+          "domain": "4x4community.co.za",
+          "title": "Small Business Accounting Software - Page 2 - 4x4 Community Forum",
+          "category": "niche_forum",
+          "signal": "forum host/path signal",
+          "longTail": true
+        },
+        {
+          "url": "https://bizna.us/small-business-accounting-software-comparison/",
+          "canonical": "bizna.us/small-business-accounting-software-comparison",
+          "domain": "bizna.us",
+          "title": "Small Business Accounting Software Comparison - Bizna",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/p/DA6H1vypcUy/",
+          "canonical": "instagram.com/p/DA6H1vypcUy",
+          "domain": "instagram.com",
+          "title": "Intuit QuickBooks est ravi d'être le logiciel de comptabilité pour ...",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.capterra.com.au/directory/1/accounting/software?page=6",
+          "canonical": "capterra.com.au/directory/1/accounting/software?page=6",
+          "domain": "capterra.com.au",
+          "title": "Accounting Software - Page 6 - Capterra Australia",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.wiseguyreports.com/reports/Small%20Business%20Accounting%20Software%20Market",
+          "canonical": "wiseguyreports.com/reports/Small%20Business%20Accounting%20Software%20Market",
+          "domain": "wiseguyreports.com",
+          "title": "Small Business Accounting Software Market Sector Growth 2035 ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.theheritageschool.net/best-small-business-accounting-software-for-2022/",
+          "canonical": "theheritageschool.net/best-small-business-accounting-software-for-2022",
+          "domain": "theheritageschool.net",
+          "title": "Best Small Business Accounting Software For 2022",
+          "category": "vendor_blog",
+          "signal": "buying-guide/blog path signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.quora.com/What-accounting-software-packages-do-most-small-businesses-use",
+          "canonical": "quora.com/What-accounting-software-packages-do-most-small-businesses-use",
+          "domain": "quora.com",
+          "title": "What accounting software packages do most small businesses use?",
+          "category": "community_forum",
+          "signal": "community domain quora.com",
+          "longTail": true
+        },
+        {
+          "url": "https://www.facebook.com/groups/1638035956489345/posts/3062114034081523/",
+          "canonical": "facebook.com/groups/1638035956489345/posts/3062114034081523",
+          "domain": "facebook.com",
+          "title": "What accounting software is recommended besides QuickBooks for ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/navigating-small-business-accounting-software-market-insights-jvgoe",
+          "canonical": "linkedin.com/pulse/navigating-small-business-accounting-software-market-insights-jvgoe",
+          "domain": "linkedin.com",
+          "title": "Navigating the Small Business Accounting Software Market - LinkedIn",
+          "category": "social_video",
+          "signal": "social/video linkedin.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.datainsightsmarket.com/reports/small-business-accounting-software-1423990",
+          "canonical": "datainsightsmarket.com/reports/small-business-accounting-software-1423990",
+          "domain": "datainsightsmarket.com",
+          "title": "Small Business Accounting Software Strategic Market Roadmap",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.researchgate.net/publication/283812561_IMPLEMENTING_ACCOUNTING_SOFTWARE_IN_SMALL_BUSINESSES_IN_NEW_ZEALAND_AN_EXPLORATORY_INVESTIGATION",
+          "canonical": "researchgate.net/publication/283812561_IMPLEMENTING_ACCOUNTING_SOFTWARE_IN_SMALL_BUSINESSES_IN_NEW_ZEALAND_AN_EXPLORATORY_INVESTIGATION",
+          "domain": "researchgate.net",
+          "title": "IMPLEMENTING ACCOUNTING SOFTWARE IN SMALL ...",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "http://vat.freeaccounting.in/Tool.asp",
+          "canonical": "vat.freeaccounting.in/Tool.asp",
+          "domain": "vat.freeaccounting.in",
+          "title": "Tools - VAT Accounting",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.accountingtoday.com/news/basic-accounting-no-more",
+          "canonical": "accountingtoday.com/news/basic-accounting-no-more",
+          "domain": "accountingtoday.com",
+          "title": "'Basic' accounting no more",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.encyclopedia.com/entrepreneurs/news-wires-white-papers-and-books/accounting-consulting",
+          "canonical": "encyclopedia.com/entrepreneurs/news-wires-white-papers-and-books/accounting-consulting",
+          "domain": "encyclopedia.com",
+          "title": "Accounting Consulting | Encyclopedia.com",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://leanplan.com/wp-content/uploads/2018/05/Lean-Business-Planning-with-LivePlan.pdf",
+          "canonical": "leanplan.com/wp-content/uploads/2018/05/Lean-Business-Planning-with-LivePlan.pdf",
+          "domain": "leanplan.com",
+          "title": "[PDF] With LivePlan - Lean Business Planning",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/generaloutsourcing/posts/we-are-honored-to-host-a-small-in-house-event-for-the-client-community-designed-/821231466837139/",
+          "canonical": "facebook.com/generaloutsourcing/posts/we-are-honored-to-host-a-small-in-house-event-for-the-client-community-designed-/821231466837139",
+          "domain": "facebook.com",
+          "title": "CEO, Ms. Jinda Uttayan (Jin) - CFO, and Mr. Thunwisit Jaroensuk ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.instagram.com/shannon__swimfairy/",
+          "canonical": "instagram.com/shannon__swimfairy",
+          "domain": "instagram.com",
+          "title": "Shannon Bryant SwimFairy (@shannon__swimfairy) - Instagram",
+          "category": "social_video",
+          "signal": "social/video instagram.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/DuncanWebbLabour/posts/it-was-great-to-have-chris-hipkins-mp-visit-christchurch-yesterday-we-went-to-ri/1338417218104269/",
+          "canonical": "facebook.com/DuncanWebbLabour/posts/it-was-great-to-have-chris-hipkins-mp-visit-christchurch-yesterday-we-went-to-ri/1338417218104269",
+          "domain": "facebook.com",
+          "title": "It was great to have Chris Hipkins MP visit Christchurch yesterday ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.tiktok.com/@.lachief/video/7628993033761033493",
+          "canonical": "tiktok.com/@.lachief/video/7628993033761033493",
+          "domain": "tiktok.com",
+          "title": "Most people don't realize this, but Canva might be hiding a ... - TikTok",
+          "category": "social_video",
+          "signal": "social/video tiktok.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/zamcorpgy/posts/our-passion-lies-in-modernizing-the-way-we-do-business-in-guyana-especially-livi/7388242287884733/",
+          "canonical": "facebook.com/zamcorpgy/posts/our-passion-lies-in-modernizing-the-way-we-do-business-in-guyana-especially-livi/7388242287884733",
+          "domain": "facebook.com",
+          "title": "Our passion lies in modernizing the way we do business in Guyana ...",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://stthomassource.com/wp-sitemap-posts-post-46.xml",
+          "canonical": "stthomassource.com/wp-sitemap-posts-post-46.xml",
+          "domain": "stthomassource.com",
+          "title": "[XML] https://stthomassource.com/wp-sitemap-posts-post-46.xml",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        },
+        {
+          "url": "https://www.facebook.com/mkcitycentre/posts/new-ceo-appointed-we-are-delighted-to-announce-the-appointment-of-jill-farnswort/608861781439566/",
+          "canonical": "facebook.com/mkcitycentre/posts/new-ceo-appointed-we-are-delighted-to-announce-the-appointment-of-jill-farnswort/608861781439566",
+          "domain": "facebook.com",
+          "title": "New CEO appointed We are delighted to announce the ... - Facebook",
+          "category": "social_video",
+          "signal": "social/video facebook.com",
+          "longTail": false
+        },
+        {
+          "url": "https://www.music.org/pdf/career/entrepreneur/resources.pdf",
+          "canonical": "music.org/pdf/career/entrepreneur/resources.pdf",
+          "domain": "music.org",
+          "title": "Resources in Career Development and Entrepreneurship",
+          "category": "other",
+          "signal": "no strong signal",
+          "longTail": false
+        }
+      ],
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"small business accounting software\" AND (industry association OR standards body) -vendor -product -review",
+          "\"small business accounting software\" inurl:tradejournal OR inurl:industryreport -site:com -site:net",
+          "\"small business accounting software\" AND (regional OR local) news -finance -bank -advertising",
+          "intitle:\"small business accounting software\" AND forum OR discussion board -amazon -ebay -reddit",
+          "\"small business accounting software\" AND (trade publication OR niche magazine) -blog -tutorial -how-to",
+          "\"small business accounting software\" AND (chamber of commerce OR small business development center) -contact -login -signup"
+        ],
+        "results": 77
+      }
+    }
+  }
+}

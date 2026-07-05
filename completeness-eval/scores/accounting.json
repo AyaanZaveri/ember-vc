@@ -1,0 +1,236 @@
+{
+  "query": "small business accounting software",
+  "slug": "accounting",
+  "wantedCategories": [
+    "trade_pub",
+    "regional_press",
+    "community_forum",
+    "niche_forum"
+  ],
+  "gtSize": 7,
+  "scores": {
+    "baseline": {
+      "total": 46,
+      "totalDomains": 41,
+      "longTailCount": 2,
+      "longTailDomains": 1,
+      "longTailDomainList": [
+        "reddit.com"
+      ],
+      "longTailExtractableDomains": 0,
+      "longTailExtractableDomainList": [],
+      "longTailFraction": 0.024390243902439025,
+      "categoryCoverage": 1,
+      "categoriesCovered": [
+        "community_forum"
+      ],
+      "categoryDistribution": {
+        "other": 20,
+        "community_forum": 2,
+        "mainstream_press": 3,
+        "vendor_blog": 16,
+        "retailer": 1,
+        "social_video": 4
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "total": 68,
+      "totalDomains": 46,
+      "longTailCount": 7,
+      "longTailDomains": 7,
+      "longTailDomainList": [
+        "akaunting.com",
+        "business-software.com",
+        "forum.another71.com",
+        "forum.babelgum.com",
+        "forum.slowtwitch.com",
+        "grassrootsmotorsports.com",
+        "halfpricesoft.com"
+      ],
+      "longTailExtractableDomains": 7,
+      "longTailExtractableDomainList": [
+        "akaunting.com",
+        "business-software.com",
+        "forum.another71.com",
+        "forum.babelgum.com",
+        "forum.slowtwitch.com",
+        "grassrootsmotorsports.com",
+        "halfpricesoft.com"
+      ],
+      "longTailFraction": 0.15217391304347827,
+      "categoryCoverage": 1,
+      "categoriesCovered": [
+        "niche_forum"
+      ],
+      "categoryDistribution": {
+        "other": 30,
+        "mainstream_press": 3,
+        "vendor_blog": 10,
+        "social_video": 9,
+        "niche_forum": 7,
+        "retailer": 5,
+        "reference": 4
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 7,
+      "emberAgreement": 0.9117647058823529,
+      "meta": {
+        "queriesRun": [
+          "small business accounting software",
+          "accounting tools for small businesses",
+          "best accounting software compared for small companies",
+          "wholesale small business accounting software providers",
+          "QuickBooks Online",
+          "Xero",
+          "FreshBooks",
+          "Wave",
+          "Zoho Books",
+          "small business accounting software (magazine OR journal OR association OR \"small business accounting\")",
+          "small business accounting software (\"local news\" OR \"now open\" OR \"local business software\")",
+          "small business accounting software (discussion OR forum OR \"business owners\")",
+          "small business accounting software intitle:forum"
+        ],
+        "rawSourceCount": 99,
+        "results": 68
+      }
+    },
+    "operators": {
+      "total": 53,
+      "totalDomains": 47,
+      "longTailCount": 15,
+      "longTailDomains": 14,
+      "longTailDomainList": [
+        "accountantforums.com",
+        "accountingtoday.com",
+        "akaunting.com",
+        "bayarearidersforum.com",
+        "business-software.com",
+        "contractortalk.com",
+        "forum.another71.com",
+        "forum.babelgum.com",
+        "forum.slowtwitch.com",
+        "forums.techsoup.org",
+        "grassrootsmotorsports.com",
+        "halfpricesoft.com",
+        "reddit.com",
+        "thefastlaneforum.com"
+      ],
+      "longTailExtractableDomains": 13,
+      "longTailExtractableDomainList": [
+        "accountantforums.com",
+        "accountingtoday.com",
+        "akaunting.com",
+        "bayarearidersforum.com",
+        "business-software.com",
+        "contractortalk.com",
+        "forum.another71.com",
+        "forum.babelgum.com",
+        "forum.slowtwitch.com",
+        "forums.techsoup.org",
+        "grassrootsmotorsports.com",
+        "halfpricesoft.com",
+        "thefastlaneforum.com"
+      ],
+      "longTailFraction": 0.2978723404255319,
+      "categoryCoverage": 3,
+      "categoriesCovered": [
+        "community_forum",
+        "niche_forum",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "other": 22,
+        "community_forum": 2,
+        "mainstream_press": 2,
+        "vendor_blog": 10,
+        "niche_forum": 12,
+        "social_video": 4,
+        "trade_pub": 1
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "reddit.com",
+          "sage.com",
+          "quickbooks.intuit.com",
+          "waveapps.com",
+          "xero.com",
+          "cnbc.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "total": 76,
+      "totalDomains": 66,
+      "longTailCount": 7,
+      "longTailDomains": 6,
+      "longTailDomainList": [
+        "4x4community.co.za",
+        "accountingtoday.com",
+        "grassrootsmotorsports.com",
+        "patch.com",
+        "quora.com",
+        "reddit.com"
+      ],
+      "longTailExtractableDomains": 4,
+      "longTailExtractableDomainList": [
+        "4x4community.co.za",
+        "accountingtoday.com",
+        "grassrootsmotorsports.com",
+        "patch.com"
+      ],
+      "longTailFraction": 0.09090909090909091,
+      "categoryCoverage": 4,
+      "categoriesCovered": [
+        "community_forum",
+        "niche_forum",
+        "regional_press",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "other": 44,
+        "community_forum": 3,
+        "mainstream_press": 2,
+        "vendor_blog": 10,
+        "regional_press": 1,
+        "social_video": 13,
+        "niche_forum": 2,
+        "trade_pub": 1
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 7,
+      "emberAgreement": null,
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"small business accounting software\" AND (industry association OR standards body) -vendor -product -review",
+          "\"small business accounting software\" inurl:tradejournal OR inurl:industryreport -site:com -site:net",
+          "\"small business accounting software\" AND (regional OR local) news -finance -bank -advertising",
+          "intitle:\"small business accounting software\" AND forum OR discussion board -amazon -ebay -reddit",
+          "\"small business accounting software\" AND (trade publication OR niche magazine) -blog -tutorial -how-to",
+          "\"small business accounting software\" AND (chamber of commerce OR small business development center) -contact -login -signup"
+        ],
+        "results": 77
+      }
+    }
+  }
+}

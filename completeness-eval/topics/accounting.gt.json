@@ -1,0 +1,26 @@
+{
+  "query": "small business accounting software",
+  "note": "Long-tail sources built from independent WebSearch oracle (not Firecrawl). domainCategories is the per-topic allowlist the shared labeler consults so topic-specific trade pubs/forums are recognized for EVERY method identically.",
+  "domainCategories": {
+    "accountingtoday.com": "trade_pub",
+    "cpapracticeadvisor.com": "trade_pub",
+    "journalofaccountancy.com": "trade_pub",
+    "thetaxadviser.com": "trade_pub",
+    "aicpa.org": "trade_pub",
+    "aicpa-cima.com": "trade_pub",
+    "accountingweb.com": "trade_pub",
+    "goingconcern.com": "trade_pub",
+    "cpajournal.com": "trade_pub",
+    "thecfoclub.com": "niche_forum",
+    "proformative.com": "niche_forum"
+  },
+  "longTailUrls": [
+    "https://www.accountingtoday.com/",
+    "https://www.accountingtoday.com/list/top-apps-for-accountants-2025",
+    "https://www.cpapracticeadvisor.com/",
+    "https://www.cpapracticeadvisor.com/resource/review/",
+    "https://www.journalofaccountancy.com/issues/2025/sep/2025-tax-software-survey/",
+    "https://www.accountingweb.com/",
+    "https://www.aicpa-cima.com/"
+  ]
+}

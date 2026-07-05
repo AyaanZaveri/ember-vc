@@ -12,8 +12,7 @@ export type CategoryId =
   | "trade_pub"
   | "regional_press"
   | "mainstream_press"
-  | "community_forum"
-  | "niche_forum"
+  | "forum"
   | "manufacturer"
   | "retailer"
   | "vendor_blog"
@@ -51,14 +50,9 @@ export const DEMO_PROFILE: CompletenessProfile = {
         "A large, general-audience news or consumer publication (e.g. Wired, TechCrunch, The Verge, NYT) — high-authority, SEO-dominant, NOT an industry trade outlet.",
     },
     {
-      id: "community_forum",
+      id: "forum",
       description:
-        "A large, general-purpose discussion or Q&A community such as Reddit, Quora, or Stack Exchange.",
-    },
-    {
-      id: "niche_forum",
-      description:
-        "A small, domain-specialist enthusiast forum dedicated to this subject.",
+        "A discussion forum or Q&A community — general (Reddit, Quora, Stack Exchange) or a domain-specialist enthusiast forum.",
     },
     {
       id: "manufacturer",
@@ -84,7 +78,7 @@ export const DEMO_PROFILE: CompletenessProfile = {
   // This client (from the transcript) wants long-tail editorial and community
   // coverage — trade press, regional press, and forums — NOT the storefronts
   // and vendor buying-guides that dominate the SEO-ranked results.
-  include: ["trade_pub", "regional_press", "community_forum", "niche_forum"],
+  include: ["trade_pub", "regional_press", "forum"],
 }
 
 /** The deterministic match rule: is this predicted category wanted by the client? */
@@ -93,4 +87,21 @@ export function matchesProfile(
   profile: CompletenessProfile
 ): boolean {
   return profile.include.includes(category)
+}
+
+/** Every category id the taxonomy knows about (the classifier's full label set). */
+export const ALL_CATEGORY_IDS: CategoryId[] = DEMO_PROFILE.categories.map((c) => c.id)
+
+/**
+ * Build a profile from a user-chosen wanted-set. The taxonomy (the categories
+ * the classifier picks from) stays fixed; only which of them "count" is
+ * configurable — that's the per-client rubric the source-type picker edits, and
+ * it's exactly the "let me tell search what I care about" control from #5.
+ * Invalid/empty input falls back to the demo default so a bad request can't
+ * produce a profile that wants nothing.
+ */
+export function profileWithInclude(include: string[]): CompletenessProfile {
+  const valid = new Set<CategoryId>(ALL_CATEGORY_IDS)
+  const filtered = include.filter((c): c is CategoryId => valid.has(c as CategoryId))
+  return { ...DEMO_PROFILE, include: filtered.length ? filtered : DEMO_PROFILE.include }
 }

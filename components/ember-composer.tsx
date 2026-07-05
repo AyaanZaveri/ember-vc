@@ -1164,12 +1164,22 @@ function collectMessageSources(
   return result
 }
 
+// The classify step streams a growing list, so `result` is defined long before
+// it's done — track its own status flag instead of treating "has result" as done.
+function isClassifyInProgress(part: ToolCallMessagePart) {
+  return (
+    part.toolName === "classify" &&
+    isRecord(part.result) &&
+    part.result.status === "scraping"
+  )
+}
+
 function getToolStatus(part: ToolCallMessagePart, isStreaming: boolean) {
   if (part.isError) {
     return "complete"
   }
 
-  if (getSearchReadState(part) === "scraping") {
+  if (getSearchReadState(part) === "scraping" || isClassifyInProgress(part)) {
     return "active"
   }
 
@@ -1187,6 +1197,10 @@ function getToolStatusIcon(part: ToolCallMessagePart, isStreaming: boolean) {
 
   if (getSearchReadState(part) === "scraping") {
     return BookOpen
+  }
+
+  if (isClassifyInProgress(part)) {
+    return LoaderCircle
   }
 
   if (part.result !== undefined) {
@@ -1322,7 +1336,7 @@ function AssistantActivity({
                 label={formatToolName(part.toolName)}
                 status={getToolStatus(part, isStreaming)}
               >
-                <SourceChips links={links} />
+                <ToolStepBody part={part} links={links} />
               </ChainOfThoughtStep>
             )
           })}
@@ -1399,6 +1413,179 @@ function SourceChips({ links }: { links: SourceLink[] }) {
       ))}
     </ChainOfThoughtSearchResults>
   )
+}
+
+type ClassifiedRow = {
+  url: string
+  title: string
+  foundVia?: string[]
+  category: string
+  matches: boolean
+  confidence: "high" | "low"
+  justification: string
+  extractable: boolean
+  parseFailed: boolean
+}
+
+function extractClassifiedRows(result: unknown): ClassifiedRow[] {
+  if (!isRecord(result) || !Array.isArray(result.classified)) return []
+  return result.classified.flatMap((item): ClassifiedRow[] => {
+    if (!isRecord(item)) return []
+    const url = typeof item.url === "string" ? item.url : null
+    const category = typeof item.category === "string" ? item.category : null
+    if (!url || !category) return []
+    return [
+      {
+        url,
+        title: typeof item.title === "string" ? item.title : url,
+        foundVia: Array.isArray(item.foundVia)
+          ? item.foundVia.filter((v): v is string => typeof v === "string")
+          : [],
+        category,
+        matches: item.matches === true,
+        confidence: item.confidence === "high" ? "high" : "low",
+        justification:
+          typeof item.justification === "string" ? item.justification : "",
+        extractable: item.extractable !== false,
+        parseFailed: item.parseFailed === true,
+      },
+    ]
+  })
+}
+
+/**
+ * The detailed classification list — one row per source showing the category
+ * the model assigned, whether it counts for this profile, its confidence, and
+ * (on hover) the model's one-line justification. This is the "show me every
+ * single thing" view of the run.
+ */
+function ClassificationList({ result }: { result: unknown }) {
+  const rows = extractClassifiedRows(result)
+  if (rows.length === 0) return null
+
+  return (
+    <TooltipProvider delayDuration={120}>
+      <div className="mt-1 flex flex-col gap-1">
+        {rows.map((row) => (
+          <Tooltip key={row.url}>
+            <TooltipTrigger asChild>
+              <a
+                href={row.url}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 rounded-md px-1.5 py-1 text-xs transition-colors hover:bg-muted/60"
+              >
+                <span
+                  aria-hidden
+                  className="size-3 shrink-0 rounded-sm"
+                  style={{
+                    backgroundImage: `url(${getFaviconUrl(row.url)})`,
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "contain",
+                  }}
+                />
+                <span className="min-w-0 flex-1 truncate text-muted-foreground">
+                  {row.title}
+                </span>
+                <span
+                  className={cn(
+                    "shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-medium",
+                    row.matches
+                      ? "bg-primary/10 text-primary"
+                      : "bg-muted text-muted-foreground"
+                  )}
+                >
+                  {prettyCategory(row.category)}
+                </span>
+                {row.confidence === "low" ? (
+                  <span
+                    className="shrink-0 text-[10px] text-amber-500"
+                    title="low confidence"
+                  >
+                    low
+                  </span>
+                ) : null}
+                {!row.extractable ? (
+                  <TriangleAlert
+                    className="size-3 shrink-0 text-amber-500"
+                    aria-label="not extractable — flagged for manual review"
+                  />
+                ) : null}
+              </a>
+            </TooltipTrigger>
+            <TooltipContent side="top" align="start" className="max-w-xs">
+              <div className="space-y-1">
+                <div className="flex items-center gap-1.5">
+                  <span className="font-medium">{prettyCategory(row.category)}</span>
+                  <span className="text-muted-foreground">
+                    · {row.matches ? "wanted" : "filtered"} · {row.confidence} confidence
+                  </span>
+                </div>
+                <p className="text-muted-foreground">
+                  {row.parseFailed
+                    ? "Model returned no usable classification — fell back to other."
+                    : row.justification || "No justification provided."}
+                </p>
+                {row.foundVia && row.foundVia.length > 0 ? (
+                  <p className="text-[11px] text-muted-foreground/80">
+                    found via: {row.foundVia.join(", ")}
+                  </p>
+                ) : null}
+              </div>
+            </TooltipContent>
+          </Tooltip>
+        ))}
+      </div>
+    </TooltipProvider>
+  )
+}
+
+function ChipList({ items }: { items: string[] }) {
+  if (items.length === 0) return null
+  return (
+    <div className="mt-1 flex flex-wrap gap-1.5">
+      {items.map((item, index) => (
+        <span
+          key={`${item}-${index}`}
+          className="rounded-full bg-muted px-2 py-0.5 text-xs text-foreground"
+        >
+          {item}
+        </span>
+      ))}
+    </div>
+  )
+}
+
+/** Chooses the right detail view for each accordion step by tool name. */
+function ToolStepBody({
+  part,
+  links,
+}: {
+  part: ToolCallMessagePart
+  links: SourceLink[]
+}) {
+  if (part.toolName === "classify") {
+    return <ClassificationList result={part.result} />
+  }
+
+  if (part.toolName === "expand") {
+    const result = isRecord(part.result) ? part.result : {}
+    const searches = Array.isArray(result.searches)
+      ? result.searches.filter((s): s is string => typeof s === "string")
+      : []
+    return <ChipList items={searches} />
+  }
+
+  if (part.toolName === "entities") {
+    const args = isRecord(part.args) ? part.args : {}
+    const entities = Array.isArray(args.entities)
+      ? args.entities.filter((e): e is string => typeof e === "string")
+      : []
+    return <ChipList items={entities} />
+  }
+
+  return <SourceChips links={links} />
 }
 
 function CitationAwareTextPart({

@@ -1,5 +1,5 @@
-import { EmberComposer } from "@/components/ember-composer"
+import { EmberSearch } from "@/components/ember-search"
 
 export default function Page() {
-  return <EmberComposer />
+  return <EmberSearch />
 }

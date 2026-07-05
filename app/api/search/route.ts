@@ -1578,6 +1578,10 @@ function handleCompletenessAudit({ query }: { query: string }) {
     execute: async ({ writer }) => {
       try {
         const classifyToolCallId = crypto.randomUUID()
+        // Accumulate each classification as it lands so the accordion shows the
+        // running list (source -> category -> confidence -> justification), not
+        // just a progress counter.
+        const classifiedSoFar: unknown[] = []
 
         const discovery = await discoverAndClassify({
           query,
@@ -1593,10 +1597,11 @@ function handleCompletenessAudit({ query }: { query: string }) {
               })
             } else if (event.type === "probe") {
               writeToolResult({
-                input: { query: event.query },
+                input: { query: event.query, round: event.round },
                 output: {
                   found: event.sources,
                   query: event.query,
+                  round: event.round,
                   status: "complete",
                 },
                 toolCallId: crypto.randomUUID(),
@@ -1618,11 +1623,13 @@ function handleCompletenessAudit({ query }: { query: string }) {
                 toolName: "classify",
                 writer,
               })
-            } else if (event.type === "classifyProgress") {
+            } else if (event.type === "classified") {
+              classifiedSoFar.push(event.source)
               writeToolOutput({
                 output: {
                   done: event.done,
                   total: event.total,
+                  classified: [...classifiedSoFar],
                   status: event.done >= event.total ? "complete" : "scraping",
                 },
                 toolCallId: classifyToolCallId,

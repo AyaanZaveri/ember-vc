@@ -16,7 +16,13 @@ export type CategoryBreakdown = {
   category: CategoryId
   wanted: boolean
   count: number
-  sources: { url: string; title: string; confidence: "high" | "low"; extractable: boolean }[]
+  sources: {
+    url: string
+    title: string
+    confidence: "high" | "low"
+    extractable: boolean
+    justification: string
+  }[]
 }
 
 export type CoverageReport = {
@@ -52,6 +58,7 @@ export function buildCoverageReport({
         title: s.title,
         confidence: s.confidence,
         extractable: s.extractable,
+        justification: s.justification,
       })),
     }
   })

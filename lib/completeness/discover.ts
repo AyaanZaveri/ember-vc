@@ -4,6 +4,11 @@ import { z } from "zod"
 
 import { canonicalizeUrl, extractResearchEntities } from "../ai/deep-research.ts"
 import { firecrawlSearch, type SearchResultSource } from "../ai/firecrawl.ts"
+import {
+  buildCategoryProbeQuery,
+  makeTopicRelevanceFloor,
+  wantedLongTail,
+} from "./category-probes.ts"
 import { classifySource } from "./classify.ts"
 import { type CategoryId, type CompletenessProfile } from "./profile.ts"
 
@@ -125,6 +130,86 @@ export async function expandQuery(
   return heuristicVariants(query)
 }
 
+/** Per-category guidance for the batched vocabulary call. */
+const VOCAB_HINTS: Partial<Record<CategoryId, string>> = {
+  forum: "words signalling forum/community discussion for this topic (e.g. 'owners', 'enthusiasts', 'home barista', 'subreddit')",
+  trade_pub: "real industry/trade terms for this topic (e.g. 'specialty coffee association', 'roaster')",
+  regional_press: "local-news signal phrasings for this topic (e.g. 'new cafe', 'opens location')",
+}
+
+const CategoryVocabSchema = z.record(z.string(), z.array(z.string()))
+
+/**
+ * ONE batched LLM call: topic-specific vocabulary for every wanted category at
+ * once (not one call per category — that's the balloon we're avoiding). The
+ * model proposes only KEYWORDS; the fixed template owns the operators, so it
+ * can't emit a self-defeating dork. Any failure → {} and the templates run on
+ * their generic operator scaffold alone.
+ */
+async function generateCategoryVocab(
+  query: string,
+  categories: CategoryId[]
+): Promise<Partial<Record<CategoryId, string[]>>> {
+  if (categories.length === 0) return {}
+  try {
+    const result = await generateText({
+      model: nim.chatModel(DISCOVERY_MODEL_ID),
+      abortSignal: AbortSignal.timeout(MODEL_CALL_TIMEOUT_MS),
+      temperature: 0.3,
+      instructions: [
+        "You suggest short web-search KEYWORDS to help find specific source types about a topic.",
+        'Return ONLY compact JSON shaped like {"<category>": ["term", "term"]}, 2-3 short terms each.',
+        "Terms are topic-specific vocabulary ONLY — no search operators, no punctuation, no 'site:'.",
+      ].join("\n"),
+      prompt: `Topic: ${query}\nCategories and what each should find:\n${categories
+        .map((c) => `- ${c}: ${VOCAB_HINTS[c] ?? c}`)
+        .join("\n")}`,
+      providerOptions: { nim: { reasoningEffort: "low" } },
+    })
+    const parsed = CategoryVocabSchema.safeParse(parseJsonObject(result.text))
+    if (!parsed.success) return {}
+    const out: Partial<Record<CategoryId, string[]>> = {}
+    for (const c of categories) {
+      const terms = parsed.data[c]
+      if (Array.isArray(terms)) {
+        out[c] = terms.filter((t) => typeof t === "string" && t.trim()).slice(0, 3)
+      }
+    }
+    return out
+  } catch (error) {
+    console.warn("[discover] category vocab generation failed, using bare templates", error)
+    return {}
+  }
+}
+
+/**
+ * Category-targeted probes: one search per wanted long-tail category, run in
+ * PARALLEL with round 1 (queries derive from the topic, not round-1 entities, so
+ * zero added latency). Each result is topic-anchored and passed through a lexical
+ * relevance floor so a right-shaped but off-topic page doesn't get counted.
+ */
+async function runCategoryProbes(
+  query: string,
+  categories: CategoryId[],
+  onEvent?: (event: DiscoveryEvent) => void
+): Promise<{ query: string; category: CategoryId; sources: SearchResultSource[] }[]> {
+  if (categories.length === 0) return []
+  const vocab = await generateCategoryVocab(query, categories)
+  const isRelevant = makeTopicRelevanceFloor(query)
+  return Promise.all(
+    categories.map((category) => {
+      const probeQuery = buildCategoryProbeQuery(query, category, vocab[category] ?? [])
+      return safeSearch(probeQuery, 8).then((sources) => {
+        const filtered = sources.filter((s) =>
+          isRelevant({ title: s.title, description: s.description })
+        )
+        onEvent?.({ type: "probe", query: probeQuery, round: 1, sources: filtered })
+        return { query: probeQuery, category, sources: filtered }
+      })
+    })
+  )
+}
+
 function isTransientError(error: unknown) {
   return (
     error instanceof Error &&
@@ -162,6 +247,20 @@ export type ClassifiedSource = {
   category: CategoryId
   matches: boolean
   confidence: "high" | "low"
+  justification: string
+  extractable: boolean
+  parseFailed: boolean
+}
+
+/** The per-source classification payload streamed to the UI as each one lands. */
+export type ClassifiedSourceEvent = {
+  url: string
+  title: string
+  foundVia: string[]
+  category: CategoryId
+  matches: boolean
+  confidence: "high" | "low"
+  justification: string
   extractable: boolean
   parseFailed: boolean
 }
@@ -183,7 +282,12 @@ export type DiscoveryEvent =
   | { type: "probe"; query: string; round: 1 | 2; sources: SearchResultSource[] }
   | { type: "entities"; entities: string[] }
   | { type: "classifyStart"; total: number }
-  | { type: "classifyProgress"; done: number; total: number }
+  | {
+      type: "classified"
+      done: number
+      total: number
+      source: ClassifiedSourceEvent
+    }
 
 export async function discoverAndClassify({
   query,
@@ -204,6 +308,14 @@ export async function discoverAndClassify({
   // each search resolves so the accordion fills in live rather than all at once.
   const variants = await expandQuery(query, variantCount)
   onEvent?.({ type: "expand", variants })
+
+  // Category-targeted probes fire in PARALLEL with round 1 — one extra search per
+  // wanted long-tail category, shaped to surface exactly the source types the
+  // generic round leaves thin. Gated on the wanted-set, so a run that wants none
+  // does no extra work.
+  const wantedCategories = wantedLongTail(profile)
+  const categoryProbePromise = runCategoryProbes(query, wantedCategories, onEvent)
+
   const round1Lists = await Promise.all(
     variants.map((v) =>
       safeSearch(v, 10).then((sources) => {
@@ -213,6 +325,7 @@ export async function discoverAndClassify({
     )
   )
   const round1Sources = round1Lists.flat()
+  const categoryProbes = await categoryProbePromise
 
   // Round 2: pull named entities out of round-1 results, search each directly —
   // this is what surfaces the source that covers the specific product/entity
@@ -241,27 +354,43 @@ export async function discoverAndClassify({
 
   // Dedupe by canonical URL — NO consensus-count ranking or truncation here.
   // Classification is what decides relevance now, not "how many lists found it."
-  const byCanonical = new Map<string, { source: SearchResultSource; foundVia: Set<string> }>()
+  // We also track whether a source came from a category probe, because the cost
+  // cap below must NOT evict the long-tail we deliberately hunted for.
+  const categoryProbeQueries = new Set(categoryProbes.map((p) => p.query))
+  const byCanonical = new Map<
+    string,
+    { source: SearchResultSource; foundVia: Set<string>; fromCategoryProbe: boolean }
+  >()
   const allLists: [string, SearchResultSource[]][] = [
     ...variants.map((v, i): [string, SearchResultSource[]] => [v, round1Lists[i] ?? []]),
     ...boundedEntities.map((e, i): [string, SearchResultSource[]] => [e, round2Lists[i] ?? []]),
+    ...categoryProbes.map((p): [string, SearchResultSource[]] => [p.query, p.sources]),
   ]
   for (const [via, sources] of allLists) {
+    const isCategoryProbe = categoryProbeQueries.has(via)
     for (const source of sources) {
       const key = canonicalizeUrl(source.url)
       const existing = byCanonical.get(key)
       if (existing) {
         existing.foundVia.add(via)
+        if (isCategoryProbe) existing.fromCategoryProbe = true
       } else {
-        byCanonical.set(key, { source, foundVia: new Set([via]) })
+        byCanonical.set(key, { source, foundVia: new Set([via]), fromCategoryProbe: isCategoryProbe })
       }
     }
   }
 
-  const unique = [...byCanonical.values()].slice(0, MAX_SOURCES_PER_RUN)
+  // Apply the cost cap category-probe-first, so the generic/entity flood of SEO
+  // winners can't evict the long-tail sources the probes were built to find.
+  // Insertion order is preserved within each group (JS filter is stable).
+  const values = [...byCanonical.values()]
+  const unique = [
+    ...values.filter((v) => v.fromCategoryProbe),
+    ...values.filter((v) => !v.fromCategoryProbe),
+  ].slice(0, MAX_SOURCES_PER_RUN)
   if (byCanonical.size > MAX_SOURCES_PER_RUN) {
     console.warn(
-      `[discover] ${byCanonical.size} unique sources found, capping classification at ${MAX_SOURCES_PER_RUN} (cost safety valve, not a relevance cutoff)`
+      `[discover] ${byCanonical.size} unique sources found, capping classification at ${MAX_SOURCES_PER_RUN} (category-probe sources kept first; cost safety valve, not a relevance cutoff)`
     )
   }
 
@@ -278,7 +407,7 @@ export async function discoverAndClassify({
         source: { url: source.url, title: source.title, description: source.description },
         profile,
       })
-      classifiedSources[index] = {
+      const classified: ClassifiedSource = {
         url: source.url,
         title: source.title,
         description: source.description,
@@ -286,21 +415,39 @@ export async function discoverAndClassify({
         category: result.category,
         matches: result.matches,
         confidence: result.confidence,
+        justification: result.justification,
         extractable: isExtractable(source.url),
         parseFailed: result.parseFailed,
       }
+      classifiedSources[index] = classified
       done += 1
-      onEvent?.({ type: "classifyProgress", done, total: unique.length })
+      onEvent?.({
+        type: "classified",
+        done,
+        total: unique.length,
+        source: {
+          url: classified.url,
+          title: classified.title,
+          foundVia: classified.foundVia,
+          category: classified.category,
+          matches: classified.matches,
+          confidence: classified.confidence,
+          justification: classified.justification,
+          extractable: classified.extractable,
+          parseFailed: classified.parseFailed,
+        },
+      })
     }
   }
   await Promise.all(
     Array.from({ length: Math.min(concurrency, unique.length) }, worker)
   )
 
+  const categoryProbeSources = categoryProbes.reduce((n, p) => n + p.sources.length, 0)
   return {
     query,
-    queriesRun: [...variants, ...boundedEntities],
-    rawSourceCount: round1Sources.length + round2Sources.length,
+    queriesRun: [...variants, ...boundedEntities, ...categoryProbes.map((p) => p.query)],
+    rawSourceCount: round1Sources.length + round2Sources.length + categoryProbeSources,
     classifiedSources,
   }
 }

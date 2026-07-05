@@ -1,0 +1,205 @@
+{
+  "query": "commercial solar installation companies",
+  "slug": "solar",
+  "wantedCategories": [
+    "trade_pub",
+    "regional_press",
+    "community_forum",
+    "niche_forum"
+  ],
+  "gtSize": 8,
+  "scores": {
+    "baseline": {
+      "total": 46,
+      "totalDomains": 44,
+      "longTailCount": 0,
+      "longTailDomains": 0,
+      "longTailDomainList": [],
+      "longTailExtractableDomains": 0,
+      "longTailExtractableDomainList": [],
+      "longTailFraction": 0,
+      "categoryCoverage": 0,
+      "categoriesCovered": [],
+      "categoryDistribution": {
+        "other": 44,
+        "social_video": 2
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 8,
+      "emberAgreement": null,
+      "meta": {
+        "results": 50
+      }
+    },
+    "ember": {
+      "total": 80,
+      "totalDomains": 61,
+      "longTailCount": 8,
+      "longTailDomains": 6,
+      "longTailDomainList": [
+        "community.ases.org",
+        "diysolarforum.com",
+        "forum.cleanenergyreviews.info",
+        "seia.org",
+        "solarpaneltalk.com",
+        "solarpowerworldonline.com"
+      ],
+      "longTailExtractableDomains": 6,
+      "longTailExtractableDomainList": [
+        "community.ases.org",
+        "diysolarforum.com",
+        "forum.cleanenergyreviews.info",
+        "seia.org",
+        "solarpaneltalk.com",
+        "solarpowerworldonline.com"
+      ],
+      "longTailFraction": 0.09836065573770492,
+      "categoryCoverage": 2,
+      "categoriesCovered": [
+        "niche_forum",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "other": 52,
+        "trade_pub": 4,
+        "vendor_blog": 11,
+        "niche_forum": 4,
+        "retailer": 1,
+        "social_video": 7,
+        "mainstream_press": 1
+      },
+      "gtRecall": 0.375,
+      "gtHits": 3,
+      "gtSize": 8,
+      "emberAgreement": 0.85,
+      "meta": {
+        "queriesRun": [
+          "commercial solar installation companies",
+          "solar panel installers for businesses",
+          "commercial vs residential solar installation providers",
+          "wholesale commercial solar installation services",
+          "Solar Landscape",
+          "Earthlight Technologies",
+          "Aurora Energy",
+          "TENCO SOLAR",
+          "Shoreline Solar",
+          "commercial solar installation companies (magazine OR journal OR association OR \"solar installer\")",
+          "commercial solar installation companies (\"local news\" OR \"now open\" OR \"solar project\")",
+          "commercial solar installation companies (discussion OR forum OR \"solar owners\")",
+          "commercial solar installation companies intitle:forum"
+        ],
+        "rawSourceCount": 98,
+        "results": 80
+      }
+    },
+    "operators": {
+      "total": 60,
+      "totalDomains": 54,
+      "longTailCount": 11,
+      "longTailDomains": 10,
+      "longTailDomainList": [
+        "community.ases.org",
+        "diysolarforum.com",
+        "forum.cleanenergyreviews.info",
+        "forum.solar-electric.com",
+        "pv-magazine-usa.com",
+        "seia.org",
+        "solarmagazine.com",
+        "solarpaneltalk.com",
+        "solarpowerworldonline.com",
+        "woodmac.com"
+      ],
+      "longTailExtractableDomains": 10,
+      "longTailExtractableDomainList": [
+        "community.ases.org",
+        "diysolarforum.com",
+        "forum.cleanenergyreviews.info",
+        "forum.solar-electric.com",
+        "pv-magazine-usa.com",
+        "seia.org",
+        "solarmagazine.com",
+        "solarpaneltalk.com",
+        "solarpowerworldonline.com",
+        "woodmac.com"
+      ],
+      "longTailFraction": 0.18518518518518517,
+      "categoryCoverage": 2,
+      "categoriesCovered": [
+        "niche_forum",
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "other": 42,
+        "social_video": 6,
+        "niche_forum": 7,
+        "trade_pub": 4,
+        "vendor_blog": 1
+      },
+      "gtRecall": 0.375,
+      "gtHits": 3,
+      "gtSize": 8,
+      "emberAgreement": null,
+      "meta": {
+        "probes": [
+          "base@20",
+          "intitle:forum",
+          "inurl:forum",
+          "magazine OR journal OR association",
+          "exclude-top-domains"
+        ],
+        "excludedTopDomains": [
+          "solarlandscape.com",
+          "solarmeusa.com",
+          "earthlighttech.com",
+          "aurora-energy.com",
+          "tencosolar.net",
+          "kcgreenenergy.com"
+        ],
+        "results": 65
+      }
+    },
+    "llm-operators": {
+      "total": 78,
+      "totalDomains": 68,
+      "longTailCount": 4,
+      "longTailDomains": 2,
+      "longTailDomainList": [
+        "blog.constructionmarketingassociation.org",
+        "seia.org"
+      ],
+      "longTailExtractableDomains": 2,
+      "longTailExtractableDomainList": [
+        "blog.constructionmarketingassociation.org",
+        "seia.org"
+      ],
+      "longTailFraction": 0.029411764705882353,
+      "categoryCoverage": 1,
+      "categoriesCovered": [
+        "trade_pub"
+      ],
+      "categoryDistribution": {
+        "other": 55,
+        "social_video": 7,
+        "vendor_blog": 11,
+        "mainstream_press": 1,
+        "trade_pub": 4
+      },
+      "gtRecall": 0,
+      "gtHits": 0,
+      "gtSize": 8,
+      "emberAgreement": null,
+      "meta": {
+        "generatedDorks": [
+          "intitle:\"commercial solar installation\" AND (industry association OR standards body) -vendor -product",
+          "\"commercial solar installation\" intitle:guide OR manual -company -buy -price",
+          "\"commercial solar installation\" site:.org OR site:.edu (regional report OR local case study) -blog -forum",
+          "\"commercial solar installation\" AND (trade publication OR journal) AND (2023 OR 2024) -amazon -ebay",
+          "\"commercial solar installation\" inurl:conference OR inurl:webinar OR inurl:research -sales -quote",
+          "\"commercial solar installation\" AND (regional news OR local government) -site:.com -site:.net"
+        ],
+        "results": 80
+      }
+    }
+  }
+}
