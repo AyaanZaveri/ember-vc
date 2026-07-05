@@ -41,69 +41,66 @@
       }
     },
     "ember": {
-      "total": 76,
-      "totalDomains": 49,
-      "longTailCount": 10,
-      "longTailDomains": 8,
+      "total": 70,
+      "totalDomains": 44,
+      "longTailCount": 12,
+      "longTailDomains": 7,
       "longTailDomainList": [
-        "baristaexchange.com",
         "coffeeforums.com",
         "coffeegeek.com",
-        "forum.audiogon.com",
-        "forum.slowtwitch.com",
+        "dailycoffeenews.com",
         "home-barista.com",
         "homeroasters.org",
-        "quora.com"
+        "new.sca.coffee",
+        "sca.coffee"
       ],
       "longTailExtractableDomains": 7,
       "longTailExtractableDomainList": [
-        "baristaexchange.com",
         "coffeeforums.com",
         "coffeegeek.com",
-        "forum.audiogon.com",
-        "forum.slowtwitch.com",
+        "dailycoffeenews.com",
         "home-barista.com",
-        "homeroasters.org"
+        "homeroasters.org",
+        "new.sca.coffee",
+        "sca.coffee"
       ],
-      "longTailFraction": 0.16326530612244897,
+      "longTailFraction": 0.1590909090909091,
       "categoryCoverage": 2,
       "categoriesCovered": [
-        "community_forum",
-        "niche_forum"
+        "niche_forum",
+        "trade_pub"
       ],
       "categoryDistribution": {
+        "retailer": 23,
+        "manufacturer": 6,
+        "vendor_blog": 2,
+        "other": 16,
+        "social_video": 7,
         "niche_forum": 8,
-        "social_video": 13,
-        "other": 13,
-        "vendor_blog": 6,
-        "reference": 4,
-        "retailer": 22,
-        "manufacturer": 7,
-        "mainstream_press": 1,
-        "community_forum": 2
+        "trade_pub": 4,
+        "reference": 4
       },
       "gtRecall": 0.14285714285714285,
       "gtHits": 1,
       "gtSize": 7,
-      "emberAgreement": 0.9473684210526315,
+      "emberAgreement": 0.9714285714285714,
       "meta": {
         "queriesRun": [
           "commercial espresso machine manufacturers",
-          "top brands of espresso machines for cafes and restaurants",
-          "commercial vs residential espresso machine suppliers",
-          "wholesale commercial espresso machine manufacturers",
+          "commercial espresso machine manufacturers suppliers",
+          "commercial espresso machine manufacturers industry",
+          "best commercial espresso machine manufacturers",
+          "commercial espresso machine (magazine OR journal OR association OR espresso machine manufacturer)",
+          "commercial espresso machine (opens OR expanding OR news OR new coffee shop opens)",
+          "commercial espresso machine (forum OR discussion OR community OR home barista forum)",
+          "Elektra",
           "La Marzocco",
-          "Nuova Simonelli",
-          "Rocket Espresso",
-          "Victoria Arduino",
-          "Sanremo",
-          "commercial espresso machine manufacturers (magazine OR journal OR association OR \"espresso machine manufacturer\")",
-          "commercial espresso machine manufacturers (\"local news\" OR \"now open\" OR \"new coffee shop opens\")",
-          "commercial espresso machine manufacturers (discussion OR forum OR \"coffee shop owners\")",
-          "commercial espresso machine manufacturers intitle:forum"
+          "Simonelli Aurelia",
+          "Modbar",
+          "ColdPerk"
         ],
-        "rawSourceCount": 91,
-        "results": 76
+        "rawSourceCount": 70,
+        "results": 70
       }
     },
     "operators": {

@@ -33,9 +33,9 @@ TOPIC_LABEL = {"espresso": "Espresso\nmachines", "accounting": "Accounting\nsoft
 METHOD_ORDER = ["baseline", "operators", "llm-operators", "ember"]
 METHOD_LABEL = {
     "baseline": "Baseline (search @50)",
-    "operators": "Operators (fixed, no LLM)",
-    "llm-operators": "Operators (LLM-written)",
-    "ember": "Ember",
+    "operators": "Candidate: fixed operators (no LLM)",
+    "llm-operators": "Candidate: LLM-written operators",
+    "ember": "Ember (current)",
 }
 METHOD_COLOR = {
     "baseline": TAILWIND["slate-400"],
@@ -77,7 +77,7 @@ def chart(metric, title, subtitle, ylabel, fname, scale=1.0):
 chart(
     "longTailExtractableDomains",
     "Usable long-tail sources surfaced",
-    "Extractable trade pubs + regional press + forums (unique domains). Non-scrapeable sources (reddit/quora/youtube) excluded. One shared labeler.",
+    "Extractable trade pubs + regional press + forums (unique domains), one shared labeler. Candidates were tested as replacements for Ember's discovery step, not standalone competitors.",
     "Extractable long-tail domains",
     "01_longtail_domains",
 )

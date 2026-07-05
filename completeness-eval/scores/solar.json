@@ -33,64 +33,52 @@
       }
     },
     "ember": {
-      "total": 80,
-      "totalDomains": 61,
-      "longTailCount": 8,
-      "longTailDomains": 6,
+      "total": 88,
+      "totalDomains": 71,
+      "longTailCount": 2,
+      "longTailDomains": 2,
       "longTailDomainList": [
-        "community.ases.org",
-        "diysolarforum.com",
-        "forum.cleanenergyreviews.info",
-        "seia.org",
-        "solarpaneltalk.com",
-        "solarpowerworldonline.com"
+        "forum.solar-electric.com",
+        "solarpaneltalk.com"
       ],
-      "longTailExtractableDomains": 6,
+      "longTailExtractableDomains": 2,
       "longTailExtractableDomainList": [
-        "community.ases.org",
-        "diysolarforum.com",
-        "forum.cleanenergyreviews.info",
-        "seia.org",
-        "solarpaneltalk.com",
-        "solarpowerworldonline.com"
+        "forum.solar-electric.com",
+        "solarpaneltalk.com"
       ],
-      "longTailFraction": 0.09836065573770492,
-      "categoryCoverage": 2,
+      "longTailFraction": 0.028169014084507043,
+      "categoryCoverage": 1,
       "categoriesCovered": [
-        "niche_forum",
-        "trade_pub"
+        "niche_forum"
       ],
       "categoryDistribution": {
-        "other": 52,
-        "trade_pub": 4,
-        "vendor_blog": 11,
-        "niche_forum": 4,
-        "retailer": 1,
-        "social_video": 7,
-        "mainstream_press": 1
+        "other": 66,
+        "vendor_blog": 10,
+        "social_video": 9,
+        "niche_forum": 2,
+        "reference": 1
       },
-      "gtRecall": 0.375,
-      "gtHits": 3,
+      "gtRecall": 0.125,
+      "gtHits": 1,
       "gtSize": 8,
-      "emberAgreement": 0.85,
+      "emberAgreement": 0.875,
       "meta": {
         "queriesRun": [
           "commercial solar installation companies",
           "solar panel installers for businesses",
           "commercial vs residential solar installation providers",
-          "wholesale commercial solar installation services",
-          "Solar Landscape",
-          "Earthlight Technologies",
-          "Aurora Energy",
-          "TENCO SOLAR",
-          "Shoreline Solar",
-          "commercial solar installation companies (magazine OR journal OR association OR \"solar installer\")",
-          "commercial solar installation companies (\"local news\" OR \"now open\" OR \"solar project\")",
-          "commercial solar installation companies (discussion OR forum OR \"solar owners\")",
-          "commercial solar installation companies intitle:forum"
+          "wholesale commercial solar installation contractors",
+          "commercial solar installation (magazine OR journal OR association OR solar installer)",
+          "commercial solar installation (opens OR expanding OR news OR solar project)",
+          "commercial solar installation (forum OR discussion OR community OR solar owners)",
+          "Empire Solar Solutions, LLC",
+          "Kasselman Solar LLC",
+          "Lighthouse Solar (Sun Source Technologies)",
+          "MassCEC",
+          "Austin Energy"
         ],
-        "rawSourceCount": 98,
-        "results": 80
+        "rawSourceCount": 88,
+        "results": 88
       }
     },
     "operators": {

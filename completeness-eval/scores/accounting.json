@@ -41,65 +41,51 @@
       }
     },
     "ember": {
-      "total": 68,
-      "totalDomains": 46,
-      "longTailCount": 7,
-      "longTailDomains": 7,
+      "total": 50,
+      "totalDomains": 32,
+      "longTailCount": 1,
+      "longTailDomains": 1,
       "longTailDomainList": [
-        "akaunting.com",
-        "business-software.com",
-        "forum.another71.com",
-        "forum.babelgum.com",
-        "forum.slowtwitch.com",
-        "grassrootsmotorsports.com",
-        "halfpricesoft.com"
+        "accountingtoday.com"
       ],
-      "longTailExtractableDomains": 7,
+      "longTailExtractableDomains": 1,
       "longTailExtractableDomainList": [
-        "akaunting.com",
-        "business-software.com",
-        "forum.another71.com",
-        "forum.babelgum.com",
-        "forum.slowtwitch.com",
-        "grassrootsmotorsports.com",
-        "halfpricesoft.com"
+        "accountingtoday.com"
       ],
-      "longTailFraction": 0.15217391304347827,
+      "longTailFraction": 0.03125,
       "categoryCoverage": 1,
       "categoriesCovered": [
-        "niche_forum"
+        "trade_pub"
       ],
       "categoryDistribution": {
-        "other": 30,
-        "mainstream_press": 3,
-        "vendor_blog": 10,
+        "other": 22,
+        "mainstream_press": 2,
+        "vendor_blog": 8,
         "social_video": 9,
-        "niche_forum": 7,
         "retailer": 5,
-        "reference": 4
+        "trade_pub": 1,
+        "reference": 3
       },
       "gtRecall": 0,
       "gtHits": 0,
       "gtSize": 7,
-      "emberAgreement": 0.9117647058823529,
+      "emberAgreement": 0.94,
       "meta": {
         "queriesRun": [
           "small business accounting software",
           "accounting tools for small businesses",
           "best accounting software compared for small companies",
           "wholesale small business accounting software providers",
-          "QuickBooks Online",
-          "Xero",
-          "FreshBooks",
-          "Wave",
+          "small business accounting software (magazine OR journal OR association OR small business accounting)",
+          "small business accounting software (opens OR expanding OR news OR local business software)",
+          "small business accounting software (forum OR discussion OR community OR small business owners)",
+          "GnuCash",
           "Zoho Books",
-          "small business accounting software (magazine OR journal OR association OR \"small business accounting\")",
-          "small business accounting software (\"local news\" OR \"now open\" OR \"local business software\")",
-          "small business accounting software (discussion OR forum OR \"business owners\")",
-          "small business accounting software intitle:forum"
+          "QuickBooks",
+          "Xero"
         ],
-        "rawSourceCount": 99,
-        "results": 68
+        "rawSourceCount": 50,
+        "results": 50
       }
     },
     "operators": {
